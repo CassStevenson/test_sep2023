@@ -117,9 +117,9 @@ Check back in the future!
 ::::::{tab-item} References
 {{ ref_bib_augustine_et_al_2019 }}
 
-{{ ref_ bib_clarke_et_al_2023 }}
+{{ ref_bib_clarke_et_al_2023 }}
 
-{{ ref_ bib_sun_et_al_2022 }}	
+{{ ref_bib_sun_et_al_2022 }}
 ::::::
 
 :::::::

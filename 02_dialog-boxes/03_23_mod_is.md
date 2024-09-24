@@ -77,11 +77,11 @@ The IS is relatively untested opposite its sister models. Simulations have shown
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext_moeller_2021 }}
-```{figure} ../03_images/03_image_files/moeller_et_al_2022_fig1.png
+::::{grid-item-card} {{ ref_intext_moeller_lukacs_2022 }}
+```{figure} ../03_images/03_image_files/moeller_lukacs_2022_fig1.png
 :class: img_grid
 ```
-The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart
+**Moeller & Lukacs (2022)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart.
 ::::
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
@@ -102,7 +102,7 @@ Check back in the future!
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
-| resource1_type | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |
+| R package | spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs | free and open-source R package designed to assist in the implementation of the STE and TTE models, along with the IS estimator | <https://github.com/annam21/spaceNtime;<br><https://link.springer.com/article/10.1007/s42991-021-00181-8>| {{ ref_bib_moeller_lukacs_2022 }} |
 | resource2_type | resource2_name | resource2_note | resource2_url | {{ ref_bib_resource2_ref_id }} |
 | resource3_type | resource3_name | resource3_note | resource3_url | {{ ref_bib_resource3_ref_id }} |
 | resource4_type | resource4_name | resource4_note | resource4_url | {{ ref_bib_resource4_ref_id }} |
@@ -120,9 +120,11 @@ Check back in the future!
 ::::::
 
 ::::::{tab-item} References
-need add refs
+{{ ref_bib_clarke_et_al_2023 }}
 
-{{ ref_intext_clarke_et_al_2023 }}
+{{ ref_bib_moeller_et_al_2018 }}
+
+{{ ref_bib_moeller_lukacs_2022 }}
 ::::::
 
 :::::::

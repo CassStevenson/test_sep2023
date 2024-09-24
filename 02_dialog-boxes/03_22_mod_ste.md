@@ -58,7 +58,7 @@ This section will be available soon! In the meantime, check out the information 
 
 The space-to-event model (STE) is an extension of the time-to-event model (TTE; see {bdg-link-primary-line}`Time-to-event<https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/ 03_21_mod_tte.html>`) that measures the area, instead of the time, sampled before an image of an animal is observed ({{ ref_intext_moeller_et_al_2018 }}). The conceptual underpinnings of the STE are the same as those of the TTE, with the exception that sampling occasions are collapsed into instantaneous samples using time-lapse images – photographs taken at predetermined periods of the day or night (e.g., every hour, every day at noon), regardless of whether animals are within frame (Figure 12; {{ ref_intext_granados 2021 }}; {{ ref_intext_moeller_et_al_2018 }}). Because they are collapsed into instants in time, there is no need to break sampling occasions down into sampling periods – and no need for measures of animal movement speed. 
 
-```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig12.png
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig12_clipped.png
 :align: center
 ```
 
@@ -92,15 +92,15 @@ The STE has been field-tested on high-density ungulates and low-density carnivor
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext_moeller_2021 }}
-```{figure} ../03_images/03_image_files/moeller_et_al_2022_fig1.png
+::::{grid-item-card} {{ ref_intext_moeller_lukacs_2022 }}
+```{figure} ../03_images/03_image_files/moeller_lukacs_2022_fig1.png
 :class: img_grid
 ```
-**Moeller et al. (2022)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart
+**Moeller & Lukacs (2022)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart.
 ::::
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
-```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_ste1.png 
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tte2_ste1.png
 :class: img_grid
 ```
 The average area of a camera viewshed is calculated using \[this\] equation.
@@ -121,7 +121,7 @@ The average area of a camera viewshed is calculated using \[this\] equation.
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
-```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig12.png 
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig12_clipped.png
 :class: img_grid
 ```
 **Clarke et al. (2023) - Fig. 12** One of many time-lapse images taken at a camera station at noon. Notice, the camera trap captures an image at a predetermined time (12:00), regardless of whether an animal is within frame.
@@ -132,7 +132,7 @@ The average area of a camera viewshed is calculated using \[this\] equation.
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
-| resource1_type | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |
+| R package | spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs | free and open-source R package designed to assist in the implementation of the STE and TTE models, along with the IS estimator | <https://github.com/annam21/spaceNtime;<br><https://link.springer.com/article/10.1007/s42991-021-00181-8>| {{ ref_bib_moeller_lukacs_2022 }} |
 | resource2_type | resource2_name | resource2_note | resource2_url | {{ ref_bib_resource2_ref_id }} |
 | resource3_type | resource3_name | resource3_note | resource3_url | {{ ref_bib_resource3_ref_id }} |
 | resource4_type | resource4_name | resource4_note | resource4_url | {{ ref_bib_resource4_ref_id }} |
@@ -163,6 +163,8 @@ The average area of a camera viewshed is calculated using \[this\] equation.
 {{ ref_bib_lukacs_2021 }}
 
 {{ ref_bib_moeller_et_al_2018 }}	
+
+{{ ref_bib_moeller_lukacs_2022 }}
 ::::::
 
 :::::::

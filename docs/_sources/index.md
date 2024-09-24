@@ -16,7 +16,7 @@ editor_options:
 ---
 <style>
     .bd-page-width {
-    max-width: 85%;  /* default is 88rem */
+    max-width: 80%;  /* default is 88rem */
 }
     .bd-main .bd-content .bd-article-container {
     max-width: 100%;  /* default is 60em */
@@ -50,7 +50,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ title_i_user_entry }}</font></font>*
+*<font size='4'>{{ title_i_user_entry }}</font></font>*
 ::::
 
 ::::{grid-item-card}
@@ -545,7 +545,7 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_51_num_det_individ.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_55_zi_overdispersed.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -604,7 +604,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_rai }}</font></font>*
+*<font size='4'>{{ name_mod_rai }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -612,7 +612,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_cr_cmr }}</font></font>*
+*<font size='4'>{{ name_mod_cr_cmr }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -620,7 +620,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_scr_secr }}</font></font>*
+*<font size='4'>{{ name_mod_scr_secr }}</font></font>*
 :::
 
 ::::
@@ -633,7 +633,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_smr }}</font></font>*
+*<font size='4'>{{ name_mod_smr }}</font>*
 :::
 
 :::{grid-item-card}
@@ -641,7 +641,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_sc }}</font></font>*
+*<font size='4'>{{ name_mod_sc }}</font>*
 :::
 
 :::{grid-item-card}
@@ -649,35 +649,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_catspim }}</font></font>*
-:::
-::::
-
-::::{grid} 3
-:gutter: 3
-
-:::{grid-item-card}
-:img-background: ./03_images/01_ui/background_green.png
-:padding: 1
-:text-align: center
-
-*<font color='grey'><font size='4'>{{ name_mod_2flankspim }}</font></font>*
-:::
-
-:::{grid-item-card}
-:img-background: ./03_images/01_ui/background_green.png
-:padding: 1
-:text-align: center
-
-*<font color='grey'><font size='4'>{{ name_mod_rem }}</font></font>*
-:::
-
-:::{grid-item-card}
-:img-background: ./03_images/01_ui/background_green.png
-:padding: 1
-:text-align: center
-
-*<font color='grey'><font size='4'>{{ name_mod_rest }}</font></font>*
+*<font size='4'>{{ name_mod_catspim }}</font>*
 :::
 ::::
 
@@ -689,7 +661,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_tifc }}</font></font>*
+*<font size='4'>{{ name_mod_2flankspim }}</font>*
 :::
 
 :::{grid-item-card}
@@ -697,14 +669,15 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_ds }}</font></font>*
+*<font size='4'>{{ name_mod_rem }}</font>*
 :::
+
 :::{grid-item-card}
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_tte }}</font></font>*
+*<font size='4'>{{ name_mod_rest }}</font>*
 :::
 ::::
 
@@ -716,7 +689,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_ste }}</font></font>*
+*<font size='4'>{{ name_mod_tifc }}</font>*
 :::
 
 :::{grid-item-card}
@@ -724,7 +697,34 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_is }}</font></font>*
+*<font size='4'>{{ name_mod_ds }}</font>*
+:::
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font size='4'>{{ name_mod_tte }}</font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font size='4'>{{ name_mod_ste }}</font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font size='4'>{{ name_mod_is }}</font>*
 :::
 
 :::{grid-item-card}
@@ -733,7 +733,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_behaviour }}</font></font>**
+*<font size='4'>{{ name_mod_behaviour }}</font>*
 :::
 
 ::::

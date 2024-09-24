@@ -78,7 +78,7 @@ Distance sampling (DS) theory was developed in the early 1990s to estimate densi
 
 The DS model was adapted for use with camera trap data by Howe et al. (2017). Camera trap DS capitalizes on the similarities between camera trap surveys and human-observer point transect surveys – for example, both cameras and people tabulate the number of animals seen in a “snapshot” moment from a point in space ({{ ref_intext_buckland_2006 }}). There are, however, important differences to account for. For one: in human-observer studies, a point is sampled for an instant, and only one or a few times total; a camera, in contrast, samples the same point for a long period of time ({{ ref_intext_palencia_et_al_2021 }}). For another: human observers can pivot 360º around a point to count animals, while cameras are fixed in place and sample only a fraction of a circle ({{ ref_intext_howe_et_al_2017 }}). Camera trap DS must therefore include inputs of time and viewshed angle. The equation derived by Howe et al. (2017) is:
  
-```{figure} .//03_images/03_image_files/clarke_et_al_2023_eqn_ds1.png
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_ds1.png
 :align: center
 ```
 

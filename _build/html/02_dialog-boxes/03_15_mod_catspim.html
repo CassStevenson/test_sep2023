@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=60974ae1" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=b42daf49" />
     <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -138,33 +138,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item">
-
-
-
-<nav aria-label="Breadcrumb" class="d-print-none">
-  <ul class="bd-breadcrumbs">
-    
-    <li class="breadcrumb-item breadcrumb-home">
-      <a href="../index.html" class="nav-link" aria-label="Home">
-        <i class="fa-solid fa-home"></i>
-      </a>
-    </li>
-    <li class="breadcrumb-item active" aria-current="page">Spatial...</li>
-  </ul>
-</nav>
-</div>
-      
-    </div>
-  
-  
-</div>
-</div>
+              <div class="bd-header-article d-print-none"></div>
               
               
               
@@ -174,7 +148,7 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="spatial-partial-identity-model-categorical-spim-catspim">
 <span id="i-mod-catspim"></span><h1>Spatial Partial Identity Model (Categorical SPIM; catSPIM)<a class="headerlink" href="#spatial-partial-identity-model-categorical-spim-catspim" title="Link to this heading">#</a></h1>
-<p><strong>Categorical partial identity model (catSPIM) (Augustine et al., 2019; Sun et al., 2022)</strong>: A method used to estimate the <a class="reference internal" href="##density"><span class="xref myst">density</span></a> of partially marked populations in which the ‘spatial locations of where partial identity samples are captured to probabilistically resolve their complete identities’ (Augustine et al., 2018, 2019). catSPIM models use partial identity traits (e.g., sex class, antler points) to help infer individual identities (Augustine et al., 2019; Sun et al., 2022). catSPIM is an extension of the SC model (Chandler &amp; Royle, 2013).</p>
+<p><strong>Categorical partial identity model (catSPIM) (Augustine et al., 2019; Sun et al., 2022)</strong>: A method used to estimate the <a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">density</span></a> of partially marked populations in which the ‘spatial locations of where partial identity samples are captured to probabilistically resolve their complete identities’ (Augustine et al., 2018, 2019). catSPIM models use partial identity traits (e.g., sex class, antler points) to help infer individual identities (Augustine et al., 2019; Sun et al., 2022). catSPIM is an extension of the SC model (Chandler &amp; Royle, 2013).</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Assumptions, Pros, Cons</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -190,13 +164,13 @@ Assumptions</div>
 <li><p class="sd-card-text">Camera must be close enough together that animals are detected at multiple cameras (Chandler &amp; Royle, 2013; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">Demographic closure (i.e., no births or deaths) (Chandler &amp; Royle, 2013; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">Geographic closure (i.e., no immigration or emigration) (Chandler &amp; Royle, 2013; Clarke et al., 2023)</p></li>
-<li><p class="sd-card-text">Detections are <a class="reference internal" href="##independent_detections"><span class="xref myst">independent</span></a> (Chandler &amp; Royle, 2013; Clarke et al., 2023)</p></li>
+<li><p class="sd-card-text">Detections are <a class="reference internal" href="09_glossary.html#independent-detections"><span class="std std-ref">independent</span></a> (Chandler &amp; Royle, 2013; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">Activity centres are randomly dispersed (Chandler &amp; Royle, 2013; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">Activity centres are stationary (Chandler &amp; Royle, 2013; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">Each categorical identifier (e.g., male*/female, collared**/not collared, etc) has fixed number of possibilities (Sun et al., 2022)</p></li>
 <li><p class="sd-card-text">All possible values of categorical identifiers occur in the population with probabilities that can be estimated (Augustine et al., 2019; Sun et al., 2022; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">Every individual is assigned ‘full categorical identity’ (i.e., ‘set of traits given all categorical identifiers and possibilities’) (Augustine et al., 2019; Clarke et al., 2023)</p></li>
-<li><p class="sd-card-text">Individuals’ identifying traits do not change during the <a class="reference internal" href="##survey"><span class="xref myst">survey</span></a> (e.g., antlers present*/absent) (Augustine et al., 2019)</p></li>
+<li><p class="sd-card-text">Individuals’ identifying traits do not change during the <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a> (e.g., antlers present*/absent) (Augustine et al., 2019)</p></li>
 </ul>
 </div>
 </div>
@@ -207,7 +181,7 @@ Assumptions</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Pros</div>
 <ul class="simple">
-<li><p class="sd-card-text">May produce more precise and less biased <a class="reference internal" href="##density"><span class="xref myst">density</span></a> estimates than SC with less information (Sun et al., 2022; Clarke et al., 2023)</p></li>
+<li><p class="sd-card-text">May produce more precise and less biased <a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">density</span></a> estimates than SC with less information (Sun et al., 2022; Clarke et al., 2023)</p></li>
 </ul>
 </div>
 </div>
@@ -219,8 +193,8 @@ Pros</div>
 Cons</div>
 <ul class="simple">
 <li><p class="sd-card-text">Sensitive to non-independent movement (e.g., group-travel); can cause over-dispersion and bias estimates (Sun et al., 2022; Clarke et al., 2023); may limit application to solitary species only (Sun et al., 2022; Clarke et al., 2023)</p></li>
-<li><p class="sd-card-text">May produce be less reliable*/accurate estimates for high-<a class="reference internal" href="##density"><span class="xref myst">density</span></a> populations (Sun et al., 2022; Clarke et al., 2023)</p></li>
-<li><p class="sd-card-text">Too few categorical identifiers*/ possibilities can result in mis-assignments and overestimating <a class="reference internal" href="##density"><span class="xref myst">density</span></a> (Augustine et al., 2019; Parmenter et al., 2003; Clarke et al., 2023)</p></li>
+<li><p class="sd-card-text">May produce be less reliable*/accurate estimates for high-<a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">density</span></a> populations (Sun et al., 2022; Clarke et al., 2023)</p></li>
+<li><p class="sd-card-text">Too few categorical identifiers*/ possibilities can result in mis-assignments and overestimating <a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">density</span></a> (Augustine et al., 2019; Parmenter et al., 2003; Clarke et al., 2023)</p></li>
 </ul>
 </div>
 </div>
@@ -379,6 +353,8 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
 <p>Augustine, B. C., Royle, J. A., Murphy, S. M., Chandler, R. B., Cox, J. J., &amp; Kelly, M. J. (2019). Spatial Capture–Recapture for Categorically Marked Populations with an Application to Genetic Capture–Recapture. <em>Ecosphere, 10</em>(4) e02627-n/a. <a class="reference external" href="https://doi.org/10.1002/ecs2.2627">https://doi.org/10.1002/ecs2.2627</a></p>
+<p>Clarke, J., Bohm, H., Burton, C., Constantinou, A. (2023). <em>Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers</em>. <a class="reference external" href="https://doi.org/10.13140/RG.2.2.18364.72320">https://doi.org/10.13140/RG.2.2.18364.72320</a></p>
+<p>Sun, C., Burgar, J. M., Fisher, J. T., &amp; Burton, A. C. (2022). A Cautionary Tale Comparing Spatial Count and Partial Identity Models for Estimating Densities of Threatened and Unmarked Populations. <em>Global Ecology and Conservation, 38</em>, e02268. <a class="reference external" href="https://doi.org/10.1016/j.gecco.2022.e02268">https://doi.org/10.1016/j.gecco.2022.e02268</a></p>
 </div>
 </div>
 </section>

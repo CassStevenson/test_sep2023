@@ -61,13 +61,13 @@ Time-to-event (TTE) analysis is used in many disciplines to estimate the rate at
 
 The equation for camera data-based density estimation using TTE is: 
 
-```{figure} ../03_images/03_image_files/clarke_et_al_2023/clarke_et_al_2023_eqn_tte1.png
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tte1.png
 :align: center
 ```
 
 where *𝜆* is the average number of animals in the viewshed, given the time until an animal is detected, and *𝑎* is the average viewshed area. *𝑎* is calculated using the equation: 
 
-```{figure} .//03_images/03_image_files/clarke_et_al_2023/clarke_et_al_2023_eqn_tte2.png
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tte2_ste1.png
 :align: center
 ```
 
@@ -116,7 +116,7 @@ The equation for camera data-based density estimation using TTE, where *𝜆* is
 ::::
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
-```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tte2.png 
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tte2_ste1.png 
 :class: img_grid
 ```
 **Clarke et al. (2023) - Eqn TTE *𝑎***:The equation for *𝑎* in camera data-based density estimation using TTE (refer to “Clarke et al. (2023)  - Eqn TTE”).
@@ -144,11 +144,11 @@ The equation for camera data-based density estimation using TTE, where *𝜆* is
 **Clarke et al. (2023) - Fig. 11** Simple diagrams showing dispersed, clumped and Poisson-distributed animals (red dots) in space.
 ::::
 
-::::{grid-item-card} {{ ref_intext_moeller_2021 }}
-```{figure} ../03_images/03_image_files/moeller_et_al_2022_fig1.png 
+::::{grid-item-card} {{ ref_intext_moeller_lukacs_2022 }}
+```{figure} ../03_images/03_image_files/moeller_lukacs_2022_fig1.png
 :class: img_grid
 ```
-The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart
+**Moeller & Lukacs (2022)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart.
 ::::
 
 ::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
@@ -216,7 +216,7 @@ Check back in the future!
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
-| R package | spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs | free and open-source R package designed to assist in the implementation of the STE and TTE models, along with the IS estimator | https://github.com/annam21/spaceNtime;<br><https://link.springer.com/article/10.1007/s42991-021-00181-8>
+| R package | spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs | free and open-source R package designed to assist in the implementation of the STE and TTE models, along with the IS estimator | <https://github.com/annam21/spaceNtime;<br><https://link.springer.com/article/10.1007/s42991-021-00181-8>| {{ ref_bib_moeller_lukacs_2022 }} |
 ::::::
 
 ::::::{tab-item} References
@@ -234,9 +234,9 @@ Check back in the future!
 
 ({{ ref_bib_lukacs_2021 }}
 
-{{ ref_bib_moeller_lukacs_2021 }}
-
 {{ ref_bib_moeller_et_al_2018 }}
+
+{{ ref_bib_moeller_lukacs_2022 }}
 
 {{ ref_bib_morin_et_al_2022 }}	
 ::::::

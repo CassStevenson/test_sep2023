@@ -27,7 +27,7 @@ Dont have information on home range size? Check out the “Shiny Apps/Widgets”
 
 Home range size will not be exactly the same for every animal of a certain species; when thinking of home range size in the context of study design, we are really thinking about the average home range size for individuals of that species for the duration of your study.
 
-```{figure} ../03_images/03_image_files/00_home_range.png
+```{figure} ../03_images/03_image_files/00_home_range.jpg
 :align: center
 ```
 

@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=60974ae1" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=b42daf49" />
     <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -138,33 +138,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item">
-
-
-
-<nav aria-label="Breadcrumb" class="d-print-none">
-  <ul class="bd-breadcrumbs">
-    
-    <li class="breadcrumb-item breadcrumb-home">
-      <a href="../index.html" class="nav-link" aria-label="Home">
-        <i class="fa-solid fa-home"></i>
-      </a>
-    </li>
-    <li class="breadcrumb-item active" aria-current="page">Distance...</li>
-  </ul>
-</nav>
-</div>
-      
-    </div>
-  
-  
-</div>
-</div>
+              <div class="bd-header-article d-print-none"></div>
               
               
               
@@ -174,7 +148,7 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="distance-sampling-ds">
 <span id="i-mod-ds"></span><h1>Distance sampling (DS)<a class="headerlink" href="#distance-sampling-ds" title="Link to this heading">#</a></h1>
-<p><strong></strong>: </p>
+<p><strong>Distance sampling (DS) model (Howe et al., 2017)</strong>: A method to estimate abundance by using distances at which animals are detected (from <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a> lines or points) to model abundance as a function of decreasing detection probability with animal distance from the camera (using a decay function) (Cappelle et al., 2021; Howe et al., 2017).</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Assumptions, Pros, Cons</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -189,11 +163,11 @@ Assumptions</div>
 <li><p class="sd-card-text">Random or systematic random placements (consistent with the assumption that points are placed independently of animal locations) (Howe et al., 2017)</p></li>
 <li><p class="sd-card-text">Camera locations are randomly placed relative to animal movement (Palencia et al., 2021)</p></li>
 <li><p class="sd-card-text">Detection is perfect (detection probability ‘<em>p</em>’ =  1) at focal area */ distance 0 (Palencia et al., 2021)</p></li>
-<li><p class="sd-card-text">Demographic closure (i.e., no births or deaths) and geographic closure (i.e., no immigration or emigration) (animal <a class="reference internal" href="##density"><span class="xref myst">density</span></a> is constant during the <a class="reference internal" href="##survey"><span class="xref myst">survey</span></a>) (Palencia et al., 2021)</p></li>
+<li><p class="sd-card-text">Demographic closure (i.e., no births or deaths) and geographic closure (i.e., no immigration or emigration) (animal <a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">density</span></a> is constant during the <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a>) (Palencia et al., 2021)</p></li>
 <li><p class="sd-card-text">Animal movement and behaviour are unaffected by the cameras (Palencia et al., 2021)</p></li>
 <li><p class="sd-card-text">Animals are detected at initial locations (e.g., they do not change course in response to the camera prior to detection) (Palencia et al., 2021)</p></li>
 <li><p class="sd-card-text">Distances are measured exactly (however if the data from different distances will be grouped (‘binned’) for analysis later, an accuracy of +*/- 1m may suffice) (Palencia et al., 2021)</p></li>
-<li><p class="sd-card-text">Detections are <a class="reference internal" href="##independent_detections"><span class="xref myst">independent</span></a> (Palencia et al., 2021)</p></li>
+<li><p class="sd-card-text">Detections are <a class="reference internal" href="09_glossary.html#independent-detections"><span class="std std-ref">independent</span></a> (Palencia et al., 2021)</p></li>
 <li><p class="sd-card-text">Snapshot moments selected independently of animal locations (Palencia et al., 2021)</p></li>
 </ul>
 </div>
@@ -206,8 +180,8 @@ Assumptions</div>
 Pros</div>
 <ul class="simple">
 <li><p class="sd-card-text">A shortcut to controlling for variation in detection distances by only counting individuals within a short distance with an unobstructed view, and well sampled across cameras and species (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="##density"><span class="xref myst">Density</span></a> estimates are unbiased by animal movement ‘since camera-animal distance is measured at a certain instant in time (intervals of duration <em>t</em> apart)’ (Howe et al., 2017; Clarke et al., 2023)</p></li>
-<li><p class="sd-card-text">Can be applied to low-<a class="reference internal" href="##density"><span class="xref myst">density</span></a> populations (Howe et al., 2017; Clarke et al., 2023)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">Density</span></a> estimates are unbiased by animal movement ‘since camera-animal distance is measured at a certain instant in time (intervals of duration <em>t</em> apart)’ (Howe et al., 2017; Clarke et al., 2023)</p></li>
+<li><p class="sd-card-text">Can be applied to low-<a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">density</span></a> populations (Howe et al., 2017; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">Does not require individual identification (Howe et al., 2017)</p></li>
 </ul>
 </div>
@@ -224,8 +198,8 @@ Cons</div>
 <li><p class="sd-card-text">Best suited to larger animals; the smaller the focal species, the lower remote cameras must be set, which reduces the depth of the viewshed, and thus sampling size and the flexibility of the model’ (Howe et al., 2017; Clarke et al., 2023).</p></li>
 <li><p class="sd-card-text">Does not permit inference about spatial variation in abundance (unless using hierarchical distance which can model spatial variation as a function of covariates) (Gilbert et al., 2020; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">Calculating camera-animal distances can be labour-intensive and time-consuming (However, recently developed techniques (e.g., Johanns et al., 2022) show promise for simplifying and automating the process) (Clarke et al., 2023)</p></li>
-<li><p class="sd-card-text">Requires a good understanding of the focal populations’ activity patterns; <a class="reference internal" href="##density"><span class="xref myst">density</span></a> estimates can be biased (e.g., under-estimated) when regular periods of inactivity are not accounted for (using detection times to infer periods of activity may help overcome this limitation)’ (Howe et al., 2017; Palencia et al., 2021; Clarke et al., 2023)</p></li>
-<li><p class="sd-card-text">Tends to underestimate <a class="reference internal" href="##density"><span class="xref myst">density</span></a> (Howe et al., 2017; Twining et al., 2022; Clarke et al., 2023)</p></li>
+<li><p class="sd-card-text">Requires a good understanding of the focal populations’ activity patterns; <a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">density</span></a> estimates can be biased (e.g., under-estimated) when regular periods of inactivity are not accounted for (using detection times to infer periods of activity may help overcome this limitation)’ (Howe et al., 2017; Palencia et al., 2021; Clarke et al., 2023)</p></li>
+<li><p class="sd-card-text">Tends to underestimate <a class="reference internal" href="09_glossary.html#density"><span class="std std-ref">density</span></a> (Howe et al., 2017; Twining et al., 2022; Clarke et al., 2023)</p></li>
 <li><p class="sd-card-text">{{ mod_ds_con_08 }</p></li>
 </ul>
 </div>
@@ -250,14 +224,14 @@ Advanced</label><div class="sd-tab-content docutils">
 <p class="admonition-title">Note</p>
 <p><strong>This content was adapted from</strong>: The Density Handbook, “<a class="reference external" href="https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers">Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers</a>” (Clarke et al., 2024)</p>
 </div>
-<p>Distance sampling (DS) theory was developed in the early 1990s to estimate density from line- or point-transect surveys, including aerial surveys (e.g., Alberta Environment and Parks 2016; ). The novelty of the DS approach is in its capacity to correct for imperfect detection (i.e., not observing animals that are present) by measuring the distance between survey lines or points and animals (Morin et al., 2022). t (; ).</p>
+<p>Distance sampling (DS) theory was developed in the early 1990s to estimate density from line- or point-transect surveys, including aerial surveys (e.g., Alberta Environment and Parks 2016; ). The novelty of the DS approach is in its capacity to correct for imperfect detection (i.e., not observing animals that are present) by measuring the distance between survey lines or points and animals (Morin et al., 2022). t (; Gilbert et al., 2021).</p>
 <figure class="align-center">
 <img alt="../_images/clarke_et_al_2023_fig6_clipped.png" src="../_images/clarke_et_al_2023_fig6_clipped.png" />
 </figure>
 <p><strong>Clarke et al. (2023) - Fig. 6</strong> An example detection function. The probability of detecting an animal decreases with increasing distance from the observer.</p>
-<p>The DS model was adapted for use with camera trap data by Howe et al. (2017). Camera trap DS capitalizes on the similarities between camera trap surveys and human-observer point transect surveys – for example, both cameras and people tabulate the number of animals seen in a “snapshot” moment from a point in space (). There are, however, important differences to account for. For one: in human-observer studies, a point is sampled for an instant, and only one or a few times total; a camera, in contrast, samples the same point for a long period of time (Palencia et al., 2021). For another: human observers can pivot 360º around a point to count animals, while cameras are fixed in place and sample only a fraction of a circle (Howe et al., 2017). Camera trap DS must therefore include inputs of time and viewshed angle. The equation derived by Howe et al. (2017) is:</p>
+<p>The DS model was adapted for use with camera trap data by Howe et al. (2017). Camera trap DS capitalizes on the similarities between camera trap surveys and human-observer point transect surveys – for example, both cameras and people tabulate the number of animals seen in a “snapshot” moment from a point in space (Buckland, 2006). There are, however, important differences to account for. For one: in human-observer studies, a point is sampled for an instant, and only one or a few times total; a camera, in contrast, samples the same point for a long period of time (Palencia et al., 2021). For another: human observers can pivot 360º around a point to count animals, while cameras are fixed in place and sample only a fraction of a circle (Howe et al., 2017). Camera trap DS must therefore include inputs of time and viewshed angle. The equation derived by Howe et al. (2017) is:</p>
 <figure class="align-center">
-<img alt="02_dialog-boxes/03_images/03_image_files/clarke_et_al_2023_eqn_ds1.png" src="02_dialog-boxes/03_images/03_image_files/clarke_et_al_2023_eqn_ds1.png" />
+<img alt="../_images/clarke_et_al_2023_eqn_ds1.png" src="../_images/clarke_et_al_2023_eqn_ds1.png" />
 </figure>
 <p>where <em>𝑌</em> is the number of detection events, 𝑤 is the truncation distance (i.e., the distance beyond which animal-camera distances are no longer considered), <em>𝑒</em> is the sampling effort, and <em>𝑝</em> is the probability of capturing an image of an animal within distance <em>𝑤</em> (Howe et al., 2017).</p>
 <p><strong>To calculate sampling effort <em>𝑒</em>:</strong> let us first consider temporal effort. At a given camera, temporal effort is a function of the camera’s total sampling time <em>𝐻</em> and a predetermined interval <em>𝑡</em> units of time apart, at which the distance between camera and animal(s) is measured, such that temporal effort at the camera is <em>𝐻</em>/<em>𝑡</em> (Howe et al., 2017). If that same camera has a viewshed angle of 𝜃 radians, the fraction of a circle it samples is</p>
@@ -269,7 +243,7 @@ Advanced</label><div class="sd-tab-content docutils">
 <img alt="../_images/clarke_et_al_2023_eqn_ds3.png" src="../_images/clarke_et_al_2023_eqn_ds3.png" />
 </figure>
 <p><strong>To estimate the probability of capturing an animal <em>𝑝</em>:</strong> practitioners must estimate the horizontal distance <em>𝑟</em> between a camera and the centre of every animal detected, at each snapshot moment <em>𝑡</em> intervals apart, for as long as animals are within the viewshed (Howe et al., 2017). Howe et al. (2017) recommend a <em>𝑡</em> of 0.25 to 3 seconds; if the focal species is fast-moving or rare, and/or cameras have fast trigger speeds, practitioners should use a smaller <em>𝑡</em>. Measurements of <em>𝑟</em> can then be inputted into a detection function, <em>𝑓</em>(<em>𝑟</em>), which describes the probability an animal at distance <em>𝑟</em> is detected given 0 ≤ <em>𝑟</em> ≤ <em>𝑤</em> – producing an estimate of <em>𝑝</em> ().</p>
-<p>Options for measuring camera-animal distance <em>𝑟</em> include: 1) comparing images of animals to reference images of field crew or objects at known distances from the camera (manually or automated; , Howe et al., 2017); 2) placing permanent reference objects at known distances from the camera so they are visible in every capture (Palencia et al., 2021); 3) physically measuring out camera-animal distances in the field, using animal images as references (Rowcliffe et al., 2011); and 4) a recently-developed, fully-automated approach (<a class="github reference external" href="https://github.com/PJcs/DistanceEstimationTracking">PJcs/DistanceEstimationTracking</a>) which does not require reference images or objects (Johanns et al., 2022).</p>
+<p>Options for measuring camera-animal distance <em>𝑟</em> include: 1) comparing images of animals to reference images of field crew or objects at known distances from the camera (manually or automated; Haucke et al., 2022, Howe et al., 2017); 2) placing permanent reference objects at known distances from the camera so they are visible in every capture (Palencia et al., 2021); 3) physically measuring out camera-animal distances in the field, using animal images as references (Rowcliffe et al., 2011); and 4) a recently-developed, fully-automated approach (<a class="github reference external" href="https://github.com/PJcs/DistanceEstimationTracking">PJcs/DistanceEstimationTracking</a>) which does not require reference images or objects (Johanns et al., 2022).</p>
 <p>If the species of interest is regularly and predictably inactive (e.g., rests at night), estimates of density must be corrected for activity level to minimize bias (Howe et al., 2017; Palencia et al., 2021). Practitioners may choose to set total sampling time <em>𝐻</em> as the time the study population was active and available for detection; another option is to correct density <em>𝐷</em> for the proportion of time animals are active, such that:</p>
 <figure class="align-center">
 <img alt="../_images/clarke_et_al_2023_eqn_ds4.png" src="../_images/clarke_et_al_2023_eqn_ds4.png" />
@@ -280,11 +254,11 @@ Advanced</label><div class="sd-tab-content docutils">
 <p>In northwestern Africa, camera trap DS produced higher estimates of duiker density than line-transect surveys – a method generally thought to underestimate the densities of forest-dwelling ungulates (Howe et al., 2017). The researchers collected video data.</p>
 <p>Another study in northwestern Africa found that the DS model performed variably for different species (Cappelle et al., 2021). DS density estimates of a common ungulate – duiker – were comparable to previous estimates (line-transect surveys and Howe et al.’s (2017) camera trap DS study), and similarly precise. For semi-arboreal chimpanzees, DS-derived density estimates were biased low and depended greatly on measures of activity level (i.e., the proportion of the day chimpanzees were on the ground and available for detection). Compared with other studies:</p>
 <ul class="simple">
-<li><p>DS performed inferiorly to spatial capture-recapture (SCR; see section 2.1.2 Spatial Capture Recapture) with individual identification (, ).</p></li>
+<li><p>DS performed inferiorly to spatial capture-recapture (SCR; see section 2.1.2 Spatial Capture Recapture) with individual identification (Després‐Einspenner et al., 2017, Cappelle et al., 2019).</p></li>
 <li><p>DS estimates were, however, comparable to labour-intensive line-transect nest surveys.
 The DS model performed inconsistently for rare species in this system, producing reasonable estimates of leopard density but questionable estimates of elephant density.</p></li>
 </ul>
-<p>DS-derived leopard density was similar to a previous study combining collar, camera and track data (Cappelle et al., 2021, ). DS-derived elephant density was nearly double that from previous line-transect surveys and extremely imprecise (0.60 &lt; CV &lt; 2.00; Cappelle et al., 2021). As per Howe et al. (2017), videos were also used for this study.</p>
+<p>DS-derived leopard density was similar to a previous study combining collar, camera and track data (Cappelle et al., 2021, Jenny, 1996). DS-derived elephant density was nearly double that from previous line-transect surveys and extremely imprecise (0.60 &lt; CV &lt; 2.00; Cappelle et al., 2021). As per Howe et al. (2017), videos were also used for this study.</p>
 <p>Palencia et al. (2021) used DS to estimate the densities of red deer and boar. They found that the model performed similarly to the random encounter model (REM; see <em>2.2.3 Random Encounter Model</em>) and the random encounter and staying time model (REST; see 2.2.4 Random Encounter and Staying Time) for both species. Compared to independent density estimates (line-transect distance sampling for red deer, drive counts for boar): DS yielded a comparable density for deer but underestimated density for boar, perhaps due to slow camera recovery times (Palencia et al., 2021). Precision of camera trap DS was quite low, with an average CV of 0.42. Still images were used.</p>
 <p>Bessone et al. (2020) used camera trap DS to estimate the densities of 14 vertebrate species, finding that low population density and reactivity to cameras were major sources of bias, and that the model applied best to evenly-distributed (versus clumpilydistributed) populations. Precision was highest for common, high-density species, but satisfactory (i.e., CV &lt; 0.35) for rare-but-widely-distributed species.</p>
 <p>Finally, another density methods comparison study showed that camera trap DS was more precise than genetic mark-recapture, live capture-recapture, REM, and spatial count (SC; see section <em>2.2.1 Spatial Count</em>) for pine marten (CV = 0.34; Twining et al., 2022). While all methods produced densities within accepted ranges, DS tended to underestimate density (Twining et al., 2022).</p>
@@ -478,7 +452,11 @@ References</label><div class="sd-tab-content docutils">
 <p>Bessone, M., Kühl, H. S., Hohmann, G., Herbinger, I., N’Goran, K. P., Asanzi, P., Da Costa, P. B., Dérozier, V., Fotsing, E. D. B., Beka, B. I., Iyomi, M. D., Iyatshi, I. B., Kafando, P., Kambere, M. A., Moundzoho, D. B., Wanzalire, M. L. K., Fruth, B., &amp; Michalski, F. (2020). Drawn out of the Shadows: Surveying Secretive Forest Species with Camera Trap Distance Sampling. <em>Journal of Applied Ecology, 57</em>(5), 963–974. <a class="reference external" href="https://doi.org/10.1111/1365-2664.13602">https://doi.org/10.1111/1365-2664.13602</a></p>
 <p>Clarke, J., Bohm, H., Burton, C., Constantinou, A. (2023). <em>Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers</em>. <a class="reference external" href="https://doi.org/10.13140/RG.2.2.18364.72320">https://doi.org/10.13140/RG.2.2.18364.72320</a></p>
 <p>Cappelle, N., Howe, E. J., Boesch, C., &amp; Kühl, H. S. (2021). Estimating Animal Abundance and Effort–Precision Relationship with Camera Trap Distance Sampling. <em>Ecosphere, 12</em>(1). <a class="reference external" href="https://doi.org/10.1002/ecs2.3299">https://doi.org/10.1002/ecs2.3299</a></p>
+<p>Després‐Einspenner, M., Howe, E. J., Drapeau, P., &amp; Kühl, H. S. (2017). An empirical evaluation of camera trapping and spatially explicit capture‐recapture models for estimating chimpanzee density. <em>American Journal of Primatology, 79</em>(7), e22647. <a class="reference external" href="https://doi.org/10.1002/ajp.22647">https://doi.org/10.1002/ajp.22647</a></p>
+<p>Gilbert, N. A., Clare, J. D. J., Stenglein, J. L., &amp; Zuckerberg, B. (2021). Abundance estimation of unmarked animals based on camera-trap data. <em>Conservation Biology, 35</em>(1), 88–100. Medline. <a class="reference external" href="https://doi.org/10.1111/cobi.13517">https://doi.org/10.1111/cobi.13517</a></p>
+<p>Haucke, T., Kühl, H. S., Hoyer, J., &amp; Steinhage, V. (2022). Overcoming the distance estimation bottleneck in estimating animal abundance with camera traps. <em>Ecological Informatics, 68</em>, 101536. <a class="reference external" href="https://doi.org/10.1016/j.ecoinf.2021.101536">https://doi.org/10.1016/j.ecoinf.2021.101536</a></p>
 <p>Howe, E. J., Buckland, S. T., Després-Einspenner, M. -L., &amp; Kühl, H. S. (2017). Distance sampling with camera traps. <em>Methods in Ecology and Evolution, 8</em>(11), 1558–1565. <a class="reference external" href="https://doi.org/https://doi.org/10.1111/2041-210X.12790">https://doi.org/https://doi.org/10.1111/2041-210X.12790</a></p>
+<p>Jenny, D. (1996). Spatial organization of leopards Panthera pardus in Taï National Park, Ivory Coast: Is rainforest habitat a ‘tropical haven’? <em>Journal of Zoology, 240</em>(3), 427–440. <a class="reference external" href="https://doi.org/10.1111/j.1469-7998.1996.tb05296.x">https://doi.org/10.1111/j.1469-7998.1996.tb05296.x</a></p>
 <p>Morin, D. J., Boulanger, J., Bischof, R., Lee, D. C., Ngoprasert, D., Fuller, A. K., McLellan, B., Steinmetz, R., Sharma, S., Garshelis, D., Gopalaswamy, A., Nawaz, M. A., &amp; Karanth, U. (2022).comparison of methods for estimating Density and population trends for low-Density Asian bears. <em>Global Ecology and Conservation, 35</em>, e02058 <a class="reference external" href="https://doi.org/10.1016/j.gecco.2022.e02058">https://doi.org/10.1016/j.gecco.2022.e02058</a></p>
 <p>Palencia, P., Rowcliffe, J. M., Vicente, J., &amp; Acevedo, P. (2021). Assessing the camera trap methodologies used to estimate Density of unmarked populations. <em>Journal of Applied Ecology, 58</em>(8), 1583–1592. <a class="reference external" href="https://doi.org/10.1111/1365-2664.13913">https://doi.org/10.1111/1365-2664.13913</a></p>
 <p>Rowcliffe, M. J., Carbone, C., Jansen, P. A., Kays, R., &amp; Kranstauber, B. (2011). Quantifying the sensitivity of camera traps: an adapted distance sampling approach. <em>Methods in Ecology and Evolution, 2</em>(5), 464–476. <a class="reference external" href="https://doi.org/10.1111/j.2041-210X.2011.00094.x">https://doi.org/10.1111/j.2041-210X.2011.00094.x</a></p>

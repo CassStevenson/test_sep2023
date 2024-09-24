@@ -6,18 +6,13 @@
 format: jb-book
 root: index
 #    - file: 02_dialog-boxes/00_00_template_master_test.md
+
 parts:
-- caption: TOC WildCAM
-  maxdepth: 0
-  titlesonly: False
-  chapters:
-  - file: 01_toc/00_concept_lib_toc.md
-  - file: 01_toc/index_links_all.md
 - caption: Concept Library
   maxdepth: 6
   titlesonly: False
   chapters:
-#  - file: 00_00_welcome.md
+  - file: index_links_all.md
 ##### Objectives & Resources
   - file: 01_toc_pages/00_01_toc_objective_resources.md
     title: Objectives & Resources
@@ -137,4 +132,3 @@ parts:
   titlesonly: False
   chapters:
   - file: 02_dialog-boxes/09_glossary.md
-  - file: 10_images.md
