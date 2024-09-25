@@ -106,6 +106,11 @@ repository:
 #  use_repository_button: true
 #  google_analytics_id: G-C74BERTX94
 
+sphinx:
+  config:
+    html_theme_options:
+      sidebarwidth: 10
+    
 #html:
 #  favicon                   : ""  # A path to a favicon image
 #  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in

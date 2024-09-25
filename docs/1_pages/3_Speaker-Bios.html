@@ -32,10 +32,11 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=203fb885" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5159fa98" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -101,8 +102,8 @@
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -172,14 +173,6 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../index.html">
-                    General Information
-                </a>
-            </li>
-        </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1_Info-for-Participants.html">Info for Participants</a></li>
 
@@ -359,7 +352,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Panel Q &amp; A</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-recap-day-1-breakout-session-summaries">Day 2: Recap Day 1 &amp; Breakout Session Summaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-recap-day-1-breakout-summaries">Day 2: Recap Day 1 &amp; Breakout Summaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-remote-cameras-telemetry">Day 2: Remote Cameras &amp; Telemetry</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jamie-clarke">Jamie Clarke</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcus-becker">Marcus Becker</a></li>
@@ -369,8 +362,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Panel Q &amp; A</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-breakout-session-summaries-discussion">Day 2: Breakout Session Summaries &amp; Discussion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-genetics-dna">Day 3: Genetics / DNA</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-breakout-summaries-discussion">Day 2: Breakout Summaries &amp; Discussion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-genetics-dna">Day 3: Genetics &amp; DNA</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lalenia-neufeld">Lalenia Neufeld</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabitha-graves">Tabitha Graves</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Panel Q &amp; A</a></li>
@@ -383,7 +376,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Panel Q &amp; A</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-breakout-session-summaries-discussion">Day 3: Breakout Session Summaries &amp; Discussion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-breakout-summaries-discussion">Day 3: Breakout Summaries &amp; Discussion</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-next-steps-workshop-wrap-up">Day 3: Next Steps &amp; Workshop Wrap-Up</a></li>
 </ul>
             </nav>
@@ -401,7 +394,17 @@ document.write(`
 <section id="day-1-workshop-welcome-monitoring-needs">
 <h2>Day 1: Workshop Welcome &amp; Monitoring Needs<a class="headerlink" href="#day-1-workshop-welcome-monitoring-needs" title="Link to this heading">#</a></h2>
 <p><em><strong>Day 1</strong></em> - <em>Tuesday, June 4th, 2024</em></p>
-<section id="sue-cotterill">
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/nckseQJ1Nlg" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div><div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="./q_a/1-14_Panel-QA_1-3_Workshop-Welcome-&-Monitoring-Needs.pdf" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div><iframe src="q_a/1-14_Panel-QA_1-3_Workshop-Welcome-&-Monitoring-Needs.pdf"></iframe><iframe class="responsive-iframe" src="./q_a/1-14_Panel-QA_1-3_Workshop-Welcome-&-Monitoring-Needs.pdf"></iframe><section id="sue-cotterill">
 <h3>Sue Cotterill<a class="headerlink" href="#sue-cotterill" title="Link to this heading">#</a></h3>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -529,7 +532,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ab-rcsc.github.io/GOA_Ungulate-monitoring-methods-workshop/_downloads/443533b3f1a90b1e088d10a998cbd270/1-14_Panel-QA_1-3_Workshop-Welcome-&-Monitoring-Needs.pdf">Download PDF</a>.</p>
     </embed>
 </object>
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/443533b3f1a90b1e088d10a998cbd270/1-14_Panel-QA_1-3_Workshop-Welcome-%26-Monitoring-Needs.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
+<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/d47e3cb093e3d5b7f988277a3729deaa/1-14_Panel-QA_1-3_Workshop-Welcome-%26-Monitoring-Needs.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
 </center>
 </div>
 </details></div>
@@ -676,7 +679,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 /3ee45922beb1318c8ed5152889c05478/1-5-2_Panel-QA_1-1_Ungulate-Monitoring-Methods-&-Manned-Aircraft.pdf">Download PDF</a>.</p>
 </embed>
 </object></p>
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/3ee45922beb1318c8ed5152889c05478/1-5-2_Panel-QA_1-1_Ungulate-Monitoring-Methods-%26-Manned-Aircraft.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
+<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/0596a57658fb84853d891da92e5772f6/1-5-2_Panel-QA_1-1_Ungulate-Monitoring-Methods-%26-Manned-Aircraft.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
 <hr class="docutils" />
 </center>
 </div>
@@ -831,7 +834,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ab-rcsc.github.io/GOA_Ungulate-monitoring-methods-workshop/_downloads/5bb25fb8b557a182e9e30570dea2567d/Panel-QA_2_Aerial-Infrared-&-Drones.pdf">Download PDF</a>.</p>
     </embed>
 </object>
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/5bb25fb8b557a182e9e30570dea2567d/Panel-QA_2_Aerial-Infrared-%26-Drones.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
+<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/f29d836515cba075b7efbf6b35ccce45/Panel-QA_2_Aerial-Infrared-%26-Drones.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
 </center>
 </div>
 </details></div>
@@ -839,8 +842,8 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 </section>
 </section>
 <hr class="docutils" />
-<section id="day-2-recap-day-1-breakout-session-summaries">
-<h2>Day 2: Recap Day 1 &amp; Breakout Session Summaries<a class="headerlink" href="#day-2-recap-day-1-breakout-session-summaries" title="Link to this heading">#</a></h2>
+<section id="day-2-recap-day-1-breakout-summaries">
+<h2>Day 2: Recap Day 1 &amp; Breakout Summaries<a class="headerlink" href="#day-2-recap-day-1-breakout-summaries" title="Link to this heading">#</a></h2>
 <p><em><strong>Day 2</strong></em> - <em>Wednesday, June 5th, 2024</em></p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -854,6 +857,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 </details></div>
 </div>
 </section>
+<hr class="docutils" />
 <section id="day-2-remote-cameras-telemetry">
 <h2>Day 2: Remote Cameras &amp; Telemetry<a class="headerlink" href="#day-2-remote-cameras-telemetry" title="Link to this heading">#</a></h2>
 <p><em><strong>Day 2</strong></em> - <em>Wednesday, June 5th, 2024</em></p>
@@ -1023,7 +1027,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 /f9dab633f93754ad7c388c5e1769a8ef/Panel-QA_3_Remote-Cameras-&-Telemetry.pdf">Download PDF</a>.</p>
 </embed>
 </object></p>
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/f9dab633f93754ad7c388c5e1769a8ef/Panel-QA_3_Remote-Cameras-%26-Telemetry.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
+<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/d09f25bc09969db7675865768da55533/Panel-QA_3_Remote-Cameras-%26-Telemetry.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
 <hr class="docutils" />
 </center>
 </div>
@@ -1032,8 +1036,8 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 </section>
 </section>
 <hr class="docutils" />
-<section id="day-2-breakout-session-summaries-discussion">
-<h2>Day 2: Breakout Session Summaries &amp; Discussion<a class="headerlink" href="#day-2-breakout-session-summaries-discussion" title="Link to this heading">#</a></h2>
+<section id="day-2-breakout-summaries-discussion">
+<h2>Day 2: Breakout Summaries &amp; Discussion<a class="headerlink" href="#day-2-breakout-summaries-discussion" title="Link to this heading">#</a></h2>
 <p><em><strong>Day 2</strong></em> - <em>Wednesday, June 5th, 2024</em></p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1049,7 +1053,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 </section>
 <hr class="docutils" />
 <section id="day-3-genetics-dna">
-<h2>Day 3: Genetics / DNA<a class="headerlink" href="#day-3-genetics-dna" title="Link to this heading">#</a></h2>
+<h2>Day 3: Genetics &amp; DNA<a class="headerlink" href="#day-3-genetics-dna" title="Link to this heading">#</a></h2>
 <p><em><strong>Day 3</strong></em> - <em>Thursday, June 6th, 2024</em></p>
 <section id="lalenia-neufeld">
 <h3>Lalenia Neufeld<a class="headerlink" href="#lalenia-neufeld" title="Link to this heading">#</a></h3>
@@ -1111,7 +1115,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 <h3>Panel Q &amp; A<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong>Day 3: Genetics / DNA - Panel Q &amp; A</strong></p>
+<p class="sd-card-text"><strong>Day 3: Genetics &amp; DNA - Panel Q &amp; A</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Watch</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -1128,7 +1132,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ab-rcsc.github.io/GOA_Ungulate-monitoring-methods-workshop/_downloads/1a41aa9dd159bd2536f12853fe781339/Panel-QA_4_Workshop_Genetics.pdf">Download PDF</a>.</p>
     </embed>
 </object>
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/1a41aa9dd159bd2536f12853fe781339/Panel-QA_4_Workshop_Genetics.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
+<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/c5f6a770bfab0ee6cc9ca60ba62dd68a/Panel-QA_4_Workshop_Genetics.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
 </center>
 </div>
 </details></div>
@@ -1246,15 +1250,16 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ab-rcsc.github.io/GOA_Ungulate-monitoring-methods-workshop/_downloads/620fb0813b9804c4b6fa8e119662d09a/Panel-QA_4_Bringing-It-All-Together.pdf">Download PDF</a>.</p>
     </embed>
 </object>
-<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/620fb0813b9804c4b6fa8e119662d09a/Panel-QA_4_Bringing-It-All-Together.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
+<p class="sd-card-text"><a class="reference download internal" download="" href="../_downloads/6c9d265f5711bec0b6d1b19fbc7564b7/Panel-QA_4_Bringing-It-All-Together.pdf"><span class="xref download myst"><em>Download the PDF</em></span></a></p>
 </center>
 </div>
 </details></div>
 </div>
 </section>
 </section>
-<section id="day-3-breakout-session-summaries-discussion">
-<h2>Day 3: Breakout Session Summaries &amp; Discussion<a class="headerlink" href="#day-3-breakout-session-summaries-discussion" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
+<section id="day-3-breakout-summaries-discussion">
+<h2>Day 3: Breakout Summaries &amp; Discussion<a class="headerlink" href="#day-3-breakout-summaries-discussion" title="Link to this heading">#</a></h2>
 <p><em><strong>Day 3</strong></em> - <em>Thursday, June 6th, 2024</em></p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -1374,7 +1379,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Panel Q &amp; A</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-recap-day-1-breakout-session-summaries">Day 2: Recap Day 1 &amp; Breakout Session Summaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-recap-day-1-breakout-summaries">Day 2: Recap Day 1 &amp; Breakout Summaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-remote-cameras-telemetry">Day 2: Remote Cameras &amp; Telemetry</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jamie-clarke">Jamie Clarke</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcus-becker">Marcus Becker</a></li>
@@ -1384,8 +1389,8 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Panel Q &amp; A</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-breakout-session-summaries-discussion">Day 2: Breakout Session Summaries &amp; Discussion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-genetics-dna">Day 3: Genetics / DNA</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-2-breakout-summaries-discussion">Day 2: Breakout Summaries &amp; Discussion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-genetics-dna">Day 3: Genetics &amp; DNA</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lalenia-neufeld">Lalenia Neufeld</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tabitha-graves">Tabitha Graves</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Panel Q &amp; A</a></li>
@@ -1398,7 +1403,7 @@ Outside of work, Sue enjoys gardening, getting lost in books, and ice fishing.</
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Panel Q &amp; A</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-breakout-session-summaries-discussion">Day 3: Breakout Session Summaries &amp; Discussion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-breakout-summaries-discussion">Day 3: Breakout Summaries &amp; Discussion</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-3-next-steps-workshop-wrap-up">Day 3: Next Steps &amp; Workshop Wrap-Up</a></li>
 </ul>
   </nav></div>
