@@ -4,11 +4,49 @@
 format: jb-book
 root: index
 parts:
-  - maxdepth: 4
+  - caption: Remote Camera Survey Guidelines
+    maxdepth: 4
     titlesonly: False
     chapters:
-    - file: 1_pages/1_Info-for-Participants.md
-    - file: 1_pages/2_Info-for-Speakers.md
-    - file: 1_pages/3_Speaker-Bios.ipynb
-    - file: 1_pages/4_Jurisdictional-Survey.md
-    - file: 1_pages/5_Related-Resources.md
+    - file: 1_survey-guidelines/1_0.1_Citation-and-Info.md
+    - file: 1_survey-guidelines/1_0.2_Acknowledgments.md
+    - file: 1_survey-guidelines/1_0.3_TOC.md
+    - file: 1_survey-guidelines/1_0.4_List-Tables-Figures.md
+    - file: 1_survey-guidelines/1_1.0_Background.md
+    - file: 1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.md
+    - file: 1_survey-guidelines/1_3.0_Design-hierarchy.md
+    - file: 1_survey-guidelines/1_4.0_Objectives.md
+    - file: 1_survey-guidelines/1_5.0_Detection-probability.md
+    - file: 1_survey-guidelines/1_6.0_Study-design.md
+    - file: 1_survey-guidelines/1_7.0_Camera-deployment.md
+    - file: 1_survey-guidelines/1_8.0_Data-management-and-processing.md
+    - file: 1_survey-guidelines/1_9.0_References.md
+    - file: 1_survey-guidelines/1_10.1_AppendixA-Tables.md
+    - file: 1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md
+    - file: 1_survey-guidelines/1_11.0_AppendixB-FigureB1.md
+#    - file: 1_survey-guidelines/images.ipynb
+  - caption: AB Remote Camera Metadata Standards
+    maxdepth: 4
+    titlesonly: False
+    chapters:
+    - file: 2_metadata-standards/2_0.1_Citation-and-Info.md
+    - file: 2_metadata-standards/2_0.2_Preface.md
+    - file: 2_metadata-standards/2_0.3_Acknowledgments.md
+    - file: 2_metadata-standards/2_0.4_TOC.md
+    - file: 2_metadata-standards/2_0.5_List-Tables-Figures.md
+    - file: 2_metadata-standards/2_1.0_Purpose.md
+    - file: 2_metadata-standards/2_2.0_Background.md
+    - file: 2_metadata-standards/2_3.0_Metadata-Standards.md
+    - file: 2_metadata-standards/2_4.0_Project.md
+    - file: 2_metadata-standards/2_5.0_Study-Area.md
+    - file: 2_metadata-standards/2_6.0_Survey.md
+    - file: 2_metadata-standards/2_7.0_Sample-Station_Camera-Location.md
+    - file: 2_metadata-standards/2_8.0_Deployment.md
+    - file: 2_metadata-standards/2_9.0_Image_Sequence.md
+    - file: 2_metadata-standards/2_10.0_Data-Management.md
+    - file: 2_metadata-standards/2_11.0_Conclusion.md
+    - file: 2_metadata-standards/2_12.0_References.md
+    - file: 2_metadata-standards/2_13.0_AppendixA.md
+  - caption: Glossary
+    chapters:
+    - file: 3_glossary/3_Glossary.md

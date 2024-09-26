@@ -1,12 +1,26 @@
 /* -- this so the 'inner container' fills the outer container -------------- */
-.bd-container .bd-container__inner {
-    max-width: 99%;
-}
-
 .bd-main .bd-content .bd-article-container {
-    max-width: 100em;
+    max-width: 90em;
 }
 
 .bd-page-width {
-    max-width: 85%;  /* default is 88rem */
+    max-width: 90%;  /* default is 88rem */
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    pst-header-height: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2F5496
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.1;
 }

@@ -1,0 +1,16 @@
+conda activate newenv
+pip install jupyter-book
+pip install jupyterlab
+pip install jupyterlab-myst
+pip install jupytext
+pip install myst-parser
+conda install -c conda-forge nodejs
+pip install mystmd
+pip install sphinx
+pip install myst-nb
+
+## see   https://jupyterbook.org/en/stable/sphinx/index.html
+## see   https://jupyterbook.org/en/stable/customize/config.html
+## jupyter-book config sphinx path/to/book
+jupyter-book config sphinx Documents/GitHub/AB-RCSC/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards
+jupyter-book build Documents\GitHub\AB-RCSC\RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards

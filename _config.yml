@@ -2,14 +2,15 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title                       : GOA Ungulate monitoring methods workshop
-author                      : Government of Alberta
+title                       : Remote Camera Survey Guidelines - Guidelines for Western Canada
+author                      : Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & Wildlife Cameras for Adaptive Management (WildCAM)
 copyright                   : "2024"  # Copyright year to be placed in the footer
-logo                        : MuleDeerHerdGordonCourt-661eabd220c747-21541121.jpg # A path to the book logo
+logo                        : logo.png # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-exclude_patterns            : [.files,.obsidian,_build,_ref Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+exclude_patterns            : [.files,.obsidian,_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
 # Auto-exclude files not in the toc
-only_build_toc_files        : true
+only_build_toc_files: true
+
 
 #######################################################################################
 # Execution settings
@@ -51,19 +52,24 @@ latex:
 parse:
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
     # - amsmath
+    - attrs_inline
+    - attrs_block
     - colon_fence
-    # - deflist
+    - deflist
     - dollarmath
-    # - html_admonition
+    - fieldlist
+    #- html_admonition
     # - html_image
     - linkify
     # - replacements
-    # - smartquotes
+    #- smartquotes
     - substitution
     - tasklist
-  myst:
-    myst_heading_anchors = 1
-    
+#    - strikethrough
+#  myst:
+#    myst_heading_anchors: 3
+#    myst_url_schemes: [mailto, http, https]
+#myst_all_links_external: True 
 #  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
 #  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
   
@@ -74,12 +80,16 @@ bibtex_bibfiles:
 extensions:
     - myst_parser
     - sphinx_design
+    - myst_nb
+    - sphinxext-rediraffe
+    - sphinx_togglebutton
+
 #######################################################################################
 # Launch button settings
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/AB-RCSC/GOA_Ungulate-monitoring-methods-workshop  # Online location of your book
+  url: https://github.com/AB-RCSC/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
@@ -101,32 +111,31 @@ repository:
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-#html:
-#  use_issues_button: true
-#  use_repository_button: true
-#  google_analytics_id: G-C74BERTX94
 
-sphinx:
-  config:
-    html_theme_options:
-      sidebarwidth: 10
-    
-#html:
-#  favicon                   : ""  # A path to a favicon image
-#  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-#  use_repository_button     : false  # Whether to add a link to your repository button
-#  use_issues_button         : false  # Whether to add an "open an issue" button
-#  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
+html:
+#  home_page_in_navbar: false          # https://stackoverflow.com/questions/74370793/how-to-hide-intro-index-page-in-toc-of-jupyterbook
+#  favicon                   : ""     # A path to a favicon image
+  use_issues_button: true            # Whether to add a link to your repository button
+  use_repository_button: true        # Whether to add a link to your repository button
+#  use_issues_button: true           # Whether to add an "open an issue" button
+#  use_edit_page_button: true         # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  google_analytics_id       : G-C74BERTX94  # A GA id that can be used to track book views.#  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
+  analytics:
+      google_analytics_id: G-C74BERTX94
+# 
+#   comments:
+#       utterances: true
+#           repo: AB-RCSC/rc-decision-support-tool_concept-library
 #  extra_footer              : ""  # Will be displayed underneath the footer.
-#  google_analytics_id       : ""  # A GA id that can be used to track book views.
 #  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
 #  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
-#  analytics:
 
-#  comments:
-#    hypothesis              : false
-#    utterances              : false
+
+#   hypothesis              : false
 #  announcement              : "" # A banner announcement at the top of the site.
+
+# documentation utterances - https://utteranc.es/#configuration
+# install utterances from https://utteranc.es/?installation_id=53922952&setup_action=install
 
 #######################################################################################
 # Advanced and power-user settings
