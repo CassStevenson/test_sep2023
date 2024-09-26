@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=4b2c329f" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=d953ec74" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -435,7 +435,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="design-hierarchy">
+  <style>
+.bd-main .bd-content .bd-article-container {
+    max-width: 80%;  /* default is 60em */
+  }
+</style>
+<section class="tex2jax_ignore mathjax_ignore" id="design-hierarchy">
 <span id="toc-surv-guidelines-design-hierarchy"></span><h1>3.0 Design hierarchy<a class="headerlink" href="#design-hierarchy" title="Link to this heading">#</a></h1>
 <p>When designing a remote camera <a class="reference internal" href="../3_glossary/3_Glossary.html#project"><span class="std std-ref">project</span></a> (e.g., scientific study, <a class="reference internal" href="../3_glossary/3_Glossary.html#mods-inventory"><span class="std std-ref">inventory</span></a>, or monitoring program), it is helpful to think of the hierarchy of information collected throughout the study. Doing so will:</p>
 <ul class="simple">
