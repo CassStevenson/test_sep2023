@@ -24,7 +24,7 @@ parts:
     - file: 1_survey-guidelines/1_10.1_AppendixA-Tables.md
     - file: 1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md
     - file: 1_survey-guidelines/1_11.0_AppendixB-FigureB1.md
-#    - file: 1_survey-guidelines/images.ipynb
+    - file: 1_survey-guidelines/images.ipynb
   - caption: AB Remote Camera Metadata Standards
     maxdepth: 4
     titlesonly: False
@@ -48,5 +48,7 @@ parts:
     - file: 2_metadata-standards/2_12.0_References.md
     - file: 2_metadata-standards/2_13.0_AppendixA.md
   - caption: Glossary
+    maxdepth: 1
+    titlesonly: True
     chapters:
     - file: 3_glossary/3_Glossary.md
