@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
@@ -47,16 +48,29 @@
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-MR0KVEXYMT"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-MR0KVEXYMT');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-MR0KVEXYMT');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/executable/output-insert';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -101,8 +115,8 @@
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search..."
-         aria-label="Search..."
+         placeholder="Search this book..."
+         aria-label="Search this book..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -138,10 +152,58 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"></div>
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Remote Camera Decision Support Tool - Concept Library - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Remote Camera Decision Support Tool - Concept Library - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Remote Camera Decision Support Tool - Concept Library
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Concept Library</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../index_links_all.html">Remote Camera Decision Support Tool - Concept Library2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Store code outputs and insert into content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../explain/migration.html">Migrating to <code class="docutils literal notranslate"><span class="pre">jupyter-book&gt;=0.14</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../02_dialog-boxes/08_references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../02_dialog-boxes/09_glossary.html">Glossary</a></li>
+</ul>
+
+    </div>
 </nav></div>
     </div>
   
@@ -157,12 +219,160 @@
       <main id="main-content" class="bd-main" role="main">
         
         
+
+<div class="sbt-scroll-pixel-helper"></div>
+
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none"></div>
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/executable/output-insert.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
               
               
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Store code outputs and insert into content</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gluing-variables-in-your-notebook">Gluing variables in your notebook</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gluing-numbers-plots-math-and-tables">Gluing numbers, plots, math, and tables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pasting-glued-variables-into-your-page">Pasting glued variables into your page</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-glue-role-directive">The <code class="docutils literal notranslate"><span class="pre">glue</span></code> role/directive</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#controlling-the-pasted-outputs">Controlling the pasted outputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-glue-text-role">The <code class="docutils literal notranslate"><span class="pre">glue:text</span></code> role</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-glue-figure-directive">The <code class="docutils literal notranslate"><span class="pre">glue:figure</span></code> directive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-glue-math-directive">The <code class="docutils literal notranslate"><span class="pre">glue:math</span></code> directive</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-glue-use-cases">Advanced <code class="docutils literal notranslate"><span class="pre">glue</span></code> use-cases</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pasting-into-tables">Pasting into tables</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
               
                 
 <div id="searchbox"></div>
@@ -273,13 +483,13 @@ to focus on the glueing part.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.002056343893885
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.9992157429488953
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.9894906941430843
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.9869874875725233
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0144573319452928
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0118174904652317
 </pre></div>
 </div>
 </div>
@@ -316,8 +526,8 @@ use the <code class="docutils literal notranslate"><span class="pre">display=Fal
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" src="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" />
-<img alt="../../_images/f89f67fd917cb56974c67f616a943c0d276c578c48e6d9e54988430510386687.png" src="../../_images/f89f67fd917cb56974c67f616a943c0d276c578c48e6d9e54988430510386687.png" />
+<img alt="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" src="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" />
+<img alt="../../_images/949922165dada80710274d28751d8428b598721a61a2285c22e40305422365a6.png" src="../../_images/949922165dada80710274d28751d8428b598721a61a2285c22e40305422365a6.png" />
 </div>
 </div>
 <p>The same can be done for <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>s (or other table-like objects) as well.</p>
@@ -356,33 +566,33 @@ use the <code class="docutils literal notranslate"><span class="pre">display=Fal
   <tbody>
     <tr>
       <th>0</th>
-      <td>3.188291</td>
-      <td>3.352018</td>
-      <td>2.795108</td>
+      <td>3.290708</td>
+      <td>3.306197</td>
+      <td>3.097848</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.972214</td>
-      <td>3.066383</td>
-      <td>2.755091</td>
+      <td>3.069130</td>
+      <td>3.402096</td>
+      <td>2.982184</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2.919955</td>
-      <td>3.491552</td>
-      <td>3.093025</td>
+      <td>3.261156</td>
+      <td>3.024523</td>
+      <td>2.833675</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>3.159832</td>
-      <td>2.910259</td>
-      <td>2.654300</td>
+      <td>2.769661</td>
+      <td>2.876694</td>
+      <td>2.977391</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>3.324488</td>
-      <td>3.381827</td>
-      <td>2.817984</td>
+      <td>2.799777</td>
+      <td>2.882243</td>
+      <td>3.065218</td>
     </tr>
   </tbody>
 </table>
@@ -417,17 +627,17 @@ Simply add this:</p>
 </pre></div>
 </div>
 <p>Here’s how it looks:</p>
-<img alt="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" src="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" />
+<img alt="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" src="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" />
 <p>Or we can paste in-line objects like so:</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>In-line text; {glue:}`boot_mean`, and a figure: {glue:}`boot_fig`.
 </pre></div>
 </div>
-<p>In-line text; <span class="output text_plain">3.002056343893885</span>, and a figure: <img alt="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" src="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" />.</p>
+<p>In-line text; <span class="output text_plain">2.9992157429488953</span>, and a figure: <img alt="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" src="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" />.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>We recommend using wider, shorter figures when plotting in-line, with a ratio
 around 6x2. For example, here’s an in-line figure of sorted means
-from our bootstrap: <img alt="../../_images/f89f67fd917cb56974c67f616a943c0d276c578c48e6d9e54988430510386687.png" src="../../_images/f89f67fd917cb56974c67f616a943c0d276c578c48e6d9e54988430510386687.png" />.
+from our bootstrap: <img alt="../../_images/949922165dada80710274d28751d8428b598721a61a2285c22e40305422365a6.png" src="../../_images/949922165dada80710274d28751d8428b598721a61a2285c22e40305422365a6.png" />.
 It can be used to make a visual point that isn’t too complex! For more
 ideas, check out <a class="reference external" href="https://en.wikipedia.org/wiki/Sparkline">how sparklines are used</a>.</p>
 </div>
@@ -453,7 +663,7 @@ For example, the following text:</p>
 </pre></div>
 </div>
 <p>Is rendered as:
-The mean of the bootstrapped distribution was <span class="pasted-text">3.002056343893885</span> (95% confidence interval <span class="pasted-text">2.9894906941430843</span>/<span class="pasted-text">3.0144573319452928</span>)</p>
+The mean of the bootstrapped distribution was <span class="pasted-text">2.9992157429488953</span> (95% confidence interval <span class="pasted-text">2.9869874875725233</span>/<span class="pasted-text">3.0118174904652317</span>)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code class="docutils literal notranslate"><span class="pre">glue:text</span></code> only works with glued variables that contain a <code class="docutils literal notranslate"><span class="pre">text/plain</span></code> output.</p>
@@ -480,7 +690,7 @@ This is a <span class="gs">**caption**</span>, with an embedded <span class="sb"
 </div>
 <p>produces the following figure:</p>
 <figure class="align-default" id="fig-boot" style="width: 300px">
-<img alt="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" src="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" />
+<img alt="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" src="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 3 </span><span class="caption-text">This is a <strong>caption</strong>, with an embedded <code class="docutils literal notranslate"><span class="pre">{glue:text}</span></code> element: <span class="pasted-text">3.00</span>!</span><a class="headerlink" href="#fig-boot" title="Link to this image">#</a></p>
 </figcaption>
@@ -528,33 +738,33 @@ A caption for a pandas table.
   <tbody>
     <tr>
       <th>0</th>
-      <td>3.188291</td>
-      <td>3.352018</td>
-      <td>2.795108</td>
+      <td>3.290708</td>
+      <td>3.306197</td>
+      <td>3.097848</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2.972214</td>
-      <td>3.066383</td>
-      <td>2.755091</td>
+      <td>3.069130</td>
+      <td>3.402096</td>
+      <td>2.982184</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2.919955</td>
-      <td>3.491552</td>
-      <td>3.093025</td>
+      <td>3.261156</td>
+      <td>3.024523</td>
+      <td>2.833675</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>3.159832</td>
-      <td>2.910259</td>
-      <td>2.654300</td>
+      <td>2.769661</td>
+      <td>2.876694</td>
+      <td>2.977391</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>3.324488</td>
-      <td>3.381827</td>
-      <td>2.817984</td>
+      <td>2.799777</td>
+      <td>2.882243</td>
+      <td>3.065218</td>
     </tr>
   </tbody>
 </table>
@@ -631,14 +841,14 @@ that were generated in other cells or other notebooks. For example, the followin
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-center"><p>histogram and raw text</p></td>
-<td class="text-center"><p><img alt="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" src="../../_images/a0941e8e58b5d87d8885637e492acdb02b8ca4bbe0eaf5a488fed969630e96e0.png" /></p></td>
-<td><p><span class="output text_plain">3.002056343893885</span></p></td>
-<td><p><span class="output text_plain">2.9894906941430843</span>-<span class="output text_plain">3.0144573319452928</span></p></td>
+<td class="text-center"><p><img alt="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" src="../../_images/b8ae3cc3496d14ae7790b7ac18ef6403b8ed23eb04640882fcca5203aee3327a.png" /></p></td>
+<td><p><span class="output text_plain">2.9992157429488953</span></p></td>
+<td><p><span class="output text_plain">2.9869874875725233</span>-<span class="output text_plain">3.0118174904652317</span></p></td>
 </tr>
 <tr class="row-odd"><td class="text-center"><p>sorted means and formatted text</p></td>
-<td class="text-center"><p><img alt="../../_images/f89f67fd917cb56974c67f616a943c0d276c578c48e6d9e54988430510386687.png" src="../../_images/f89f67fd917cb56974c67f616a943c0d276c578c48e6d9e54988430510386687.png" /></p></td>
-<td><p><span class="pasted-text">3.002</span></p></td>
-<td><p><span class="pasted-text">2.989</span>-<span class="pasted-text">3.014</span></p></td>
+<td class="text-center"><p><img alt="../../_images/949922165dada80710274d28751d8428b598721a61a2285c22e40305422365a6.png" src="../../_images/949922165dada80710274d28751d8428b598721a61a2285c22e40305422365a6.png" /></p></td>
+<td><p><span class="pasted-text">2.999</span></p></td>
+<td><p><span class="pasted-text">2.987</span>-<span class="pasted-text">3.012</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -669,20 +879,109 @@ that were generated in other cells or other notebooks. For example, the followin
 
                 </article>
               
+
               
               
               
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../index_links_all.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Remote Camera Decision Support Tool - Concept Library2</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../explain/migration.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Migrating to <code class="docutils literal notranslate"><span class="pre">jupyter-book&gt;=0.14</span></code></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
               
             </div>
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gluing-variables-in-your-notebook">Gluing variables in your notebook</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gluing-numbers-plots-math-and-tables">Gluing numbers, plots, math, and tables</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pasting-glued-variables-into-your-page">Pasting glued variables into your page</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-glue-role-directive">The <code class="docutils literal notranslate"><span class="pre">glue</span></code> role/directive</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#controlling-the-pasted-outputs">Controlling the pasted outputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-glue-text-role">The <code class="docutils literal notranslate"><span class="pre">glue:text</span></code> role</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-glue-figure-directive">The <code class="docutils literal notranslate"><span class="pre">glue:figure</span></code> directive</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-glue-math-directive">The <code class="docutils literal notranslate"><span class="pre">glue:math</span></code> directive</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-glue-use-cases">Advanced <code class="docutils literal notranslate"><span class="pre">glue</span></code> use-cases</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pasting-into-tables">Pasting into tables</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
             
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Alberta Remote Camera Steering Committee (RCSC)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
           </footer>
         
+
       </main>
     </div>
   </div>
@@ -692,36 +991,6 @@ that were generated in other cells or other notebooks. For example, the followin
 <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
-<div class="bd-footer__inner bd-page-width">
-  
-    <div class="footer-items__start">
-      
-        <div class="footer-item">
-
-  <p class="copyright">
-    
-      © Copyright 2024.
-      <br/>
-    
-  </p>
-</div>
-      
-    </div>
-  
-  
-  
-    <div class="footer-items__end">
-      
-        <div class="footer-item">
-<p class="component-author">
-By Alberta Remote Camera Steering Committee (RCSC)
-</p>
-</div>
-      
-    </div>
-  
-</div>
-
   </footer>
   </body>
 </html>

@@ -149,63 +149,6 @@ tippy_add_class: {
     "https://example.com": "<p>This is a custom tip!</p>"
 }
 
-#html_sidebars: {
-#  "index.md": ["sidebar-nav-bs"]
-#search-field.html or search-button or search-field
-sphinx:
-  config:
-    html_theme: pydata_sphinx_theme
-    html_show_sourcelink: False
-    html_sidebars: {
-       "index": ["navbar-logo","search-button-field","edit-this-page","page-toc"],
-       "02_dialog-boxes/**": [],
-    }
-    html_theme_options:
-#      announcement: ["This is a demo of the Remote Camera Decision Support Tool; stay tuned for the complete version for Phase 1.0; expected March 2025"]
-      github_url: "https://github.com/AB-RCSC/rc-decision-support-tool_concept-library"
-      logo: {
-         "text": " <font color='grey'><font size='4'></font><b>Home</b></font></font>",
-         "link": "https://ab-rcsc.github.io/rc-decision-support-tool",
-      }
-#      nosidebar: true
-#      primary_sidebar: false
-#      primary_sidebar_end: false## CANT USE
-#      primary_sidebar_end: []
-#      globaltoc_includehidden: false
-      sidebarwidth: 10
-      secondary_sidebar_items: false
-      secondary_sidebar_items: []##hide right-side sidebar
-#      sidebar_includehidden: false
-      show_nav_level: 4
-      show_toc_level: 4
-      navigation_depth: 4
-      collapse_navigation: TRUE
-      navbar_start: false
-      navbar_start: []
-#      navbar_center: ["navbar-logo"]
-      navbar_center: []
-#      navbar_end: false     ## CANT USE
-      navbar_end: []
-#      navbar_persistent: false ## CANT USE
-      navbar_persistent: []
-#      content_footer_items: false
-#      content_footer_items: []
-      article_header_start: FALSE
-      article_header_start: []
-#      article_footer_items: false
-#      article_footer_items: []
-#      footer_start: false
-#      footer_end: false
-      footer_start: ["copyright"]
-      footer_end: ["author"]  
-      footer_center: []
-      show_prev_next: False ##hide previous and next buttons
-      navbar_align: content
-##      navigation_depth: 0
-##      sidebar-primary: []
-##      sidebar-primary: false
-##      section_nav: []
-##      sidebars: []
 
 #   comments:
 #       utterances: true
