@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Remote Camera Survey Guidelines &amp; AB Metadata Standards &#8212; Remote Camera Survey Guidelines - Guidelines for Western Canada</title>
+    <title>Remote Camera Decision Support Tool - Concept Library &#8212; Remote Camera Decision Support Tool - Concept Library</title>
   
   
   
@@ -29,13 +29,13 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=d953ec74" />
+    <link rel="stylesheet" type="text/css" href="_static/tippy.css?v=7a364cf7" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=cf5192f4" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -47,34 +47,21 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-C74BERTX94"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-C74BERTX94');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-C74BERTX94');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Citation &amp; Information" href="1_survey-guidelines/1_0.1_Citation-and-Info.html" />
+    <link rel="next" title="Remote Camera Decision Support Tool - Concept Library2" href="index_links_all.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -113,8 +100,8 @@
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -154,10 +141,10 @@
         <div class="sidebar-primary-item">
 
   
-    
+     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="https://ab-rcsc.github.io/rc-decision-support-tool">
   
   
   
@@ -168,9 +155,11 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Remote Camera Survey Guidelines - Guidelines for Western Canada - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Remote Camera Survey Guidelines - Guidelines for Western Canada - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt=""/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt=""/>`);</script>
   
+  
+    <p class="title logo__title"> <font color='grey'><font size='4'></font><b>Home</b></font></font></p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -184,65 +173,28 @@
    </button>
  `);
  </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
-                    Remote Camera Survey Guidelines & AB Metadata Standards
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Remote Camera Survey Guidelines</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.1_Citation-and-Info.html">Citation &amp; Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.2_Acknowledgments.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.3_TOC.html">Table of Contents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.4_List-Tables-Figures.html">List of Tables &amp; List of Figures</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_1.0_Background.html">1.0 Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.html">2.0 Intended Audience and How to use this document</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_3.0_Design-hierarchy.html">3.0 Design hierarchy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_4.0_Objectives.html">4.0 Objectives</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_5.0_Detection-probability.html">5.0 Detection probability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html">6.0 Study design</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html">7.0 Camera deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html">8.0 Data management and processing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_9.0_References.html">9.0 References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_10.1_AppendixA-Tables.html">Appendix A - Tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.html">Appendix A - Field Datasheets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_11.0_AppendixB-FigureB1.html">Appendix B</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/images.html">images</a></li>
+        <div class="sidebar-primary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives-resources">Objectives &amp; Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#study-area-site-selection-constraints">Study area &amp; Site selection constraints</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duration-timing">Duration &amp; Timing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species">Target species</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species-single">Target species (single)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species-multiple">Target species (multiple)</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">AB Remote Camera Metadata Standards</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.1_Citation-and-Info.html">Citation &amp; Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.2_Preface.html">Preface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.3_Acknowledgments.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.4_TOC.html">Table of Contents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.5_List-Tables-Figures.html">List of Tables &amp; List of Figures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_1.0_Purpose.html">1.0 Purpose</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_2.0_Background.html">2.0 Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_3.0_Metadata-Standards.html">3.0 Metadata Standards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_4.0_Project.html">4.0 Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_5.0_Study-Area.html">5.0 Study Area</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_6.0_Survey.html">6.0 Surveys</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html">7.0 Sample Station/Camera Location</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html">8.0 Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html">9.0 Image/Sequence</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_10.0_Data-Management.html">10.0 Data management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_11.0_Conclusion.html">11.0 Conclusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_12.0_References.html">13.0 References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_13.0_AppendixA.html">Appendix A</a></li>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equipment-deployment">Equipment &amp; Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis">Data &amp; Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations">Recommendations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-approaches">Modelling Approaches</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="3_glossary/3_Glossary.html">Glossary</a></li>
+</li>
 </ul>
-
-    </div>
-</nav></div>
+  </nav></div>
     </div>
   
   
@@ -257,500 +209,820 @@
       <main id="main-content" class="bd-main" role="main">
         
         
-
-<div class="sbt-scroll-pixel-helper"></div>
-
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <span class="fa-solid fa-bars"></span>
-</button></div>
-      
-    </div>
-  
-  
-    <div class="header-article-items__end">
-      
-        <div class="header-article-item">
-
-<div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/AB-RCSC/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/AB-RCSC/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
-<div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
-    <i class="fas fa-download"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="_sources/index.md" target="_blank"
-   class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="btn__text-container">.md</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li>
-<button onclick="window.print()"
-  class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="btn__text-container">.pdf</span>
-</button>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-<button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
-  data-bs-placement="bottom" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-
-
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
-
-
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
-</div></div>
-      
-    </div>
-  
-</div>
-</div>
+              <div class="bd-header-article d-print-none"></div>
               
               
-
-<div id="jb-print-docs-body" class="onlyprint">
-    <h1>Remote Camera Survey Guidelines & AB Metadata Standards</h1>
-    <!-- Table of contents -->
-    <div id="print-main-content">
-        <div id="jb-print-toc">
-            
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates">Updates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-files-access-templates">Download files / Access templates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tables-of-content">Tables of Content</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
-</ul>
-            </nav>
-        </div>
-    </div>
-</div>
-
               
                 
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="remote-camera-survey-guidelines-ab-metadata-standards">
-<h1>Remote Camera Survey Guidelines &amp; AB Metadata Standards<a class="headerlink" href="#remote-camera-survey-guidelines-ab-metadata-standards" title="Link to this heading">#</a></h1>
-<section id="updates">
-<h2>Updates<a class="headerlink" href="#updates" title="Link to this heading">#</a></h2>
-<div class="dropdown admonition">
-<p class="admonition-title">July 4, 2024</p>
-<ul class="simple">
-<li><p><strong>July 4, 2024</strong></p>
-<ul>
-<li><p><strong>New version - EpiCollect Template &amp; JSON file</strong></p>
-<ul>
-<li><p>A new version of the EpiCollect is available online.</p></li>
-<li><p>You can find a JSON file below that can be imported into EpiCollect to create an editable version of the template managed under your EpiCollect account.</p></li>
-</ul>
-</li>
-<li><p><strong>New version - Metadata Template</strong></p>
-<ul>
-<li><p>Since Epicollect limits the character length for field names, the field codes do not completely align with the field codes in the Metadata Template. Therefore the metadata template has also been updated to include a “field_code_epicollect” in the “legend_md_standards_surv_guidel” tab, to support users in cross-walking data fields when using this template.</p></li>
-<li><p>The data field options previously excluded in the “data_validation” tab of the metadata template have now been included. The previously excluded fields were those not required in “Alberta Remote Camera Metadata Standards”, but included in the “Remote Camera Survey Guidelines.”</p></li>
-</ul>
-</li>
-<li><p><strong>Version crosswalk</strong></p>
-<ul>
-<li><p>You can now find a crosswalk of the data fields in the current and previous versions of the Metadata Template.</p></li>
-</ul>
-</li>
-<li><p>See <a class="reference internal" href="#download-links">“Downloads &amp; Links”</a> section below for all updated files/links.</p></li>
-</ul>
-</li>
-</ul>
+  <style>
+    .bd-page-width {
+    max-width: 80%;  /* default is 88rem */
+}
+    .bd-main .bd-content .bd-article-container {
+    max-width: 100%;  /* default is 60em */
+  }
+    h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    }
+}
+</style>
+<section class="tex2jax_ignore mathjax_ignore" id="remote-camera-decision-support-tool-concept-library">
+<span id="toc1-concept-lib"></span><h1>Remote Camera Decision Support Tool - Concept Library<a class="headerlink" href="#remote-camera-decision-support-tool-concept-library" title="Link to this heading">#</a></h1>
+<!-- 
+conda activate rclib
+cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
+jupyter-book build ./
+-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-column sd-col-11 sd-col-xs-11 sd-col-sm-11 sd-col-md-11 sd-col-lg-11 docutils">
+<p>Items in grey/italics are not yet available.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 docutils">
+<p><a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/index_links_all.html"><span>Secrets</span></a></p>
+</div>
+</div>
+</div>
+</div>
+<section id="objectives-resources">
+<span id="id1"></span><h2>Objectives &amp; Resources<a class="headerlink" href="#objectives-resources" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orangelight.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>User entry (Study design or data already collected)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orangelight.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>State Variable <em>vs.</em> Objective</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_objective.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_objective.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orangelight.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Number of cameras available</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_03_num_cams.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_03_num_cams.html</span></a></div>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 </section>
-<section id="download-files-access-templates">
-<span id="download-links"></span><h2>Download files / Access templates<a class="headerlink" href="#download-files-access-templates" title="Link to this heading">#</a></h2>
-<div class="dropdown admonition seealso">
-<p class="admonition-title">See also</p>
-<p><a class="reference download internal" download="" href="_downloads/5fd2ce71e7907f4734a15863dd5dd765/RC-Survey-Guidelines-v2_AB-Metadata-Standards-v3_2024-07-04.zip"><span class="xref download myst">Download everything</span></a></p>
-<p><strong>Remote Camera Survey Guidelines: Guidelines for Western Canada</strong></p>
-<p id="files-surv-guidelines-remote-cam-survey-guidelines"><a class="reference download internal" download="" href="_downloads/23834a6749b732affbfe38aef5a0e5c0/RCSC-WildCAM_RC-Survey-Guidelines-v2_2024-04-01.pdf"><span class="xref download myst">Remote Camera Survey Guidelines: Guidelines for Western Canada v1 (RCSC et al., 2024)</span></a></p>
-<p id="files-surv-guidelines-datasheet-deployment"><a class="reference download internal" download="" href="_downloads/b174248ec4623c88d02c345f16a74681/RCSC-WildCAM_RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf"><span class="xref download myst">Remote Camera Survey Guidelines: Camera Deployment Field Datasheet (RCSC et al., 2024)</span></a></p>
-<p id="files-surv-guidelines-datasheet-test-image-sheet"><a class="reference download internal" download="" href="_downloads/5ad3ba013a47b9356a97613a6fb7e88b/RCSC-WildCAM_RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf"><span class="xref download myst">Remote Camera Survey Guidelines: Test Image Sheet (RCSC et al., 2024)</span></a></p>
-<p id="files-surv-guidelines-datasheet-service-retrieval"><a class="reference download internal" download="" href="_downloads/93877de72e7891567471b13959d60a2c/RCSC-WildCAM_RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf"><span class="xref download myst">Remote Camera Survey Guidelines: Camera Service/Retrieval Field Datasheet (RCSC et al., 2024)</span></a></p>
-<p id="files-surv-guidelines-epicollect-template"><a class="reference external" href="https://five.epicollect.net/project/rcsc-and-wildcam-remote-camera-survey-guidelines">Remote Camera Survey Guidelines: EpiCollect Template (RCSC et al., 2024)</a></p>
-<p id="files-surv-guidelines-epicollect-template-json"><a class="reference download internal" download="" href="_downloads/7b76ea4145d5607d133d94daf2b9a101/RCSC_AB-RC-Metadata-Standards-v3_EpiCollect-Template_2024-07-04.json"><span class="xref download myst">Remote Camera Survey Guidelines: EpiCollect Template JSON (RCSC et al., 2024)</span></a></p>
-<hr class="docutils" />
-<p><strong>Remote Camera Metadata Standards: Standards for Alberta</strong></p>
-<p id="files-md-standards-ab-metadata-standards"><a class="reference download internal" download="" href="_downloads/3ce3f5f374eb0cf4cd342944b87369b9/RCSC_AB-RC-Metadata-Standards-v3_2024-07-04.pdf"><span class="xref download myst">Remote Camera Metadata Standards: Standards for Alberta v3 (RCSC, 2024)</span></a></p>
-<p id="files-md-standards-metadata-template"><a class="reference download internal" download="" href="_downloads/9c9cce698da9ee6e3be09c5be851a8ac/RCSC_AB-RC-Metadata-Standards-v3_Metadata-Template_2024-07-04.xlsm"><span class="xref download myst">Alberta Remote Camera Metadata Standards: Metadata Template (RCSC, 2024)</span></a></p>
-<p id="files-md-standards-version-crosswalk"><a class="reference download internal" download="" href="_downloads/a45da47f1acb6cef8717f88ba3a4e364/RC-Survey-Guidelines-AB-Metadata-Standards_VersionCrosswalk_2024-04-01.xlsx"><span class="xref download myst">Alberta Remote Camera Metadata Standards: Version Crosswalk (RCSC, 2024)</span></a></p>
+<section id="study-area-site-selection-constraints">
+<span id="id2"></span><h2>Study area &amp; Site selection constraints<a class="headerlink" href="#study-area-site-selection-constraints" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orange.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Single <em>vs</em> multiple</font></font></em></p>
 </div>
-</section>
-<hr class="docutils" />
-<section id="tables-of-content">
-<h2>Tables of Content<a class="headerlink" href="#tables-of-content" title="Link to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Remote Camera Survey Guidelines</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.1_Citation-and-Info.html">Citation &amp; Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.2_Acknowledgments.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.3_TOC.html">Table of Contents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.4_List-Tables-Figures.html">List of Tables &amp; List of Figures</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_0.4_List-Tables-Figures.html#list-of-tables">List of Tables</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_0.4_List-Tables-Figures.html#list-of-figures">List of Figures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_1.0_Background.html">1.0 Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.html">2.0 Intended Audience and How to use this document</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_2.0_Intended-Audience-and-How-to-use-this-document.html#supporting-documents">2.1 Supporting documents</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_3.0_Design-hierarchy.html">3.0 Design hierarchy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_4.0_Objectives.html">4.0 Objectives</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_5.0_Detection-probability.html">5.0 Detection probability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html">6.0 Study design</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#study-area">6.1 Study area</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#site-selection-and-camera-arrangement">6.2 Site selection and camera arrangement</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#random-or-simple-random-design">6.2.1 Random (or “simple random”) design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#systematic-design">6.2.2 Systematic design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#stratified-design">6.2.3 Stratified design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#clustered-paired-designs">6.2.4 Clustered / Paired designs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#targeted-design">6.2.5 Targeted design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#convenience-design">6.2.6 Convenience design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#pseudoreplication">6.2.7 Pseudoreplication</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#camera-spacing">6.3 Camera spacing</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#modelling-approach">6.3.1 Modelling approach</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#avoidance-behaviour">6.3.2	Avoidance behaviour</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#site-closure-assumption">6.3.3 Site closure assumption</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#survey-effort-and-timing">6.4 Survey effort and timing</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#survey-effort-number-of-cameras">6.4.1 Survey effort - Number of cameras</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#survey-effort-camera-days-per-camera-location">6.4.2 Survey effort - Camera days per camera location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#survey-effort-total-number-of-camera-days">6.4.3 Survey effort - Total number of camera days</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#species-rarity">6.4.4 Species rarity</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#number-of-cameras-vs-camera-days-per-camera-location">6.4.5 Number of cameras vs. Camera days per camera location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_6.0_Study-design.html#survey-timing">6.4.6 Survey timing</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html">7.0 Camera deployment</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#camera-hardware-options">7.1 Camera hardware options</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#battery-type">7.1.1 Battery type</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#sd-cards">7.1.2 SD cards</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#camera-settings">7.2 Camera settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#photos-vs-video">7.2.1 Photos vs video</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#trigger-mode-s-time-lapse-vs-motion-detector">7.2.2 Trigger Mode(s) - Time-lapse <em>vs.</em> motion detector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#trigger-sensitivity-photos-per-trigger-motion-image-interval-and-quiet-period">7.2.3 Trigger Sensitivity, Photos Per Trigger, Motion Image Interval and Quiet Period</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#attractants-vs-no-attractants">7.3 Attractants <em>vs.</em> no attractants</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#camera-placement">7.4 Camera placement</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#fov-target-feature">7.4.1 FOV Target Feature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#camera-height">7.4.2 Camera Height</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#camera-angle">7.4.3 Camera angle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#camera-direction">7.4.4 Camera Direction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#field-of-view-fov-and-walktest">7.4.5 Field of View (FOV) and Walktest</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#test-image">7.4.6 Test image</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#deployment-area-photos-optional">7.4.7 Deployment Area Photos (optional)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#camera-location-characteristics">7.4.8 Camera Location Characteristics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#field-equipment">7.4.9 Field equipment</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#metadata">7.5 Metadata</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#metadata-deployment-service-and-retrieval">7.5.1 Metadata - Deployment, Service and Retrieval</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#spatial-information">7.5.2 Spatial information</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_7.0_Camera-deployment.html#sd-card-retrieval">7.5.3 SD card retrieval</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html">8.0 Data management and processing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#software-and-tools">8.1 Software and tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#data-storage-archival">8.2 Data storage (archival)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#image-processing">8.3 Image processing</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#image-names">8.3.1 Image names</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#image-classification-and-tagging">8.3.2 Image classification and tagging</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#use-of-artificial-intelligence-megadetector">8.3.3 Use of artificial intelligence (MegaDetector)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#human-images">8.3.4 Human images</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#data-analysis">8.4 Data analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_8.0_Data-management-and-processing.html#useful-websites">8.5 Useful websites</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_9.0_References.html">9.0 References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_10.1_AppendixA-Tables.html">Appendix A - Tables</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.html">Appendix A - Field Datasheets</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.html#camera-deployment-field-datasheet">Camera Deployment Field Datasheet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.html#test-image-sheet">Test Image Sheet</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.html#camera-service-retrieval-field-datasheet">Camera Service/Retrieval Field Datasheet</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/1_11.0_AppendixB-FigureB1.html">Appendix B</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_survey-guidelines/images.html">images</a></li>
-</ul>
 </div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">AB Remote Camera Metadata Standards</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.1_Citation-and-Info.html">Citation &amp; Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.2_Preface.html">Preface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.3_Acknowledgments.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.4_TOC.html">Table of Contents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_0.5_List-Tables-Figures.html">List of Tables &amp; List of Figures</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_0.5_List-Tables-Figures.html#list-of-tables">List of Tables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_0.5_List-Tables-Figures.html#list-of-figures">List of Figures</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_1.0_Purpose.html">1.0 Purpose</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_1.0_Purpose.html#supporting-documents">1.2 Supporting documents</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_2.0_Background.html">2.0 Background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_3.0_Metadata-Standards.html">3.0 Metadata Standards</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_4.0_Project.html">4.0 Project</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_4.0_Project.html#project-name">4.1 Project Name</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_4.0_Project.html#project-coordinator">4.2 Project Coordinator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_4.0_Project.html#project-coordinator-email">4.3 Project Coordinator Email</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_4.0_Project.html#project-description">4.4 Project Description</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_5.0_Study-Area.html">5.0 Study Area</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_5.0_Study-Area.html#study-area-name">5.1 Study Area Name</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_5.0_Study-Area.html#study-area-description">5.2 Study Area Description</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_6.0_Survey.html">6.0 Surveys</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_6.0_Survey.html#survey-name">6.1 Survey Name</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_6.0_Survey.html#survey-objectives">6.2 Survey Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_6.0_Survey.html#target-species">6.3 Target Species</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_6.0_Survey.html#survey-design">6.4 Survey Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_6.0_Survey.html#survey-design-description-optional">6.5 Survey Design Description (optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_6.0_Survey.html#event-type">6.6 Event Type</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html">7.0 Sample Station/Camera Location</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#sample-station-name">7.1 Sample Station Name</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#camera-location-name">7.2 Camera Location Name</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#latitude-camera-location">7.3 Latitude Camera Location</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#longitude-camera-location">7.4 Longitude Camera Location</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#northing-camera-location">7.5 Northing Camera Location</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#easting-camera-location">7.6 Easting Camera Location</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#utm-zone-camera-location">7.7 UTM Zone Camera Location</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#gps-unit-accuracy-m">7.8 GPS Unit Accuracy (m)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_7.0_Sample-Station_Camera-Location.html#camera-location-comments-optional">7.9 Camera Location Comments (optional)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html">8.0 Deployment</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-visit-metadata">8.1 Deployment - Visit Metadata</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-name">8.1.1 Deployment Name</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-crew-and-service-retrieval-crew">8.1.2 Deployment Crew and Service/Retrieval Crew</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-start-date-time-dd-mmm-yyyy-hh-mm-ss">8.1.3 Deployment Start Date Time (DD-MMM-YYYY HH:MM:SS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-end-date-time-dd-mmm-yyyy-hh-mm-ss">8.1.4 Deployment End Date Time (DD-MMM-YYYY HH:MM:SS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#visit-comments-optional">8.1.5 Visit Comments (optional)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-equipment-information">8.2 Deployment - Equipment Information</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#camera-id">8.2.1 Camera ID</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#camera-make">8.2.2 Camera Make</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#camera-model">8.2.3 Camera Model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#camera-serial-number">8.2.4 Camera Serial Number</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-camera-settings">8.3 Deployment - Camera Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#trigger-mode-s">8.3.1 Trigger Mode(s)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#video-length-seconds">8.3.2 Video Length (seconds)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#trigger-sensitivity">8.3.3 Trigger Sensitivity</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#photos-per-trigger">8.3.4 Photos Per Trigger</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#motion-image-interval-seconds">8.3.5 Motion Image Interval (seconds)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#quiet-period-seconds">8.3.6 Quiet Period (seconds)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-camera-placement">8.4 Deployment - Camera Placement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#camera-height-m">8.4.1 Camera Height (m)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#camera-direction-degrees-optional">8.4.2 Camera Direction (degrees) (optional)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#stake-distance-m-optional">8.4.3 Stake Distance (m) (optional)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#fov-target-feature">8.4.4 FOV Target Feature</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#fov-target-feature-distance-m-optional">8.4.5 FOV Target Feature Distance (m) (optional)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#bait-lure-type">8.4.6 Bait/Lure Type</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-site-characteristics">8.5 Deployment - Site Characteristics</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#camera-location-characteristic-s-optional">8.5.1 Camera Location Characteristic(s) (optional)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-equipment-checks">8.6 Deployment - Equipment Checks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#walktest-distance-m-optional">8.6.1 Walktest Distance (m) (optional)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#walktest-height-m-optional">8.6.2 Walktest Height (m) (optional)</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-image-set-information">Deployment - Image Set Information</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#image-set-start-date-time-dd-mmm-yyyy-hh-mm-ss">8.7.1 Image Set Start Date Time (DD-MMM-YYYY HH:MM:SS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#image-set-end-date-time-dd-mmm-yyyy-hh-mm-ss">8.7.2 Image Set End Date Time (DD-MMM-YYYY HH:MM:SS)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_8.0_Deployment.html#deployment-image-count-optional">8.7.3 Deployment Image Count (optional)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html">9.0 Image/Sequence</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#image-name">9.1 Image Name</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#sequence-name">9.2 Sequence Name</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#image-sequence-date-time-dd-mmm-yyyy-hh-mm-ss">9.3 Image/Sequence Date Time (DD-MMM-YYYY HH:MM:SS)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#analyst">9.4 Analyst</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#species">9.5 Species</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#individual-count">9.6 Individual Count</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#age-class-and-sex-class">9.7 Age Class and Sex Class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#behaviour-optional">9.8 Behaviour (optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#animal-id-optional">9.9 Animal ID (optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#human-transport-mode-activity-optional">9.10 Human Transport Mode/Activity (optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#image-sequence-comments-optional">9.11 Image/Sequence Comments (optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#image-trigger-mode-optional">9.12 Image Trigger Mode (optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#image-sequence-optional">9.13 Image Sequence (optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#image-infrared-illuminator-optional">9.14 Image Infrared Illuminator (optional)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_9.0_Image_Sequence.html#image-flash-output-optional">9.15 Image Flash Output (optional)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_10.0_Data-Management.html">10.0 Data management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_10.0_Data-Management.html#naming-conventions">10.1 Naming conventions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_10.0_Data-Management.html#allowable-formats-special-characters">10.1.1 Allowable formats &amp; Special characters</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="2_metadata-standards/2_10.0_Data-Management.html#renaming-images">10.1.2 Renaming images</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_10.0_Data-Management.html#file-structure">10.2 File structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2_metadata-standards/2_10.0_Data-Management.html#data-storage-archival">10.5 Data storage (archival)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_11.0_Conclusion.html">11.0 Conclusion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_12.0_References.html">13.0 References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_metadata-standards/2_13.0_AppendixA.html">Appendix A</a></li>
-</ul>
 </div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="3_glossary/3_Glossary.html">Glossary</a></li>
-</ul>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orange.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Known density gradient</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orange.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Stratified by covariates</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_06_cam_strat_covar.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_06_cam_strat_covar.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orange.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Camera density</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <hr class="docutils" />
 </section>
+<section id="duration-timing">
+<span id="id3"></span><h2>Duration &amp; Timing<a class="headerlink" href="#duration-timing" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orange.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Duration (minimum &amp; maximum)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orange.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Species-accumulation curves</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_orange.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Season(s)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="target-species">
+<span id="id4"></span><h2>Target species<a class="headerlink" href="#target-species" title="Link to this heading">#</a></h2>
+<section id="target-species-single">
+<span id="id5"></span><h3>Target species (single)<a class="headerlink" href="#target-species-single" title="Link to this heading">#</a></h3>
+<br>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Single <em>vs.</em> multiple</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Ecology of species (well known <em>vs.</em> poorly known)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Carnivore / ungulate</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Low density species</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Occurrence restricted</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Home range size</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_17_sp_hr_size.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_17_sp_hr_size.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Body size</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_18_sp_size.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_18_sp_size.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Rarity</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_19_sp_rarity.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_19_sp_rarity.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Detection probability</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_20_sp_detprob_cat.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_20_sp_detprob_cat.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Behaviour (Investigative)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Behaviour (Seasonal)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Markings (Marked, unmarked, partially marked)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Markings (All or subset marked)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Markings (Number of categorical identifiers)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Additional information obtainable</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Counts of individuals</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Focal area measured or detections binned by distance</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Camera density</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Study population size</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="target-species-multiple">
+<span id="id6"></span><h3>Target species (multiple)<a class="headerlink" href="#target-species-multiple" title="Link to this heading">#</a></h3>
+<br>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Size</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Behaviour</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Rarity</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_purple.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Detection probability</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+</section>
+</section>
+<section id="equipment-deployment">
+<span id="id7"></span><h2>Equipment &amp; Deployment<a class="headerlink" href="#equipment-deployment" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_yellow2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Camera make &amp; model</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_yellow2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Camera settings</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_yellow2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Camera height, angle, direction</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_yellow2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Bait/lure</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_43_bait_lure.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_43_bait_lure.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_yellow2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Targetting specific features</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_45_targ_feature.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_45_targ_feature.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="data-analysis">
+<span id="id8"></span><h2>Data &amp; Analysis<a class="headerlink" href="#data-analysis" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_blue2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Camera location independence</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_47_cam_independent.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_47_cam_independent.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_blue2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Repeat sampling</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_48_multisamp_per_loc.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_48_multisamp_per_loc.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_blue2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Mixed models</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_49_modmixed.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_49_modmixed.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_blue2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Number of detections</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_50_num_det.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_50_num_det.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_blue2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Number of individuals</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_mod_divers_rich.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_mod_divers_rich.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_blue2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Number of recaptures</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_52_num_recap.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_52_num_recap.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_blue2.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Overdispersion</font></font></em> / <em><font color='grey'><font size='4'>Zero-inflation</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_55_zi_overdispersed.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_55_zi_overdispersed.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="recommendations">
+<span id="id9"></span><h2>Recommendations<a class="headerlink" href="#recommendations" title="Link to this heading">#</a></h2>
+<section id="modelling-approaches">
+<span id="id10"></span><h3>Modelling Approaches<a class="headerlink" href="#modelling-approaches" title="Link to this heading">#</a></h3>
+<br>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Species inventory</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_01_mod_inventory.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_01_mod_inventory.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Species diversity &amp; richness</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_02_mod_divers_rich.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_02_mod_divers_rich.html</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong><font size='4'>Occupancy</font></strong></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_03_mod_occupancy.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_03_mod_occupancy.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Relative abundance indices</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Capture-recapture (CR) / Capture-mark-recapture (CMR)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial capture-recapture (SCR) / Spatially explicit capture recapture (SECR)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial mark-resight </font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial count (SC) model / Unmarked spatial capture-recapture</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial Partial Identity Model (Categorical SPIM; catSPIM)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial Partial Identity Model (2-flank SPIM)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Random encounter model (REM)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Random encounter and staying time (REST)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Time in front of the camera (TIFC)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Distance sampling (DS)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Time-to-event (TTE)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Space-to-event (STE)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Instantaneous sampling (IS)</font></font></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-p-1 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover sd-text-center docutils">
+<img alt="" class="sd-card-img" src="_images/background_green.png" />
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Behaviour</font></font></em></p>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_24_mod_behaviour.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_24_mod_behaviour.html</span></a></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -775,87 +1047,20 @@ document.write(`
 
                 </article>
               
-
               
               
               
-              
-                <footer class="prev-next-footer d-print-none">
-                  
-<div class="prev-next-area">
-    <a class="right-next"
-       href="1_survey-guidelines/1_0.1_Citation-and-Info.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Citation &amp; Information</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
-</div>
-                </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updates">Updates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-files-access-templates">Download files / Access templates</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tables-of-content">Tables of Content</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
-</ul>
-  </nav></div>
-
-</div></div>
-              
             
           </div>
           <footer class="bd-footer-content">
             
-<div class="bd-footer-content__inner container">
-  
-  <div class="footer-item">
-    
-<p class="component-author">
-By Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & Wildlife Cameras for Adaptive Management (WildCAM)
-</p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-
-  <p class="copyright">
-    
-      © Copyright 2024.
-      <br/>
-    
-  </p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-</div>
           </footer>
         
-
       </main>
     </div>
   </div>
@@ -865,6 +1070,36 @@ By Alberta Remote Camera Steering Committee (RCSC), Stevenson, C., Hubbs, A., & 
 <script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="component-author">
+By Alberta Remote Camera Steering Committee (RCSC)
+</p>
+</div>
+      
+    </div>
+  
+</div>
+
   </footer>
   </body>
 </html>

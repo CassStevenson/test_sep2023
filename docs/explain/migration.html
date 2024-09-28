@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Migrating to jupyter-book&gt;=0.14 &#8212; Remote Camera Decision Support Tool - Concept Library</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=cf5192f4" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'explain/migration';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="References" href="../02_dialog-boxes/08_references.html" />
+    <link rel="prev" title="Store code outputs and insert into content" href="../content/executable/output-insert.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="migrating-to-jupyter-book-0-14">
+<span id="explain-migration"></span><h1>Migrating to <code class="docutils literal notranslate"><span class="pre">jupyter-book&gt;=0.14</span></code><a class="headerlink" href="#migrating-to-jupyter-book-0-14" title="Link to this heading">#</a></h1>
+<p>This release of <code class="docutils literal notranslate"><span class="pre">jupyter-book&gt;=0.14</span></code> includes major updates to <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/">myst-nb</a>
+and <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">myst-parser</a> that include some <strong>breaking changes</strong>.</p>
+<p>This update includes incorporating three major updates to <a class="reference external" href="https://github.com/executablebooks/myst-nb">myst-nb</a> moving from <code class="docutils literal notranslate"><span class="pre">myst-nb~=0.13.1</span></code> to <code class="docutils literal notranslate"><span class="pre">myst-nb~=0.17.1</span></code>
+which incorporates changes to the underlying <a class="reference external" href="https://github.com/executablebooks/myst-parser">myst-parser</a> moving from <code class="docutils literal notranslate"><span class="pre">myst-parser~=0.15</span></code> to <code class="docutils literal notranslate"><span class="pre">myst-parser~=0.18</span></code>.</p>
+<p>While every effort has been made to enable backward compatibility, there are some new warnings
+that may appear when upgrading to the latest version. This page has been put together to help explain
+these warnings and provides suggestions on how to fix them.</p>
+<p>The latest configuration options are well documented in the underlying libraries:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/configuration.html">myst-nb configuration</a></p></li>
+<li><p><a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/configuration.html">myst-parser configuration</a></p></li>
+</ol>
+<p>so it is worth referring to these resources when updating any options or using more advacned features in your project.</p>
+<section id="common-configuration-updates">
+<h2>Common Configuration Updates<a class="headerlink" href="#common-configuration-updates" title="Link to this heading">#</a></h2>
+<p>A number of configuration option names have been updated.</p>
+<p>Some of the more commonly used options include those that control execution of <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> notebooks.
+The majority of options concerning notebooks have an <code class="docutils literal notranslate"><span class="pre">nb_</span></code> prefix added to the pre-existing option name,
+however there are some cases where the option name has been changed.</p>
+<p>For example <code class="docutils literal notranslate"><span class="pre">jupyter_execute_notebooks</span></code> has become <code class="docutils literal notranslate"><span class="pre">nb_execution_mode</span></code>. Most of the old option
+names will be auto-converted and a warning is issued by <a class="reference external" href="https://github.com/executablebooks/myst-nb">myst-nb</a> such as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">WARNING</span><span class="p">:</span> <span class="s1">&#39;jupyter_execute_notebooks&#39;</span> <span class="ow">is</span> <span class="n">deprecated</span> <span class="k">for</span> <span class="s1">&#39;nb_execution_mode&#39;</span> <span class="p">[</span><span class="n">mystnb</span><span class="o">.</span><span class="n">config</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>These warning messages now includes the software that is responsible as seen in the square brackets.
+This helps to identify where your warning is coming from and using the <a class="reference external" href="https://github.com/executablebooks/myst-nb">myst-nb</a>
+documentation may be a good source of information.</p>
+<p>Below we highlight some of the configuration changes here, which we found useful when updating our range
+projects. It should be noted that these are only a handful of examples, please refer to the doc links
+mentioned above <a class="reference external" href="https://github.com/executablebooks/jupyter-book/issues">raise an issue</a>.</p>
+<section id="book-level-configuration">
+<h3>Book level configuration<a class="headerlink" href="#book-level-configuration" title="Link to this heading">#</a></h3>
+<p>Some of the configurations have been renamed, and the variable types of some have also been changed.</p>
+<p>The noteworthy configuration changes which effected most of our projects were:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter_execute_notebooks</span></code> is renamed to  <code class="docutils literal notranslate"><span class="pre">nb_execution_mode</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nb_render_priority</span></code> is renamed to <code class="docutils literal notranslate"><span class="pre">nb_mime_priority_overrides</span></code> and it accepts a sequence of tuples.
+Each tuple takes three mandatory entries namely <code class="docutils literal notranslate"><span class="pre">builder</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">mime</span> <span class="pre">type</span></code>, and <code class="docutils literal notranslate"><span class="pre">priority</span></code>.</p></li>
+</ol>
+<p>An Example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sphinx</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">config</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">nb_render_priority</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;application/vnd.jupyter.widget-view+json&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;application/javascript&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;text/html&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;text/latex&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;image/svg+xml&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;image/png&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;image/jpeg&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;text/markdown&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;text/plain&quot;</span>
+</pre></div>
+</div>
+<p>would become:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">sphinx</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">config</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">nb_mime_priority_overrides</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;application/vnd.jupyter.widget-view+json&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">10</span><span class="p p-Indicator">],</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;application/javascript&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">20</span><span class="p p-Indicator">],</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;text/html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">30</span><span class="p p-Indicator">],</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;text/latex&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">40</span><span class="p p-Indicator">],</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;image/svg+xml&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">50</span><span class="p p-Indicator">],</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;image/png&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">60</span><span class="p p-Indicator">],</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;image/jpeg&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">70</span><span class="p p-Indicator">],</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;text/markdown&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">80</span><span class="p p-Indicator">],</span>
+<span class="w">      </span><span class="p p-Indicator">[</span><span class="s">&#39;html&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;text/plain&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">90</span><span class="p p-Indicator">],</span>
+<span class="w">    </span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+<p>There are additional option name changes that should be notified to you via the <code class="docutils literal notranslate"><span class="pre">warnings</span></code> output.</p>
+</section>
+<section id="configuration-pass-through-file-level">
+<h3>Configuration pass-through (file level)<a class="headerlink" href="#configuration-pass-through-file-level" title="Link to this heading">#</a></h3>
+<p>If you wish to specify a configuration options that is processed by <a class="reference external" href="https://github.com/executablebooks/myst-nb">myst-nb</a>,
+overriding the <strong>default configuration</strong> now requires them to under the <code class="docutils literal notranslate"><span class="pre">mystnb</span></code> key. Likewise, if a configuration option is
+processed by <a class="reference external" href="https://github.com/executablebooks/myst-parser">myst-parser</a>, then they should be under the <code class="docutils literal notranslate"><span class="pre">myst</span></code> key.</p>
+<p>Some examples follow:</p>
+<section id="myst-nb">
+<h4>myst-nb<a class="headerlink" href="#myst-nb" title="Link to this heading">#</a></h4>
+<p>To set the <code class="docutils literal notranslate"><span class="pre">execution_timeout</span></code> config option managed by <code class="docutils literal notranslate"><span class="pre">mystnb</span></code> you would specify the following:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">```</span>
+<span class="gu">---</span>
+file_format: mystnb
+mystnb:
+<span class="gu">  execution_timeout: 60</span>
+<span class="gu">---</span>
+```
+</pre></div>
+</div>
+<p>in the header of the notebook (or page).</p>
+</section>
+<section id="myst-parser">
+<h4>Myst-parser<a class="headerlink" href="#myst-parser" title="Link to this heading">#</a></h4>
+<p>To make document level variables that will be resolved by <a class="reference external" href="https://github.com/executablebooks/myst-parser">myst-parser</a>
+then this configuration can be specified under the <code class="docutils literal notranslate"><span class="pre">myst</span></code> key in the configuration for each notebook (or page) such as:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">```</span>
+<span class="gu">---</span>
+myst:
+  substitutions:
+    key1: &quot;I&#39;m a <span class="gs">**substitution**</span>&quot;
+    key2: |
+      ```{note}
+      {{ key1 }}
+<span class="sb">      ```</span>
+<span class="sb">    fishy: |</span>
+<span class="sb">      ```{image} /images/fun-fish.png</span>
+<span class="sb">      :alt: fishy</span>
+<span class="sb">      :width: 200px</span>
+<span class="sb">      ```</span>
+    jinja: &quot;[Jinja templates](https://jinja.palletsprojects.com/en/2.11.x/)&quot;
+    repo_name: &quot;jupyter-book&quot;
+<span class="gu">    repo_url: &quot;[my repo url](https://github.com/executablebooks/jupyter-book)&quot;</span>
+<span class="gu">---</span>
+```
+</pre></div>
+</div>
+</section>
+</section>
+<section id="configuration-pass-through-cell-level">
+<h3>Configuration pass-through (cell level)<a class="headerlink" href="#configuration-pass-through-cell-level" title="Link to this heading">#</a></h3>
+<p>Similarly, overriding the default configuration can also be done at the cell level
+and requires them to be under the <code class="docutils literal notranslate"><span class="pre">mystnb</span></code> key.</p>
+<p>Since cell-level operations are in myst-nb domain, we don’t have to worry about <strong>Myst-parser</strong> here.</p>
+<p>This changes the way configuration was previously captured under the <code class="docutils literal notranslate"><span class="pre">render</span></code> title, replacing it with <code class="docutils literal notranslate"><span class="pre">mystnb</span></code>.</p>
+<p>An example of the new configuration:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">```{code-cell} ipython3</span>
+<span class="gu">---</span>
+mystnb:
+  image:
+    width: 200px
+    alt: fun-fish
+    classes: shadow bg-primary
+  figure:
+    caption: |
+      Hey everyone its <span class="gs">**party**</span> time!
+<span class="gu">    name: fun-fish</span>
+<span class="gu">---</span>
+from IPython.display import Image
+Image(&quot;../images/fun-fish.png&quot;)
+```
+</pre></div>
+</div>
+<p>Further </p>
+</section>
+<section id="changes-to-glue">
+<span id="explain-migration-glue"></span><h3>Changes to <code class="docutils literal notranslate"><span class="pre">glue</span></code><a class="headerlink" href="#changes-to-glue" title="Link to this heading">#</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>One of the key changes is that <code class="docutils literal notranslate"><span class="pre">glue</span></code> directives will now need to use <code class="docutils literal notranslate"><span class="pre">:doc:</span></code> to
+reference objects that are created in a <strong>separate notebook (page or document)</strong>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">glue</span></code> behaviour is the same as previously <strong>within the same</strong> notebook (page or document)</p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">glue</span></code> roles and directives will only identify keys in the same notebook, by <strong>default</strong>.
+To reference a glue object in another notebook (page or document), now requires you to use a <code class="docutils literal notranslate"><span class="pre">:doc:</span></code> key,
+which specifies the relative path to the notebook.</p>
+<p>An example:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{glue} cool_text
+:doc: /test/output-insert.md
+```
+</pre></div>
+</div>
+<p>will render as</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">extension</span></code> of the document needs to be specified. So you need to use
+<code class="docutils literal notranslate"><span class="pre">executable/output-insert.md</span></code> rather than <code class="docutils literal notranslate"><span class="pre">executable/output-insert</span></code> as can be the case
+in some other <code class="docutils literal notranslate"><span class="pre">sphinx/docutils</span></code> directives</p>
+</div>
+<p><strong>DataFrames:</strong></p>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>first</th>
+      <th>second</th>
+      <th>third</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3.188291</td>
+      <td>3.352018</td>
+      <td>2.795108</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2.972214</td>
+      <td>3.066383</td>
+      <td>2.755091</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2.919955</td>
+      <td>3.491552</td>
+      <td>3.093025</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3.159832</td>
+      <td>2.910259</td>
+      <td>2.654300</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3.324488</td>
+      <td>3.381827</td>
+      <td>2.817984</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><section id="limitations-for-figures-and-math">
+<h4>Limitations for Figures and Math<a class="headerlink" href="#limitations-for-figures-and-math" title="Link to this heading">#</a></h4>
+<p>There are currently some limitations based on the <code class="docutils literal notranslate"><span class="pre">mime</span></code> types for <code class="docutils literal notranslate"><span class="pre">Figures</span></code> and <code class="docutils literal notranslate"><span class="pre">Math</span></code>.</p>
+<p><strong>Math:</strong></p>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">glue</span></code> directive between documents for math results in a text representation:</p>
+<p><strong>Figures:</strong></p>
+<p>The resultant text representation when using the <code class="docutils literal notranslate"><span class="pre">glue</span></code> directive is similar for figures.</p>
+<p>For example, if you glue in the figure <code class="docutils literal notranslate"><span class="pre">sorted_means_fig</span></code> from the <code class="docutils literal notranslate"><span class="pre">executable/output-insert.md</span></code> document:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{glue} sorted_means_fig
+:doc: /content/executable/output-insert.md
+```
+</pre></div>
+</div>
+<p>it will be rendered as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Figure</span> <span class="n">size</span> <span class="mi">600</span><span class="n">x200</span> <span class="k">with</span> <span class="mi">1</span> <span class="n">Axes</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>which is the text description of the image.</p>
+<p>These issues have been reported to the myst-nb team.</p>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./explain"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="component-author">
+By Alberta Remote Camera Steering Committee (RCSC)
+</p>
+</div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

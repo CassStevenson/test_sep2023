@@ -14,80 +14,712 @@ editor_options:
   markdown: 
   wrap: none
 ---
-# Remote Camera Survey Guidelines & AB Metadata Standards
+<style>
+    .bd-page-width {
+    max-width: 80%;  /* default is 88rem */
+}
+    .bd-main .bd-content .bd-article-container {
+    max-width: 100%;  /* default is 60em */
+  }
+    h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    }
+}
+</style>
+(toc1_concept_lib)=
+# Remote Camera Decision Support Tool - Concept Library
+<!-- 
+conda activate rclib
+cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
+jupyter-book build ./
+-->
+:::::{note}
+::::{grid} 2
+:gutter: 3
 
-## Updates
-
-:::{admonition} July 4, 2024
-:class: dropdown
-
-- **July 4, 2024**
-
-  - **New version - EpiCollect Template & JSON file**
-     - A new version of the EpiCollect is available online.
-     - You can find a JSON file below that can be imported into EpiCollect to create an editable version of the template managed under your EpiCollect account.
-
-  - **New version - Metadata Template**
-     - Since Epicollect limits the character length for field names, the field codes do not completely align with the field codes in the Metadata Template. Therefore the metadata template has also been updated to include a "field_code_epicollect" in the "legend_md_standards_surv_guidel" tab, to support users in cross-walking data fields when using this template.
-     - The data field options previously excluded in the "data_validation" tab of the metadata template have now been included. The previously excluded fields were those not required in "Alberta Remote Camera Metadata Standards", but included in the "Remote Camera Survey Guidelines."
-
-  - **Version crosswalk**
-     - You can now find a crosswalk of the data fields in the current and previous versions of the Metadata Template.
-     
-  - See ["Downloads & Links"](#download_links) section below for all updated files/links.
-  
+:::{grid-item}
+:columns: 11
+Items in grey/italics are not yet available.
 :::
+
+:::{grid-item}
+:columns: 1
+
+{bdg-link-primary-line}`Secrets<https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/index_links_all.html>`
+:::
+::::
+:::::
+
+(objectives-resources)=
+## Objectives & Resources
+:::::{grid} 3
+:gutter: 3
+
+::::{grid-item-card}
+:img-background: ./03_images/01_ui/background_orangelight.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_user_entry }}</font></font>*
+::::
+
+::::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_objective.html
+:img-background: ./03_images/01_ui/background_orangelight.png
+:padding: 1
+:text-align: center
+**<font size='4'>{{ title_i_objective }}</font>**
+::::
+
+::::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_03_num_cams.html
+:img-background: ./03_images/01_ui/background_orangelight.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ title_i_num_cams }}</font>**
+::::
+
+:::::
 
 ***
 
-(download_links)=
-## Download files / Access templates
+(study-area-site-selection-constraints)=
+## Study area & Site selection constraints
 
-:::{seealso}
-:class: dropdown 
-[Download everything](./0_files/RC-Survey-Guidelines-v2_AB-Metadata-Standards-v3_2024-07-04.zip)
+::::{grid} 3
+:gutter: 3
 
+:::{grid-item-card} 
+:img-background: ./03_images/01_ui/background_orange.png
+:padding: 1
+:text-align: center
 
-**Remote Camera Survey Guidelines: Guidelines for Western Canada**
+*<font color='grey'><font size='4'>{{ title_i_study_area_mult }}</font></font>*
+:::
 
-(#FILES_surv_guidelines_remote_cam_survey_guidelines)=
-[Remote Camera Survey Guidelines: Guidelines for Western Canada v1 (RCSC et al., 2024)](./0_files/RCSC-WildCAM_RC-Survey-Guidelines-v2_2024-04-01.pdf)
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_orange.png
+:padding: 1
+:text-align: center
 
-(#FILES_surv_guidelines_datasheet_deployment)=
-[Remote Camera Survey Guidelines: Camera Deployment Field Datasheet (RCSC et al., 2024)](./0_files/RCSC-WildCAM_RC-Survey-Guidelines-v2_Deployment-Datasheet_2024-04-01.pdf)
+*<font color='grey'><font size='4'>{{ title_i_cam_dens_gradient }}</font></font>*
+:::
 
-(#FILES_surv_guidelines_datasheet_test_image_sheet)=
-[Remote Camera Survey Guidelines: Test Image Sheet (RCSC et al., 2024)](./0_files/RCSC-WildCAM_RC-Survey-Guidelines-v2_Test-Image-Sheet_2024-04-01.pdf)
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_06_cam_strat_covar.html
+:img-background: ./03_images/01_ui/background_orange.png
+:padding: 1
+:text-align: center
 
-(#FILES_surv_guidelines_datasheet_service_retrieval)=
-[Remote Camera Survey Guidelines: Camera Service/Retrieval Field Datasheet (RCSC et al., 2024)](./0_files/RCSC-WildCAM_RC-Survey-Guidelines-v2_ServiceRetrieval-Datasheet_2024-04-01.pdf)
+**<font size='4'>{{ title_i_cam_strat_covar }}</font>**
+:::
+::::
 
-(#FILES_surv_guidelines_epicollect_template)=
-[Remote Camera Survey Guidelines: EpiCollect Template (RCSC et al., 2024)](https://five.epicollect.net/project/rcsc-and-wildcam-remote-camera-survey-guidelines)
+::::{grid} 3
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_orange.png
+:padding: 1
+:text-align: center
 
-(#FILES_surv_guidelines_epicollect_template_json)=
-[Remote Camera Survey Guidelines: EpiCollect Template JSON (RCSC et al., 2024)](./0_files/RCSC_AB-RC-Metadata-Standards-v3_EpiCollect-Template_2024-07-04.json)
+*<font color='grey'><font size='4'>{{ title_i_cam_high_dens }}</font></font>*
+:::
+::::
 
 ***
 
-**Remote Camera Metadata Standards: Standards for Alberta**
+(duration-timing)=
+## Duration & Timing
 
-(#FILES_md_standards_ab_metadata_standards)=
-[Remote Camera Metadata Standards: Standards for Alberta v3 (RCSC, 2024)](./0_files/RCSC_AB-RC-Metadata-Standards-v3_2024-07-04.pdf)
+::::{grid} 3
+:gutter: 3
 
-(#FILES_md_standards_metadata_template)=
-[Alberta Remote Camera Metadata Standards: Metadata Template (RCSC, 2024)](./0_files/RCSC_AB-RC-Metadata-Standards-v3_Metadata-Template_2024-07-04.xlsm)
+:::{grid-item-card} 
+:img-background: ./03_images/01_ui/background_orange.png
+:padding: 1
+:text-align: center
 
-(#FILES_md_standards_version_crosswalk)=
-[Alberta Remote Camera Metadata Standards: Version Crosswalk (RCSC, 2024)](./0_files/RC-Survey-Guidelines-AB-Metadata-Standards_VersionCrosswalk_2024-04-01.xlsx)
-
+*<font color='grey'><font size='4'>{{ title_i_surv_dur_min_max }}</font></font>*
 :::
 
-*** 
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html
+:img-background: ./03_images/01_ui/background_orange.png
+:padding: 1
+:text-align: center
 
-## Tables of Content
+**<font size='4'>{{ title_i_sp_asymptote }}</font>**
+:::
 
-```{tableofcontents}
-```
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_orange.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_study_season_num }}</font></font>*
+:::
+
+::::
+
+***
+
+(target-species)=
+## Target species
+
+(target-species-single)=
+### Target species (single)
+<br>
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_obj_targ_sp }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_info }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_type }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_dens_low }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_occ_restr }}</font></font>*
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_17_sp_hr_size.html
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ title_i_sp_hr_size }}</font>**
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_18_sp_size.html
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ title_i_sp_size }}</font>**
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_19_sp_rarity.html
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ title_i_sp_rarity }}</font>**
+:::
+
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_20_sp_detprob_cat.html
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ title_i_sp_detprob_cat }}</font>**
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_behav }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_behav_season }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_marking_code }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_marking_allsub }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_3ormore_cat_ids }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_auxillary_info }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_aux_count_possible }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_focalarea_calc }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_cam_high_dens }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_common_pop_lg }}</font></font>*
+:::
+
+::::
+
+***
+
+(target-species-multiple)=
+### Target species (multiple)
+<br>
+
+::::{grid} 3
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_size_multi }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_behav_mult }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_rarity_multi }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_purple.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_sp_detprob_cat_multi }}</font></font>*
+:::
+
+::::
+
+***
+
+(equipment-deployment)=
+## Equipment & Deployment
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card} 
+:img-background: ./03_images/01_ui/background_yellow2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_cam_makemod_same }}</font></font>*
+:::
+
+:::{grid-item-card} 
+:img-background: ./03_images/01_ui/background_yellow2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_cam_settings_mult }}</font></font>*
+:::
+
+:::{grid-item-card} 
+:img-background: ./03_images/01_ui/background_yellow2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_cam_protocol_ht_angle_dir }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card} 
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_43_bait_lure.html
+:img-background: ./03_images/01_ui/background_yellow2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_bait_lure }}</font></font>*
+:::
+
+:::{grid-item-card} 
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_45_targ_feature.html
+:img-background: ./03_images/01_ui/background_yellow2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_targ_feature }}</font></font>*
+:::
+
+::::
+
+***
+
+(data-analysis)=
+## Data & Analysis
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card} 
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_47_cam_independent.html
+:img-background: ./03_images/01_ui/background_blue2.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ title_i_cam_independent }}</font>**
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_48_multisamp_per_loc.html
+:img-background: ./03_images/01_ui/background_blue2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_multisamp_per_loc }}</font></font>*
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_49_modmixed.html
+:img-background: ./03_images/01_ui/background_blue2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_modmixed }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card} 
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_50_num_det.html
+:img-background: ./03_images/01_ui/background_blue2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_num_det }}</font></font>*
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_mod_divers_rich.html
+:img-background: ./03_images/01_ui/background_blue2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_num_det_individ }}</font></font>*
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_52_num_recap.html
+:img-background: ./03_images/01_ui/background_blue2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_num_recap }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card} 
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_55_zi_overdispersed.html
+:img-background: ./03_images/01_ui/background_blue2.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ title_i_overdispersion }}</font></font>* / *<font color='grey'><font size='4'>{{ title_i_zeroinflation }}</font></font>*
+
+:::
+::::
+
+***
+
+(recommendations)=
+## Recommendations
+
+(modelling-approaches)=
+### Modelling Approaches
+<br>
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card} 
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_01_mod_inventory.html
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ name_mod_inventory }}</font>**
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_02_mod_divers_rich.html
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ name_mod_divers_rich }}</font>**
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_03_mod_occupancy.html
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+**<font size='4'>{{ name_mod_occupancy }}</font>**
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_rai }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_cr_cmr }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_scr_secr }}</font></font>*
+:::
+
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_smr }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_sc }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_catspim }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_2flankspim }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_rem }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_rest }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_tifc }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_ds }}</font></font>*
+:::
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_tte }}</font></font>*
+:::
+::::
+
+::::{grid} 3
+:gutter: 3
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_ste }}</font></font>*
+:::
+
+:::{grid-item-card}
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_is }}</font></font>*
+:::
+
+:::{grid-item-card}
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_24_mod_behaviour.html
+:img-background: ./03_images/01_ui/background_green.png
+:padding: 1
+:text-align: center
+
+*<font color='grey'><font size='4'>{{ name_mod_behaviour }}</font></font>*
+:::
+
+::::
 
 ***
