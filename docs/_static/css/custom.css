@@ -40,7 +40,7 @@ h3 {
 }
 
 div.b {
-      line-height: 1.15;
+    line-height: 1.15;
 }
 
 html {
@@ -50,11 +50,11 @@ html {
 root {
   ---pst-sidebar-font-size: 2em;
 }
+
 div.img_grid {
   :width: 100%;
   :align: center;
 }
-
 
 /* Block Quotes
 blockquote {
