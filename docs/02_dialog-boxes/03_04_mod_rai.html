@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
@@ -147,6 +147,11 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="relative-abundance-indices">
 <span id="i-mod-rai"></span><h1>Relative abundance indices<a class="headerlink" href="#relative-abundance-indices" title="Link to this heading">#</a></h1>
+<!--
+:::{info}
+replace me with text
+:::
+-->
 <p><strong>Relative abundance indices</strong>: A regression model for count data used when data are not overdispersed or zero-inflated (Lambert, 1992). [relative abundance indices]</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -197,9 +202,9 @@ Cons</div>
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Overview</label><div class="sd-tab-content docutils">
-<p>This section will be available soon! In the meantime, check out the information in the other tabs!</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/00_coming_soon.png"><img alt="../_images/00_coming_soon.png" src="../_images/00_coming_soon.png" style="width: 300px;" /></a>
+<p>Add some info here</p>
+<figure class="align-default">
+<img alt="../_images/dubey_nd_abundance_clipped.png" class="img-grid" src="../_images/dubey_nd_abundance_clipped.png" />
 </figure>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
@@ -215,7 +220,7 @@ In-depth</label><div class="sd-tab-content docutils">
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/clarke_et_al_2023_eqn_rai1.png"><img alt="../_images/clarke_et_al_2023_eqn_rai1.png" src="../_images/clarke_et_al_2023_eqn_rai1.png" style="width: 80px;" /></a>
 </figure>
-<p>where <em>𝑁</em> is population size, <em>𝐶</em> is the count of animals or signs and <em>𝑝</em> is detection probability (Anderson, 2001; Brennan, 2019). This equation underlies many estimators of abundance, including capture-recapture (CR; see <a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_10_mod_cr_cmr.html"><span>Capture-recapture (CR) / Capture-mark-recapture (CMR)</span></a>) and distance sampling (DS; see <a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_20_mod_ds.html"><span>Distance sampling</span></a>) methods (O’Brien, 2011). RA comparisons assume that detection probability <em>𝑝</em> is constant across space, time or species, and can therefore be ignored (; O’Brien, 2011; Sollmann et al., 2013b), such that:</p>
+<p>where <em>𝑁</em> is population size, <em>𝐶</em> is the count of animals or signs and <em>𝑝</em> is detection probability (Anderson, 2001; Brennan, 2019). This equation underlies many estimators of abundance, including capture-recapture (CR; see <a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_10_mod_cr_cmr.html"><span>Capture-recapture (CR) / Capture-mark-recapture (CMR)</span></a>) and distance sampling (DS; see <a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_20_mod_ds.html"><span>Distance sampling</span></a>) methods (O’Brien, 2011). RA comparisons assume that detection probability <em>𝑝</em> is constant across space, time or species, and can therefore be ignored (Anderson, 2001; O’Brien, 2011; Sollmann et al., 2013b), such that:</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/clarke_et_al_2023_eqn_rai2.png"><img alt="../_images/clarke_et_al_2023_eqn_rai2.png" src="../_images/clarke_et_al_2023_eqn_rai2.png" style="width: 80px;" /></a>
 </figure>
@@ -224,10 +229,7 @@ In-depth</label><div class="sd-tab-content docutils">
 <p>In a camera trapping context, RA is the comparison of detection rates across space, time or species – where detection rates are typically reported as the number of images per 100 trap days, but can also be reported in terms of the total number of detections, other units of effort (e.g., camera trap hours), proportion of stations with detections, etc. (Burton et al., 2015). As with other kinds of RA surveys, comparisons of camera trap detection rates can confound abundance with animal behaviour and observability (Anderson, 2001; Burton et al., 2015).</p>
 <p>RA has been criticized as an abundance estimator. Anderson (2001) condemned the index as “unprofessional,” while O’Brien (2011) called it a “metric of last resort.” Sollmann et al. (2013b) used simulations to determine that camera trap RA analyses did not detect changes in big cat density, and called use of the index for wildlife management “alarming.” Nevertheless, some researchers have had success with the method and/or have argued for its conceptual and practical advantages (e.g., ; Palmer et al., 2018; Rovero &amp; Marshall, 2009). Broadley et al. (2019) used simulations to show that RA could be sensitive to density-dependent movement, but generally tracked abundance well. Banks-Leite (2014) emphasized the importance of careful sampling design and protocols to control for variation in detectability, arguing that researchers should not solely rely on statistical corrections.</p>
 <p>Ultimately, there is no “silver bullet” and researchers must carefully consider their inferential objectives and potential sources of sampling and estimation bias when choosing response variables and modelling frameworks for camera trap data.</p>
-</div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
-Visual resources</label><div class="sd-tab-content docutils">
+<div class="docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -238,7 +240,7 @@ Gilbert et al., 2020</div>
 <figure class="align-default">
 <img alt="../_images/gilbert_et_al_2020_fig3.png" class="img-grid" src="../_images/gilbert_et_al_2020_fig3.png" />
 </figure>
-<p class="sd-card-text">Modified from Gilbert et al. (2022) - Figure 3.</p>
+<p class="sd-card-text">Modified from Gilbert et al. (2020) - Fig 3.</p>
 </div>
 </div>
 </div>
@@ -278,6 +280,7 @@ Blasco-Moreno et al., 2019</div>
 </div>
 </div>
 </div>
+</div>
 <div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -303,8 +306,9 @@ Dénes et al., 2015</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 ref_intext_figure5_ref_id</div>
 <figure class="align-default">
-<img alt="03_images/03_image_files/zip_models_mindmap.png" class="img-grid" src="03_images/03_image_files/zip_models_mindmap.png" />
+<img alt="../_images/zi_models_mindmap.png" class="img-grid" src="../_images/zi_models_mindmap.png" />
 </figure>
+<p class="sd-card-text"><a class="reference external" href="https://www.mdpi.com/2673-4591/39/1/38">https://www.mdpi.com/2673-4591/39/1/38</a></p>
 </div>
 </div>
 </div>
@@ -315,21 +319,6 @@ ref_intext_figure5_ref_id</div>
 Clarke et al., 2023</div>
 <figure class="align-default">
 <img alt="../_images/clarke_et_al_2023_eqn_rai1.png" class="img-grid" src="../_images/clarke_et_al_2023_eqn_rai1.png" />
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Clarke et al., 2023</div>
-<figure class="align-default">
-<img alt="../_images/clarke_et_al_2023_eqn_rai2.png" class="img-grid" src="../_images/clarke_et_al_2023_eqn_rai2.png" />
 </figure>
 </div>
 </div>
@@ -435,8 +424,8 @@ Russell, 2020</div>
 </div>
 </div>
 </div>
-<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
 Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -447,6 +436,7 @@ Microbiome Analysis: Relative Abundance Boxplots</div>
     width="100%"
     height="900"
     src="https://guthub.org/shiny/sample-apps/absboxplot/ "
+    loading="lazy"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -454,8 +444,8 @@ Microbiome Analysis: Relative Abundance Boxplots</div>
 </div>
 </div>
 </div>
-<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
 Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -539,12 +529,66 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <td class="text-left"><p><a class="reference external" href="https://www.andrewheiss.com/blog/2022/05/09/hurdle-lognormal-gaussian-brms">https://www.andrewheiss.com/blog/2022/05/09/hurdle-lognormal-gaussian-brms</a></p></td>
 <td class="text-left"><p>ref_bib_resource11_ref_id</p></td>
 </tr>
+<tr class="row-even"><td class="text-left"><p>resource12_type</p></td>
+<td class="text-left"><p>resource12_name</p></td>
+<td class="text-left"><p>resource12_note</p></td>
+<td class="text-left"><p>resource12_url</p></td>
+<td class="text-left"><p>ref_bib_resource12_ref_id</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>resource13_type</p></td>
+<td class="text-left"><p>resource13_name</p></td>
+<td class="text-left"><p>resource13_note</p></td>
+<td class="text-left"><p>resource13_url</p></td>
+<td class="text-left"><p>ref_bib_resource13_ref_id</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>resource14_type</p></td>
+<td class="text-left"><p>resource14_name</p></td>
+<td class="text-left"><p>resource14_note</p></td>
+<td class="text-left"><p>resource14_url</p></td>
+<td class="text-left"><p>ref_bib_resource14_ref_id</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>resource15_type</p></td>
+<td class="text-left"><p>resource15_name</p></td>
+<td class="text-left"><p>resource15_note</p></td>
+<td class="text-left"><p>resource15_url</p></td>
+<td class="text-left"><p>ref_bib_resource15_ref_id</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>resource16_type</p></td>
+<td class="text-left"><p>resource16_name</p></td>
+<td class="text-left"><p>resource16_note</p></td>
+<td class="text-left"><p>resource16_url</p></td>
+<td class="text-left"><p>ref_bib_resource16_ref_id</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>resource17_type</p></td>
+<td class="text-left"><p>resource17_name</p></td>
+<td class="text-left"><p>resource17_note</p></td>
+<td class="text-left"><p>resource17_url</p></td>
+<td class="text-left"><p>ref_bib_resource17_ref_id</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>resource18_type</p></td>
+<td class="text-left"><p>resource18_name</p></td>
+<td class="text-left"><p>resource18_note</p></td>
+<td class="text-left"><p>resource18_url</p></td>
+<td class="text-left"><p>ref_bib_resource18_ref_id</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>resource19_type</p></td>
+<td class="text-left"><p>resource19_name</p></td>
+<td class="text-left"><p>resource19_note</p></td>
+<td class="text-left"><p>resource19_url</p></td>
+<td class="text-left"><p>ref_bib_resource19_ref_id</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>resource20_type</p></td>
+<td class="text-left"><p>resource20_name</p></td>
+<td class="text-left"><p>resource20_note</p></td>
+<td class="text-left"><p>resource20_url</p></td>
+<td class="text-left"><p>ref_bib_resource20_ref_id</p></td>
+</tr>
 </tbody>
 </table>
 </div>
 </div>
-<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
 References</label><div class="sd-tab-content docutils">
 <p>Anderson, D. R. (2001). The Need to Get the Basics Right in Wildlife Field Studies. <em>Wildlife Society Bulletin, 29</em>(4), 1294–1297. <a class="reference external" href="https://www.jstor.org/stable/3784156">https://www.jstor.org/stable/3784156</a></p>
 <p>Banks‐Leite, C., Pardini, R., Boscolo, D., Cassano, C. R., Püttker, T., Barros, C. S., &amp; Barlow, J. (2014). Assessing the utility of statistical adjustments for imperfect detection in tropical conservation science. <em>Journal of Applied Ecology, 51</em>(4), 849–859. <a class="reference external" href="https://doi.org/10.1111/1365-2664.12272">https://doi.org/10.1111/1365-2664.12272</a></p>

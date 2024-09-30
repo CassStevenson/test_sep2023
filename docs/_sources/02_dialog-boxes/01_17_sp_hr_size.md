@@ -18,7 +18,7 @@ editor_options:
 # {{ title_i_sp_hr_size }}
 
 ::::::{note}
-Dont have information on home range size? Check out the “Shiny Apps/Widgets” tab to see if information for your Target Species is available for in our “Species home range / body size lookup.”
+Unsure about the size of your Target Species? There may be information available in the “Species home range / body size lookup”; see the **Shiny Apps/Widgets** tab below.
 ::::::
 
 :::::::{tab-set}
@@ -26,10 +26,10 @@ Dont have information on home range size? Check out the “Shiny Apps/Widgets”
 ::::::{tab-item} Overview
 Home range size will not be exactly the same for every animal of a certain species; when thinking of home range size in the context of study design, we are really thinking about the average home range size for individuals of that species for the duration of your study.
 
-```{figure} ../03_images/03_image_files/00_home_range.jpg
+:::{figure} ../03_images/03_image_files/00_home_range.jpg
 :align: center
 :width: 300px
-```
+:::
 
 **Home range**: the area within which an animal normally lives and finds what it needs to survive and reproduce.
 
@@ -45,11 +45,12 @@ Home range size information should, ideally, be chosen to reflect the conditions
 ::::::
 
 ::::::{tab-item} In-depth
+This section will be available soon! In the meantime, check out the information in the other tabs!
 
-```{figure} ../03_images/03_image_files/00_coming_soon.png
+:::{figure} ../03_images/03_image_files/00_coming_soon.png
 :width: 300px
 :align: center
-```
+:::
 
 ::::::
 

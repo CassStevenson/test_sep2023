@@ -17,9 +17,15 @@ editor_options:
 (i_mod_occupancy)=
 # {{ name_mod_occupancy }}
 
+test
+
+:::::{hint}
+I am a note
+:::::
+
 **{{ term_mod_occupancy }}**: {{ term_def_mod_occupancy }}
 
-:::::::{dropdown} Assumptions, Pros, Cons
+::::::{dropdown} Assumptions, Pros, Cons
 :::::{grid}
 
 ::::{grid-item-card} Assumptions
@@ -41,7 +47,7 @@ editor_options:
 - {{ mod_occupancy_con_02 }}
 ::::
 :::::
-:::::::
+::::::
 
 :::::::{tab-set}
 
@@ -57,7 +63,7 @@ This section will be available soon! In the meantime, check out the information 
 
 ::::::{tab-item} In-depth
 :::{note}
-**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2024)
+**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al.. 2024)
 :::
 
 Occupancy models describe spatial patterns of animal occurrence ({{ ref_intext_sollmann_2018 }}) and have been proposed as a proxy for abundance ({{ ref_intext_noon_et_al_2012 }}). They ask: what proportion of a study area is inhabited by a population – that is, at how many camera sites do one or more individuals of a species occur ({{ ref_intext_mackenzie_et_al_2017 }})? The basic equation for occupancy is: 
@@ -80,8 +86,9 @@ However, many researchers have cautioned against the use occupancy as an index. 
 
 Despite its widespread use, occupancy may be particularly problematic for camera trap studies due to the violation of the closure assumption. Burton et al. (2015) highlighted that many camera trap studies using occupancy do not explicitly define the “site,” although is often implicitly given as some larger area around a camera trap. Since camera trap studies typically target mammal species with relatively large home ranges, the site closure assumption is almost certainly violated in most cases. Many camera trappers therefore assume that “occupancy” is in fact “use” of a site (i.e., the site is not closed), and that detection probability also includes availability for detection. Mackenzie et al. (2017) suggested that estimates should be unbiased if movements in and out of a site are random, but this assumption is rarely tested. And where occupancy estimates have been tested using realistic mammal movements, they have generally performed poorly ({{ ref_intext_neilson_et_al_2018 }};  {{ ref_intext_stewart_et_al_2018 }}).
 
-:::::
+::::::
 
+::::::{tab-item} Visual resources
 :::::{grid} 3
 :gutter: 1
 :padding: 0
@@ -110,6 +117,7 @@ We used images of coyotes collected along transects following an urban gradient 
 :::
    
 ::::
+
 :::::
 
 :::::{grid} 3
@@ -201,8 +209,7 @@ figure12_caption
 ::::{grid-item-card} {{ ref_intext_cove_2020a }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/n21Ugw0lYcY?si=RUCD7WjcLPJdHR00" frameborder="0" allowfullscreen
-      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    <iframe src="https://www.youtube.com/embed/n21Ugw0lYcY?si=RUCD7WjcLPJdHR00" loading="lazy" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
 
@@ -211,10 +218,7 @@ Occupancy Modeling Video 1 -- Sampling Techniques for Mammals
 
 ::::{grid-item-card} {{ ref_intext_cove_2020b }} 
 <div>
-  <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/u--F8_oRpVU?si=XzL4GMaQmvlL-noj" frameborder="0" allowfullscreen
-      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-  </div>
+  <div style="position:relative;padding-top:56.25%;"><iframe src="https://www.youtube.com/embed/u--F8_oRpVU?si=XzL4GMaQmvlL-noj" loading="lazy" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 </div>
 
 Occupancy Modeling Video 2 -- Introductory Statistical Review
@@ -223,7 +227,7 @@ Occupancy Modeling Video 2 -- Introductory Statistical Review
 ::::{grid-item-card} {{ ref_intext_cove_2020c }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/-F-txltI_iA?si=C8R-MQ3pKcskOcQt" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/-F-txltI_iA?si=C8R-MQ3pKcskOcQt" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -238,9 +242,10 @@ Occupancy Modeling Video 3 -- What are Occupancy Models and What are the Applica
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext_cove_2020d }} 
+
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/DVo4KVMPnWg?si=m_umrFr9FjNb9KlK" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/DVo4KVMPnWg?si=m_umrFr9FjNb9KlK" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -249,9 +254,10 @@ Occupancy Modeling Video 4 -- How to Run and Interpret the Models in PRESENCE
 ::::
 
 ::::{grid-item-card} {{ ref_intext_proteus_2018 }}
+
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/Sp4kb4_TiBA?si=HfYJ3DgqOJfiJ4Z4l" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/Sp4kb4_TiBA?si=HfYJ3DgqOJfiJ4Z4l" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -262,100 +268,27 @@ Occupancy modelling - more than species presence/absence! (Darryl MacKenzie)
 ::::{grid-item-card} {{ ref_intext_proteus_2019a }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/zKQFY8W4ceU?si=ibziVu2KyWro5IUx" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/zKQFY8W4ceU?si=ibziVu2KyWro5IUx" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
 
 Occupancy modelling - the difference between probability and proportion of units occupied
 ::::
-:::::
 
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_proteus_2019b }}
-<div>
-  <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/tCh7rTu6fvQ?si=xHlbwdQa69Kma-Ma" frameborder="0" allowfullscreen
-      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-  </div>
-</div>
-
-Occupancy models - how many covariates can I include?
-::::
-
-::::{grid-item-card} {{ ref_intext_weecology_2020 }}
-<div>
-  <div style="position:relative;padding-top:56.25%;">
-    <iframe src="<https://www.youtube.com/embed/0VObf2rMrI8?si=cDKbg_-IzRZNGq8T>" frameborder="0" allowfullscreen
-      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-  </div>
-</div>
-
-Introduction to Species Distribution Modeling Using R
-::::
-
-::::{grid-item-card} {{ ref_intext_vid9_ref_id }}
-<div>
-  <div style="position:relative;padding-top:56.25%;">
-    <iframe src="vid9_url" frameborder="0" allowfullscreen
-      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-  </div>
-</div>
-
-vid9_caption
-::::
 :::::
 
 ::::::
 
 ::::::{tab-item} Shiny apps/Widgets
-Check back in the future!
-::::::
-
-::::::{tab-item} Shiny apps/Widgets
-:::::{card} shiny_name
-shiny_caption
-
-<iframe 
-    width="100%"
-    height="900"
-    src="shiny_url"
-    loading="lazy"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-:::::
-::::::
-
-::::::{tab-item} Shiny apps/Widgets
-:::::{card}
-::::{dropdown} shiny_name
-shiny_caption
-
-<iframe 
-    width="100%"
-    height="900"
-    src="shiny_url"
-    loading="lazy"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-::::
-::::{dropdown} Bias in single-season occupancy models
+::::{card} Bias in single-season occupancy models
 Compute the relative bias (in %) in the maximum-likelihood estimator of the occupancy probability ψ in a single-season (aka static) occupancy model with constant parameters fitted with the package 'unmarked'.
 {{ ref_bib_gimenez_2020a }}
 
-<iframe
+<iframe https://ecologicalstatistics.shinyapps.io/bias_occupancy
     width="100%"
     height="900"
-    src="https://ecologicalstatistics.shinyapps.io/bias_occupancy/"
-    loading="lazy"
+    src=""
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -364,28 +297,27 @@ Compute the relative bias (in %) in the maximum-likelihood estimator of the occu
 :::::
 ::::::
 
-:::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
-|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------| 
+|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | rJAGS/R code | mfidino/multi-state-occupancy-models |     | <https://github.com/mfidino/multi-state-occupancy-models> | {{ ref_bib_fidino_2021a }} |
-| JAGS/R code | A gentle introduction to an integrated occupancy model that combines presence-only and detection/non-detection data, and how to fit it in JAGS; <br>integrated-occupancy-model” |      | <https://masonfidino.com/bayesian_integrated_model/>;<br><https://github.com/mfidino/integrated-occupancy-model> | {{ ref_bib_fidino_2021b }}; <br><br>{{ ref_bib_fidino_2021c }} |
+| JAGS/R code | A gentle introduction to an integrated occupancy model that combines presence-only and detection/non-detection data, and how to fit it in JAGS; <br>integrated-occupancy-model” |      | <https://masonfidino.com/bayesian_integrated_model/>;<br><https://github.com/mfidino/integrated-occupancy-model> | {{ ref_bib_fidino_2021b }}; {{ ref_bib_fidino_2021c }} |
 | JAGS code/Tutorial | So, you don't have enough data to fit a dynamic occupancy model? An introduction to auto-logistic occupancy models; <br>auto-logistic-occupancy | 
- | <https://masonfidino.com/autologistic_occupancy_model/>;<br><https://github.com/mfidino/auto-logistic-occupancy> | {{ ref_bib_fidino_2021d }}; <br><br>{{ ref_bib_fidino_2021e }} |
+ | <https://masonfidino.com/autologistic_occupancy_model/>;<br><https://github.com/mfidino/auto-logistic-occupancy> | {{ ref_bib_fidino_2021d }}; {{ ref_bib_fidino_2021e }} |
 | R package | Package “autoOcc” | An R package for fitting autologistic occupancy models | <https://github.com/mfidino/autoOcc> | {{ ref_bib_fidino_2023 }} |
 | R code | mfidino/periodicity | Using Fourier series to predict periodic patterns in dynamic occupancy models | <https://github.com/mfidino/periodicity> | {{ ref_bib_fidino_magle_2017 }} |
-| resource13_type | resource13_name | 
- | resource_13_url | {{ ref_bib_resource6_ref_id }} |
 | R code/Tutorial | “An Introduction to Camera Trap Data Management and Analysis in R > Chapter 11 Occupancy” |     | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html> | {{ ref_bib_wildco_lab_2021c }} |
 | Program  | Program “PRESENCE” | "Relatively simple, but comprehensive, software dedicated to occupancy estimation. Linux version available. Can also be used for occupancy-based species richness estimation." (Wearn & Glover-Kapfer, 2017) | **Software**: <www.mbr-pwrc.usgs.gov/software/presence.html>;<br>**Help forum**: <www.phidot.org>| {{ ref_bib_hines_2006}} |
 | R package | Package “RPresence” | “The R counterpart to Presence. Cross-platform (Windows, Mac and Linux)." (Wearn & Glover-Kapfer, 2017) | <https://www.mbr-pwrc.usgs.gov/software/presence.shtml> | {{ ref_bib_hines_2006 }} |
-| R package | R package "unmarked” | "Implements a wide variety of occupancy and count-based abundance models (the latter are mostly not appropriate for camera-trapping). Actively being developed and supported by a community of users. Cross-platform (Windows, Mac and Linux)." (Wearn & Glover-Kapfer, 2017) | <https://cran.r-project.org/web/packages/unmarked/index.html>;<br><https://groups.google.com/d/forum/unmarked,>;<br>https://hmecology.github.io/unmarked> | {{ ref_bib_kellner_et_al_2023 }}; <br><br>{{ ref_bib_fiske_chandler_2011 }} |
+| R package | R package "unmarked” | "Implements a wide variety of occupancy and count-based abundance models (the latter are mostly not appropriate for camera-trapping). Actively being developed and supported by a community of users. Cross-platform (Windows, Mac and Linux)." (Wearn & Glover-Kapfer, 2017) | <https://cran.r-project.org/web/packages/unmarked/index.html>;<br><https://groups.google.com/d/forum/unmarked,>;<br>https://hmecology.github.io/unmarked> | {{ ref_bib_kellner_et_al_2023 }}; {{ ref_bib_fiske_chandler_2011 }} |
 | R code/Tutorial | Multi-season Occupancy Models |     | <https://darinjmcneil.weebly.com/multi-season-occupancy.html> | {{ ref_bib_mcneil_nd }} |
 | R package | Package “detect” | R package for analyzing wildlife data with detection error | <https://github.com/psolymos/detect> | {{ ref_bib_solymos_2023 }} |
 | Spreadsheet | OccPower.xlsx | Spreadsheet to compute power to detect difference in 2 independent occupancy estimates using asymptotic approximations described in Guillera-Arroita et. al. (2012). | [Download the XLS](../09_downloads/OccPower.xlsx)  | {{ ref_bib_guillera_arroita_et_al_2012 }} |
 | Tutorial | occupancyTuts: Occupancy modelling tutorials with RPresence | Occupancy modelling tutorials with RPresence | <https://doi.org/10.1111/2041-210X.14285> | {{ ref_bib_donovan_et_al_2024 }} |
-| R code/Tutorial | Implicit dynamics occupancy models in R | Implicit dynamics occupancy models with the R package RPresence. These models estimate occupancy probability when it changes through time without estimating colonization and extinction parameters.<br>The code and sample data from this tutorial are available on GitHub; <https://github.com/jamesepaterson/occupancyworkshop>. | <https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html> | {{ ref_bib_paterson_2024 }} |
-| Tutorial | Using the mgcvmgcv package to create a generalized additive occupancy model in R  |      | <https://masonfidino.com/generalized_additive_occupancy_model> | {{ ref_bib_fidino_et_al_2021f }} |
-| R Shiny app | Bias in single-season occupancy models | "Compute the relative bias (in %) in the maximum-likelihood estimator of the occupancy probability ψ in a single-season (aka static) occupancy model with constant parameters fitted with the package 'unmarked'." | **Repo**: <https://github.com/oliviergimenez/bias_occupancy_flexdashboard><br>**App**: <https://ecologicalstatistics.shinyapps.io/bias_occupancy> | {{ ref_bib_gimenez_2020a }} |
+| R code/Tutorial | Implicit dynamics occupancy models in R | Implicit dynamics occupancy models with the R package RPresence. These models estimate occupancy probability when it changes through time without estimating colonization and extinction parameters.<br>
+The code and sample data from this tutorial are available on GitHub; < https://github.com/jamesepaterson/occupancyworkshop>. | <https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html> | {{ ref_bib_paterson_2024 }} |
+| resource16_type | Using the mgcvmgcv package to create a generalized additive occupancy model in R  | resource16_note | <https://masonfidino.com/generalized_additive_occupancy_model> | {{ ref_bib_resource16_ref_id }} |
+| resource17_type | Bias in single-season occupancy models | "Compute the relative bias (in %) in the maximum-likelihood estimator of the occupancy probability ψ in a single-season (aka static) occupancy model with constant parameters fitted with the package 'unmarked'." | **Repo**: <https://github.com/oliviergimenez/bias_occupancy_flexdashboard><br>**App**: <https://ecologicalstatistics.shinyapps.io/bias_occupancy> | {{ ref_bib_gimenez_2020a }} |
 | R code | Bias in occupancy estimate for a static model | "R code to calculate bias in occupancy estimate as a function of the detection probability given various levels of occupancy probability, various number of sites and surveys." | <https://github.com/oliviergimenez/bias_occupancy>| {{ ref_bib_gimenez_2020b}} |
 | resource19_type | resource19_name | resource19_note | resource19_url | {{ ref_bib_resource19_ref_id }} |
 | resource20_type | resource20_name | resource20_note | resource20_url | {{ ref_bib_resource20_ref_id }} |

@@ -18,7 +18,7 @@ editor_options:
 # {{ title_i_sp_size }}
 
 :::{note}
-Unsure about the size of your Target Species? Check out the “Shiny Apps/Widgets” tab to see if information for your Target Species is available for in our “Species home range / body size lookup.”
+Unsure about the size of your Target Species? There may be information available in the “Species home range / body size lookup”; see the **Shiny Apps/Widgets** tab below.
 :::
 
 :::::::{tab-set}
@@ -56,7 +56,6 @@ This is an especially important consideration when targetting multiple species o
 ::::::
 
 ::::::{tab-item} In-depth
-In-depth
 This section will be available soon! In the meantime, check out the information in the other tabs!
 
 :::{figure} ../03_images/03_image_files/00_coming_soon.png
