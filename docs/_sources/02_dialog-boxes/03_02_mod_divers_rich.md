@@ -23,8 +23,6 @@ replace me with text
 :::
 -->
 
-**{{ term_mod_divers_rich }}**: {{ term_def_mod_divers_rich }}
-
 :::::::{dropdown} Assumptions, Pros, Cons
 :::::{dropdown} Species richness (Alpha diversity)
 ::::{grid}
@@ -107,7 +105,7 @@ You can refer to the “Assumptions, Pros, Cons” dropdown above to see relevan
 :align: center
 :scale: 60%
 ```
-**Pyron (2010) – Fig. 1**: Species evenness and species richness for animalcule communities. Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. 
+**Pyron (2010) - Fig. 1**: Species evenness and species richness for animalcule communities. Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. 
 :::
 
 ::::::
@@ -124,15 +122,15 @@ This section is still in progress
 ## Study design
 ### Number of cameras
 
-The optimal number of cameras required will be influenced by factors such as landscape heterogeneity, [survey](#survey) duration and spatial scale, species rarity and desired level of precision ({{ colyn_et_al_2018 }}; {{ rovero_et_al_2013 }}). For example, Kays et al. (2020) found that 25–35 cameras were needed for precise estimates of species richness, depending on the spatial scale of the [survey](#survey) and landscape diversity. In general, deploying more cameras and/or for longer durations always results in more precise estimates; however, users can consider rotating cameras across multiple sites for shorter durations (if feasible).
+The optimal number of cameras required will be influenced by factors such as landscape heterogeneity, [survey](#survey) duration and spatial scale, species rarity and desired level of precision ({{ ref_intext_colyn_et_al_2018 }}; {{ ref_intext_rovero_et_al_2013 }}). For example, Kays et al. (2020) found that 25–35 cameras were needed for precise estimates of species richness, depending on the spatial scale of the [survey](#survey) and landscape diversity. In general, deploying more cameras and/or for longer durations always results in more precise estimates; however, users can consider rotating cameras across multiple sites for shorter durations (if feasible).
 
 ### Duration - Camera days per camera location
 
-For measures of species richness or diversity, it is presumed that a camera is active long enough to detect rare species that may occur at a specific location ({{ wearn_gloverkapfer_2017 }}). If this is not the case, the results will indicate that the species was not present when it was (i.e., a “false negative”). False negatives may also be problematic for other measures, such as [**relative abundance indices**](#mods_relative_abundance) (count data, with or without [zero-inflation](#mods_zero_inflation) and/or [overdispersion](#mods_overdispersion)), even if the model type used can account for [imperfect detection](#imperfect_detection) explicitly (e.g., combined occurrence/[relative abundance](#mods_relative_abundance); [N-mixture models](#mods_n_mixture)).
+For measures of species richness or diversity, it is presumed that a camera is active long enough to detect rare species that may occur at a specific location ({{ ref_intext_wearn_gloverkapfer_2017 }}). If this is not the case, the results will indicate that the species was not present when it was (i.e., a “false negative”). False negatives may also be problematic for other measures, such as [**relative abundance indices**](#mods_relative_abundance) (count data, with or without [zero-inflation](#mods_zero_inflation) and/or [overdispersion](#mods_overdispersion)), even if the model type used can account for [imperfect detection](#imperfect_detection) explicitly (e.g., combined occurrence/[relative abundance](#mods_relative_abundance); [N-mixture models](#mods_n_mixture)).
 
 ### Number of cameras vs. Camera days per camera location
 
-If a user must choose between more cameras *vs.* fewer cameras with longer [surveys](#survey), Chatterjee et al. (2021) suggested that for rare species, the optimal precision can be obtained by increasing the number of sites, whereas for common species, increasing the number of samples is more effective. For measuring species richness, Si et al. (2014) found that rotating cameras to new sites was more efficient than leaving cameras at fewer sites for longer periods. O'Connor et al. (2017) also recommended utilizing more cameras *vs*. increasing study length to increase [detection probabilities](#detection_probability). In general, regardless of species and [objective](#survey_objectives), increasing the number of [survey](#survey) locations or the [survey](#survey) length improved precision ({{ chatterjee_et_al_2021 }}). 
+If a user must choose between more cameras *vs.* fewer cameras with longer [surveys](#survey), Chatterjee et al. (2021) suggested that for rare species, the optimal precision can be obtained by increasing the number of sites, whereas for common species, increasing the number of samples is more effective. For measuring species richness, Si et al. (2014) found that rotating cameras to new sites was more efficient than leaving cameras at fewer sites for longer periods. O'Connor et al. (2017) also recommended utilizing more cameras *vs*. increasing study length to increase [detection probabilities](#detection_probability). In general, regardless of species and [objective](#survey_objectives), increasing the number of [survey](#survey) locations or the [survey](#survey) length improved precision ({{ ref_intext_chatterjee_et_al_2021 }}). 
 Analysis
 
 Note that there are multiple parameters corresponding to different scales and incorporating of evenness; these include:
@@ -140,13 +138,13 @@ Note that there are multiple parameters corresponding to different scales and in
 - **{{ term_mod_divers_rich_beta }}**: {{ term_def_mod_divers_rich_beta }}
 - **{{ term_mod_divers_rich_gamma }}**: {{ term_def_mod_divers_rich_gamma }}
 
-Its important to note the difference in **Observed *vs* estimated species richness** (from {{ ref_intext_wearn_gloverkapfer_2019 }}):
+Its important to note the difference in **Observed *vs* estimated species richness** (from {{ ref_intext_wearn_gloverkapfer_2017 }}):
 - **Observed species richness**: the sum of the number of species seen (e.g. {{ ref_intext_kitamura_et_al_2010 }}; {{ ref_intext_pettorelli_et_al_2010 }}; {{ ref_intext_ahumada_et_al_2011 }}; {{ ref_intext_samejima_et_al_2012 }})
     -  Observed species richness will not, in general, be a reliable index of actual species richness because, even if sampling effort is strictly controlled, the detectability of species will vary across samples
 -  **Estimated species richness**: when the “sum of the number of species seen” is adjusted based on corrections for “imperfect detection” (i.e. the fact that some species in a given sample may have been missed)
-    -  (e.g. {{ ref_intext_tobler_et_al_2008 }}; {{ ref_intext_kinnaird-&-obrien-2012 }}; {{ ref_intext_brodie_et_al_2015 }}; {{ ref_intext_yue_et_al_2015 }}; {{ ref_intext_wearn_et_al_2016 }})
+    -  (e.g. {{ ref_intext_tobler_et_al_2008 }}; {{ ref_intext_kinnaird_obrien_2012 }}; {{ ref_intext_brodie_et_al_2015 }}; {{ ref_intext_yue_et_al_2015 }}; {{ ref_intext_wearn_et_al_2016 }})
 
-The **two principal ways of estimating species richness from remote camera data** are (from {{ ref_intext_wearn_gloverkapfer_2019 }}):<br> 
+The **two principal ways of estimating species richness from remote camera data** are (from {{ ref_intext_wearn_gloverkapfer_2017 }}):
  -   non-parametric estimators ({{ ref_intext_gotelli_chao_2013 }}), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. {{ ref_intext_tobler_et_al_2008 }}), 
 -   or 2) occupancy models ({{ ref_intext_mackenzie_et_al_2006 }})
 :::::
@@ -223,7 +221,7 @@ figure6_caption
 ::::{grid-item-card} {{ ref_intext_project_dragonfly_2019 }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/ghhZClDRK_g?si=khprL1u5NJrFduTb" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/ghhZClDRK_g?si=khprL1u5NJrFduTb" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -234,7 +232,7 @@ Abundance, species richness, and diversity
 ::::{grid-item-card} {{ ref_intext_mecks100_2018 }} 
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/4gcmAUpo9TU?si=_S-JYDDskR8QbHs5" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/4gcmAUpo9TU?si=_S-JYDDskR8QbHs5" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -245,7 +243,7 @@ Species accumulation and rarefaction curves
 ::::{grid-item-card} {{ ref_intext_riffomonas_project_2022a }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/wq1SXGQYgCs?si=Re5tglERblfkCNhDl" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/wq1SXGQYgCs?si=Re5tglERblfkCNhDl" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -262,7 +260,7 @@ Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC19
 ::::{grid-item-card} {{ ref_intext_vsn_international_2022 }} 
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/wBx7f4PP8RE?si=D6mtAMNMLlk3aH8H" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/wBx7f4PP8RE?si=D6mtAMNMLlk3aH8H" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -273,7 +271,7 @@ Species abundance tools in Genstat
 ::::{grid-item-card} {{ ref_intext_baylor_tutoring_center_2021 }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/UXJ0r4hjbqI?si=gYR6rOmIMgyibyvR" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/UXJ0r4hjbqI?si=gYR6rOmIMgyibyvR" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -284,13 +282,31 @@ Species Diversity and Species Richness
 ::::{grid-item-card} {{ ref_intext_styring_2020a }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/KBByV3kR3IA?si=RPcG1lFQ-v0Shwaw" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/KBByV3kR3IA?si=RPcG1lFQ-v0Shwaw" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
 
 Field Ecology - Diversity Metrics in R
 ::::
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_riffomonas_project_2022b }}
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/ywHVb0Q-qsM?si=_xJ5jbFc6MDEQlAh" loading="lazy" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
+
+Generating a rarefaction curve from collector's curves in R within the tidyverse (CC198)
+::::
+
 :::::
 
 ::::::
@@ -344,7 +360,11 @@ Software for interpolation and extrapolation of species diversity.<br><br>{{ ref
 
 {{ ref_bib_benedetti_2024 }}
 
+{{ ref_bib_bioninja_nd }}
+
 {{ ref_bib_brodie_et_al_2015 }}
+
+{{ ref_bib_chatterjee_et_al_2021 }}
 
 {{ ref_bib_chao_et_al_2016 }}
 
@@ -364,9 +384,13 @@ Software for interpolation and extrapolation of species diversity.<br><br>{{ ref
 
 {{ ref_bib_kitamura_et_al_2010 }}
 
+{{ ref_bib_loreau_2010 }}
+
 {{ ref_bib_mackenzie_et_al_2006 }}
 
 {{ ref_bib_mecks100_2018 }}
+
+{{ ref_bib_oconnor_et_al_2017 }}
 
 {{ ref_bib_oksanen_et_al_2024 }}
 
@@ -382,6 +406,8 @@ Software for interpolation and extrapolation of species diversity.<br><br>{{ ref
 
 {{ ref_bib_samejima_et_al_2012 }}
 
+{{ ref_bib_si_et_al_2014 }}
+
 {{ ref_bib_styring_2020a }}
 
 {{ ref_bib_styring_2020b }}
@@ -391,6 +417,8 @@ Software for interpolation and extrapolation of species diversity.<br><br>{{ ref
 {{ ref_bib_vsn_international_2022 }}
 
 {{ ref_bib_wearn_et_al_2016 }}
+
+{{ ref_bib_wearn_gloverkapfer_2017 }}
 
 {{ ref_bib_wildco_lab_2021b }}
 

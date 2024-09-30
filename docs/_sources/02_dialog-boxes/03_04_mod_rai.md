@@ -158,7 +158,7 @@ https://www.mdpi.com/2673-4591/39/1/38
 ::::{grid-item-card} {{ ref_intext_dectre_accel_2016 }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/CvM6j8hE8lE?si=E_kNQm9YYwgUECM3" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/CvM6j8hE8lE?si=E_kNQm9YYwgUECM3" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -169,7 +169,7 @@ Using Hurdle Models to Analyze Zero-Inflated Count Data
 ::::{grid-item-card} {{ ref_intext_cao_2021 }} 
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/q2NRQBcihQY?si=r9NeRpegoj47uVn-" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/q2NRQBcihQY?si=r9NeRpegoj47uVn-" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -180,7 +180,7 @@ Hurdle models
 ::::{grid-item-card} {{ ref_intext_tilestats_2021 }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/ztNQvAabgtU?si=9rY7DVbBWN_ByPvf" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/ztNQvAabgtU?si=9rY7DVbBWN_ByPvf" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -197,7 +197,7 @@ Zero-inflated Poisson (ZIP) regression
 ::::{grid-item-card} {{ ref_intext_marinstats_2020a }} 
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/A8H6gc9Eq0w?si=Ade-D5-J5JtCZwil" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/A8H6gc9Eq0w?si=Ade-D5-J5JtCZwil" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -208,7 +208,7 @@ Poisson Regression Review
 ::::{grid-item-card} {{ ref_intext_marinstats_2020b }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/eIY--zc5f24?si=dgtSF_vfwUxuG1Mi" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/eIY--zc5f24?si=dgtSF_vfwUxuG1Mi" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -219,7 +219,7 @@ Poisson Regression: Zero Inflation (Excessive Zeros)
 ::::{grid-item-card} {{ ref_intext_russel_2020 }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="vid6_url" frameborder="0" allowfullscreen
+    <iframe src="vid6_url" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>

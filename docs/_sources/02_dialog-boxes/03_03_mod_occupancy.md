@@ -201,7 +201,7 @@ figure12_caption
 ::::{grid-item-card} {{ ref_intext_cove_2020a }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/n21Ugw0lYcY?si=RUCD7WjcLPJdHR00" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/n21Ugw0lYcY?si=RUCD7WjcLPJdHR00" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -212,7 +212,7 @@ Occupancy Modeling Video 1 -- Sampling Techniques for Mammals
 ::::{grid-item-card} {{ ref_intext_cove_2020b }} 
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/u--F8_oRpVU?si=XzL4GMaQmvlL-noj" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/u--F8_oRpVU?si=XzL4GMaQmvlL-noj" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -223,7 +223,7 @@ Occupancy Modeling Video 2 -- Introductory Statistical Review
 ::::{grid-item-card} {{ ref_intext_cove_2020c }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/-F-txltI_iA?si=C8R-MQ3pKcskOcQt" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/-F-txltI_iA?si=C8R-MQ3pKcskOcQt" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -240,7 +240,7 @@ Occupancy Modeling Video 3 -- What are Occupancy Models and What are the Applica
 ::::{grid-item-card} {{ ref_intext_cove_2020d }} 
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/DVo4KVMPnWg?si=m_umrFr9FjNb9KlK" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/DVo4KVMPnWg?si=m_umrFr9FjNb9KlK" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -251,7 +251,7 @@ Occupancy Modeling Video 4 -- How to Run and Interpret the Models in PRESENCE
 ::::{grid-item-card} {{ ref_intext_proteus_2018 }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/Sp4kb4_TiBA?si=HfYJ3DgqOJfiJ4Z4l" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/Sp4kb4_TiBA?si=HfYJ3DgqOJfiJ4Z4l" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -262,7 +262,7 @@ Occupancy modelling - more than species presence/absence! (Darryl MacKenzie)
 ::::{grid-item-card} {{ ref_intext_proteus_2019a }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/zKQFY8W4ceU?si=ibziVu2KyWro5IUx" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/zKQFY8W4ceU?si=ibziVu2KyWro5IUx" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -279,7 +279,7 @@ Occupancy modelling - the difference between probability and proportion of units
 ::::{grid-item-card} {{ ref_intext_proteus_2019b }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/tCh7rTu6fvQ?si=xHlbwdQa69Kma-Ma" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/tCh7rTu6fvQ?si=xHlbwdQa69Kma-Ma" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -290,7 +290,7 @@ Occupancy models - how many covariates can I include?
 ::::{grid-item-card} {{ ref_intext_weecology_2020 }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="<https://www.youtube.com/embed/0VObf2rMrI8?si=cDKbg_-IzRZNGq8T>" frameborder="0" allowfullscreen
+    <iframe src="<https://www.youtube.com/embed/0VObf2rMrI8?si=cDKbg_-IzRZNGq8T>" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -301,7 +301,7 @@ Introduction to Species Distribution Modeling Using R
 ::::{grid-item-card} {{ ref_intext_vid9_ref_id }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="vid9_url" frameborder="0" allowfullscreen
+    <iframe src="vid9_url" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
