@@ -89,7 +89,7 @@ The IS is relatively untested opposite its sister models. Simulations have shown
 :::{figure} ../03_images/03_image_files/moeller_lukacs_2021_fig1.png
 :class: img_grid
 :::
-**Moeller & Lukacs (2022)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart.
+**Moeller & Lukacs (2021)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart.
 ::::
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}

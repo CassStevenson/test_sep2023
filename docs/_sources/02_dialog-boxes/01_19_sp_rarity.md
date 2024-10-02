@@ -17,7 +17,8 @@ editor_options:
 (i_sp_rarity)=
 # {{ title_i_sp_rarity }}
 
-:::{info}
+:::{admonition}
+:type: info
 **Species rarity**: the number of individuals present of the species in question, relative to the total number of individuals of all species (or how “represented” is the species when considering the total number of individuals of all species).
 While technically “how rare” a species is will be change from place to place (e.g., will depend on geographic range, habitat specificity, local abundance, etc.; {{ref_intext_crisfield_et_al_2024}}), for the purposes of informing study design recommendations, the **species rarity categories are defined as follows**:
 

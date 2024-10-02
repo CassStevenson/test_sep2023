@@ -36,11 +36,26 @@ myst:
 </style>
 # Remote Camera Decision Support Tool - Concept Library
 
-:::{note}
+:::::{note}
+::::{grid} 2
+:gutter: 3
+
+:::{grid-item}
+:columns: 11
 *<font color='grey'>Items in grey/italics are not yet available.</font>*<br>
 Items in black/normal font are partially completely; to show BC AC how information from Clarke et al. (2023) might be included.<br>
 **Items in black/bold were presented for the demo (more broadly distributed than RCSC/BC AC).**
 :::
+
+:::{grid-item}
+:columns: 1
+
+{bdg-light-line}`Test<02_dialog-boxes/00_master_test.html>`
+{bdg-light-line}`Test 2<02_dialog-boxes/00_test_cross_ref.html>`
+{bdg-light-line}`Test 3<02_dialog-boxes/00_test_embed.html>`
+:::
+::::
+:::::
 
 (objectives-resources2)=
 ## Objectives & Resources

@@ -94,7 +94,7 @@ The STE has been field-tested on high-density ungulates and low-density carnivor
 :::{figure} ../03_images/03_image_files/moeller_lukacs_2021_fig1.png
 :class: img_grid
 :::
-**Moeller & Lukacs (2022)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart
+**Moeller & Lukacs (2021)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart
 ::::
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
@@ -142,7 +142,7 @@ We performed 1000 simulations for each of the three models at two step lengths f
 :::{figure} ../03_images/03_image_files/moeller_et_al_2018_fig7_clipped.png
 :class: img_grid
 :::
-**Moeller et al. (2018) - Fig. 7. Factors that influence accurate group counts. 
+**Moeller et al. (2018) - Fig. 7** Factors that influence accurate group counts. 
 :::{dropdown}
 Various factors can influence accurate counts of group size, including animal behavior (a, b), photograph quality (c), and weather (d). Although it may be difficult to accurately count group size in these four photographs, the species is still identifiable. In studies where group counts are consistently difficult but species identification is possible, the space to event model is a useful tool to estimate abundance.
 :::
