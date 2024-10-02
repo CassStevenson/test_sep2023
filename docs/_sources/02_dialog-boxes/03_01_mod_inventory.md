@@ -17,7 +17,7 @@ editor_options:
 (i_mod_inventory)=
 # {{ name_mod_inventory }}
 <!--
-:::{info}
+:::{note}
 replace me with text
 :::
 -->

@@ -35,17 +35,19 @@ Here are a few examples of comparable species for each body size options:
 :align: center
 :width: 50%
 :::
+
 **Kemp et al. (2022) - Pg 15 Fig 1** The graphic above shows how the height of the camera should reflect the size of the target animal to increase the chance of detection. In this case, the yellow area shows the field of view.
 
 **<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
 
-Body size affects the detection process ({{ ref_intext_obrien_et_al_2011 }}). Species with a larger body size are more likely to be detected; and therefore may require lower sampling effort than smaller species ({{ ref_intext_chatterjee_et_al_2021 }}). Larger species moving through the camera’s detection zone are more likely to trigger the camera ({{ ref_intext_chatterjee_et_al_2021 }}; {{ ref_intext_rowcliffe_et_al_2011 }}; {{ ref_intext_hofmeester_et_al_2017 }}); they can also be detected farther away or occur at wider angles ({{ ref_intext_rowcliffe_et_al_2011 }}; {{{ ref_intext_hofmeester_et_al_2017 }}). Whereas, small mammals are often undetected due to their small size ({{ ref_intext_obrien_et_al_2011 }}; {{ ref_intext_anile_devillard_2016 }}) and because “small species which routinely move at fast speeds, such as stoats and weasels, are likely to have especially small detection zones” ({{ ref_intext_glen_et_al_2013 }}).
+Body size affects the detection process ({{ ref_intext_obrien_et_al_2011 }}). Species with a larger body size are more likely to be detected; and therefore may require lower sampling effort than smaller species ({{ ref_intext_chatterjee_et_al_2021 }}). Larger species moving through the camera’s detection zone are more likely to trigger the camera ({{ ref_intext_chatterjee_et_al_2021 }}; {{ ref_intext_rowcliffe_et_al_2011 }}; {{ ref_intext_hofmeester_et_al_2017 }}); they can also be detected farther away or occur at wider angles ({{ ref_intext_rowcliffe_et_al_2011 }}; {{ ref_intext_hofmeester_et_al_2017 }}). Whereas, small mammals are often undetected due to their small size ({{ ref_intext_obrien_et_al_2011 }}; {{ ref_intext_anile_devillard_2016 }}) and because “small species which routinely move at fast speeds, such as stoats and weasels, are likely to have especially small detection zones” ({{ ref_intext_glen_et_al_2013 }}).
 
 :::{figure} ../03_images/03_image_files/kays_et_al_2021_fig6_clipped.png
 :align: center
 :width: 40%
 :::
-**Kays et al. (2021) - Fig. 6**: Relationship between trigger probability and body mass for four focal species (ascending order by weight: gray fox, raccoon, coyote, white-tailed deer). Error bars show standard deviation. Body mass values come from North Carolina animals in the mammal collections of the NC Museum of Natural Sciences.
+
+**Kays et al. (2021) - Fig. 6**:\ Relationship between trigger probability and body mass for four focal species (ascending order by weight: gray fox, raccoon, coyote, white-tailed deer). Error bars show standard deviation. Body mass values come from North Carolina animals in the mammal collections of the NC Museum of Natural Sciences.
 
 When thinking beyond the camera's FOV, larger species generally also have larger home ranges ({{ ref_intext_garland_1983 }}) and daily movement distances, making them more likely to be detected at multiple cameras ({{ ref_intext_chatterjee_et_al_2021 }}), therefore there are also implications for which models may be appropriate (due to assumptions of “site closure” / “independent locations”).
 
@@ -107,7 +109,7 @@ Fitted values are predicted for fixed effects only from the averaged model. The 
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext_bodysize_movement.png }}
+::::{grid-item-card} {{ ref_intext_bodysize_movement }}
 :::{figure} ../03_images/03_image_files/bodysize_movement.png 
 :class: img_grid
 :::

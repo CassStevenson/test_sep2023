@@ -17,7 +17,7 @@ editor_options:
 (i_mod_scr_secr)=
 # {{ name_mod_scr_secr }}
 <!--
-:::{info}
+:::{note}
 replace me with text
 :::
 -->

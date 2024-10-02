@@ -57,9 +57,14 @@ div.img_grid {
 }
 
 div.h_bold {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #2F5496
+    color: #2F5496;
+}
+
+span.underline {
+    text-decoration: underline;
+    color: #2F5496;
 }
 
 /* Block Quotes
@@ -75,6 +80,11 @@ div.indent {
   border-left: 8px solid  white;
   background-color: white;
   padding: 20px;
+}
+
+div.hanging {
+padding-left: 2em
+text-indent: -2em
 }
 
 div.admonition.admonition-youtube {

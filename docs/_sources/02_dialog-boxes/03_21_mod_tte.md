@@ -17,7 +17,7 @@ editor_options:
 (i_mod_tte)=
 # {{ name_mod_tte }}
 <!--
-:::{info}
+:::{note}
 replace me with text
 :::
 -->

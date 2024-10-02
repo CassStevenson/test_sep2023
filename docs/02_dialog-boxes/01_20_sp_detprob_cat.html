@@ -31,11 +31,11 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0be1e2fb" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=6423beaa" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -147,6 +147,34 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="detection-probability">
 <span id="i-sp-det-prob-cat"></span><h1>Detection probability<a class="headerlink" href="#detection-probability" title="Link to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Detection probability (aka detectability)</strong>: The probability (likelihood) that an individual of the population of interest is included in the count at time or location <em>i</em>.</p>
+<p><strong>Detection probability categories are defined as follows:</strong></p>
+<ul class="simple">
+<li><p><strong>Low</strong>:</p>
+<ul>
+<li><p>&lt; 0.1 (Tobler &amp; Powell, 2013)</p></li>
+<li><p>&lt; 0.05 (Shannon et al., 2014)</p></li>
+<li><p>0–0.37 (Chatterjee et al., 2021)</p></li>
+</ul>
+</li>
+<li><p><strong>Medium</strong>:</p>
+<ul>
+<li><p>0.37–0.67 (Chatterjee et al., 2021)</p></li>
+</ul>
+</li>
+<li><p><strong>High</strong>:</p>
+<ul>
+<li><p>0.67–1 (Chatterjee et al., 2021)</p></li>
+<li><p>&gt; 0.5 (Mackenzie &amp; Royle, 2005)</p></li>
+</ul>
+</li>
+<li><p><strong>Unknown</strong>: select this option if you’re not sure of the detection probability of your <a class="reference internal" href="09_glossary.html#target-species"><span class="std std-ref">Target Species</span></a> (single or multiple species)</p></li>
+<li><p><strong>Multiple</strong>: select this option if your study include multiple <a class="reference internal" href="09_glossary.html#target-species"><span class="std std-ref">Target Species</span></a>.</p></li>
+</ul>
+<p><strong>Select “Unknown” if you’re not sure.</strong></p>
+</div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">

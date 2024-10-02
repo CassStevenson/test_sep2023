@@ -23,6 +23,11 @@ test
 I am a note
 :::::
 
+:::::{admonition}
+:type: info
+I am a note
+:::::
+
 :::::::{tab-set}
 
 ::::::{tab-item} TEST
@@ -35,12 +40,10 @@ I am a note
 - An icon {fab}`gitkraken;sd-text-success fa-xl`, some more text.
 - An icon {fas}`skull;sd-text-danger`, some more text.
 
-```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
-:color: primary
-:shadow:
-:align: center
-Concept library
-```
+
+**<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
+<div class="h_bold">How does this relate to study design?</div>
+
 
 ```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
 :color: primary
@@ -50,22 +53,57 @@ Concept library
 Concept library
 ```
 
+:::{figure} ../logo.png
+:width: 50%
+:align: left
+:::
+<div class="indent">figure 1. this is a figure caption</div>
+
+here is some info with a {bdg}`plain badge`
+
+here is some info with a {bdg}`plain badge<tooltip="I am a tooltip">`
+
+{bdg-link-white}`explicit title <https://ab-rcsc.github.io/rc-decision-support-tool_concept-library>`
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+
+```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
+:color: primary
+:shadow:
+:align: center
+:tooltip: I am a tooltip
+Concept library
+```
+
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+  Tooltip with HTML
+</button>
+
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+
+
+
+
 **<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
 <div class="h_bold">How does this relate to study design?</div>
 
-
-```{literalinclude} include/example.py
-```
-
-```{literalinclude} include/00_test_image.md
-```
-
+this one
 ```{include} include/00_test_image.md
 ```
-
-```{embed} include/00_test_image.md
-```
-
 
 ::::::
 ::::::{tab-item} Overview
@@ -333,25 +371,12 @@ Compute the relative bias (in %) in the maximum-likelihood estimator of the occu
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------| 
 | rJAGS/R code | mfidino/multi-state-occupancy-models |     | <https://github.com/mfidino/multi-state-occupancy-models> | {{ ref_bib_fidino_2021a }} |
 | JAGS/R code | A gentle introduction to an integrated occupancy model that combines presence-only and detection/non-detection data, and how to fit it in JAGS; <br>integrated-occupancy-model” |      | <https://masonfidino.com/bayesian_integrated_model/>;<br><https://github.com/mfidino/integrated-occupancy-model> | {{ ref_bib_fidino_2021b }}; {{ ref_bib_fidino_2021c }} |
-| JAGS code/Tutorial | So, you don't have enough data to fit a dynamic occupancy model? An introduction to auto-logistic occupancy models; <br>auto-logistic-occupancy | 
- | <https://masonfidino.com/autologistic_occupancy_model/>;<br><https://github.com/mfidino/auto-logistic-occupancy> | {{ ref_bib_fidino_2021d }}; {{ ref_bib_fidino_2021e }} |
-| R package | Package “autoOcc” | An R package for fitting autologistic occupancy models | <https://github.com/mfidino/autoOcc> | {{ ref_bib_fidino_2023 }} |
-| R code | mfidino/periodicity | Using Fourier series to predict periodic patterns in dynamic occupancy models | <https://github.com/mfidino/periodicity> | {{ ref_bib_fidino_magle_2017 }} |
-| R code/Tutorial | “An Introduction to Camera Trap Data Management and Analysis in R > Chapter 11 Occupancy” |     | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html> | {{ ref_bib_wildco_lab_2021c }} |
-| Program  | Program “PRESENCE” | "Relatively simple, but comprehensive, software dedicated to occupancy estimation. Linux version available. Can also be used for occupancy-based species richness estimation." (Wearn & Glover-Kapfer, 2017) | **Software**: <www.mbr-pwrc.usgs.gov/software/presence.html>;<br>**Help forum**: <www.phidot.org>| {{ ref_bib_hines_2006}} |
 | R package | Package “RPresence” | “The R counterpart to Presence. Cross-platform (Windows, Mac and Linux)." (Wearn & Glover-Kapfer, 2017) | <https://www.mbr-pwrc.usgs.gov/software/presence.shtml> | {{ ref_bib_hines_2006 }} |
 | R package | R package "unmarked” | "Implements a wide variety of occupancy and count-based abundance models (the latter are mostly not appropriate for camera-trapping). Actively being developed and supported by a community of users. Cross-platform (Windows, Mac and Linux)." (Wearn & Glover-Kapfer, 2017) | <https://cran.r-project.org/web/packages/unmarked/index.html>;<br><https://groups.google.com/d/forum/unmarked,>;<br>https://hmecology.github.io/unmarked> | {{ ref_bib_kellner_et_al_2023 }}; {{ ref_bib_fiske_chandler_2011 }} |
 | R code/Tutorial | Multi-season Occupancy Models |     | <https://darinjmcneil.weebly.com/multi-season-occupancy.html> | {{ ref_bib_mcneil_nd }} |
 | R package | Package “detect” | R package for analyzing wildlife data with detection error | <https://github.com/psolymos/detect> | {{ ref_bib_solymos_2023 }} |
 | Spreadsheet | OccPower.xlsx | Spreadsheet to compute power to detect difference in 2 independent occupancy estimates using asymptotic approximations described in Guillera-Arroita et. al. (2012). | [Download the XLS](../09_downloads/OccPower.xlsx)  | {{ ref_bib_guillera_arroita_et_al_2012 }} |
 | Tutorial | occupancyTuts: Occupancy modelling tutorials with RPresence | Occupancy modelling tutorials with RPresence | <https://doi.org/10.1111/2041-210X.14285> | {{ ref_bib_donovan_et_al_2024 }} |
-| R code/Tutorial | Implicit dynamics occupancy models in R | Implicit dynamics occupancy models with the R package RPresence. These models estimate occupancy probability when it changes through time without estimating colonization and extinction parameters.<br>
-The code and sample data from this tutorial are available on GitHub; < https://github.com/jamesepaterson/occupancyworkshop>. | <https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html> | {{ ref_bib_paterson_2024 }} |
-| resource16_type | Using the mgcvmgcv package to create a generalized additive occupancy model in R  | resource16_note | <https://masonfidino.com/generalized_additive_occupancy_model> | {{ ref_bib_resource16_ref_id }} |
-| resource17_type | Bias in single-season occupancy models | "Compute the relative bias (in %) in the maximum-likelihood estimator of the occupancy probability ψ in a single-season (aka static) occupancy model with constant parameters fitted with the package 'unmarked'." | **Repo**: <https://github.com/oliviergimenez/bias_occupancy_flexdashboard><br>**App**: <https://ecologicalstatistics.shinyapps.io/bias_occupancy> | {{ ref_bib_gimenez_2020a }} |
-| R code | Bias in occupancy estimate for a static model | "R code to calculate bias in occupancy estimate as a function of the detection probability given various levels of occupancy probability, various number of sites and surveys." | <https://github.com/oliviergimenez/bias_occupancy>| {{ ref_bib_gimenez_2020b}} |
-| resource19_type | resource19_name | resource19_note | resource19_url | {{ ref_bib_resource19_ref_id }} |
-| resource20_type | resource20_name | resource20_note | resource20_url | {{ ref_bib_resource20_ref_id }} |
 ::::::
 
 ::::::{tab-item} References

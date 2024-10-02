@@ -17,7 +17,7 @@ editor_options:
 (i_mod_rai)=
 # {{ name_mod_rai }}
 <!--
-:::{info}
+:::{note}
 replace me with text
 :::
 -->

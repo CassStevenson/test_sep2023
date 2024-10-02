@@ -17,7 +17,7 @@ editor_options:
 (i_sp_det_prob_cat)=
 # {{ title_i_sp_detprob_cat }}
 
-:::::::{info}
+:::::::{note}
 **{{ term_detection_probability }}**: {{ term_def_detection_probability }}
 
 **Detection probability categories are defined as follows:**

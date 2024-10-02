@@ -17,7 +17,7 @@ editor_options:
 (i_sp_hr_size)=
 # {{ title_i_sp_hr_size }}
 
-:::{info}
+:::{note}
 **Home range**: the area within which an animal normally lives and finds what it needs to survive and reproduce.
 
 Unsure about the home range size of your Target Species? There may be information available in the “Species home range / body size lookup”; see the**Shiny Apps/Widgets** tab below.

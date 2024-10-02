@@ -14,8 +14,8 @@ editor_options:
   markdown: 
   wrap: none
 ---
-(i_design_camera_arrangement)=
-# Study area
+(i_design_camera_arrange)=
+# Camera arrangement
 
 :::::::{tab-set}
 

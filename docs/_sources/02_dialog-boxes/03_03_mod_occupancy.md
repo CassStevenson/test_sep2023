@@ -16,7 +16,7 @@ editor_options:
 ---
 # {{ name_mod_occupancy }}
 <!--
-:::{info}
+:::{note}
 replace me with text
 :::
 -->

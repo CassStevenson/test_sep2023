@@ -17,7 +17,7 @@ editor_options:
 (i_num_cams)=
 # {{ title_i_num_cams }}
 
-:::{info}
+:::{note}
 If you only have a set number of cameras to deploy (e.g., 30), select “Yes” and enter the number of cameras in the numeric field.
 
 If you aren’t limited by a certain number of cameras, select “No” and leave the numeric field blank. 
