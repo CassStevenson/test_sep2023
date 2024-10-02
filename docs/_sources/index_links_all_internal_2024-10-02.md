@@ -13,12 +13,6 @@ kernelspec:
 editor_options: 
   markdown: 
   wrap: none
-myst:
-  substitutions:
-    card_toc_prog1: |
-      :img-background: ./03_images/01_ui/background_orange.png
-      :padding: 1
-      :text-align: center
 ---
 <style>
     .bd-page-width {

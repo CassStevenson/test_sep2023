@@ -16,7 +16,7 @@ editor_options:
 ---
 <style>
     .bd-page-width {
-    max-width: 80%;  /* default is 88rem */
+    max-width: 85%;  /* default is 88rem */
 }
     .bd-main .bd-content .bd-article-container {
     max-width: 100%;  /* default is 60em */
