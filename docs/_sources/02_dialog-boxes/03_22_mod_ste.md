@@ -45,10 +45,10 @@ editor_options:
 ::::::{tab-item} Overview
 This section will be available soon!
 
-```{figure} ../03_images/03_image_files/00_coming_soon.png
+:::{figure} ../03_images/03_image_files/00_coming_soon.png
 :width: 300px
 :align: center
-```
+:::
 ::::::
 
 ::::::{tab-item} In-depth
@@ -56,7 +56,7 @@ This section will be available soon!
 **This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2024)
 :::
 
-The space-to-event model (STE) is an extension of the time-to-event model (TTE; see {bdg-link-primary-line}`Time-to-event<https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/ 03_21_mod_tte.html>`) that measures the area, instead of the time, sampled before an image of an animal is observed ({{ ref_intext_moeller_et_al_2018 }}). The conceptual underpinnings of the STE are the same as those of the TTE, with the exception that sampling occasions are collapsed into instantaneous samples using time-lapse images – photographs taken at predetermined periods of the day or night (e.g., every hour, every day at noon), regardless of whether animals are within frame (Figure 12; {{ ref_intext_granados 2021 }}; {{ ref_intext_moeller_et_al_2018 }}). Because they are collapsed into instants in time, there is no need to break sampling occasions down into sampling periods – and no need for measures of animal movement speed. 
+The space-to-event model (STE) is an extension of the time-to-event model (TTE; see {bdg-link-primary-line}`Time-to-event<https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/ 03_21_mod_tte.html>`) that measures the area, instead of the time, sampled before an image of an animal is observed ({{ ref_intext_moeller_et_al_2018 }}). The conceptual underpinnings of the STE are the same as those of the TTE, with the exception that sampling occasions are collapsed into instantaneous samples using time-lapse images – photographs taken at predetermined periods of the day or night (e.g., every hour, every day at noon), regardless of whether animals are within frame (Figure 12; {{ ref_intext_granados_2021 }}; {{ ref_intext_moeller_et_al_2018 }}). Because they are collapsed into instants in time, there is no need to break sampling occasions down into sampling periods – and no need for measures of animal movement speed. 
 
 :::{figure} ../03_images/03_image_files/clarke_et_al_2023_fig12_clipped.png
 :align: center
@@ -90,8 +90,8 @@ The STE has been field-tested on high-density ungulates and low-density carnivor
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext_moeller_lukacs_2022 }}
-:::{figure} ../03_images/03_image_files/moeller_lukacs_2022_fig1.png
+::::{grid-item-card} {{ ref_intext_moeller_lukacs_2021 }}
+:::{figure} ../03_images/03_image_files/moeller_lukacs_2021_fig1.png
 :class: img_grid
 :::
 **Moeller & Lukacs (2022)** The spaceNtime workflow for count data. The user will go through five major steps for STE, TTE, and IS analyses. If the user has presence/absence (0 and 1) data instead of count data, the IS analysis is not appropriate, and the IS pathway should be removed from the flowchart
@@ -156,10 +156,10 @@ Various factors can influence accurate counts of group size, including animal be
 Check back in the future!
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------| 
-| R package | spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs | free and open-source R package designed to assist in the implementation of the STE and TTE models, along with the IS estimator | <https://github.com/annam21/spaceNtime;<br><https://link.springer.com/article/10.1007/s42991-021-00181-8> | {{ ref_bib_moeller_lukacs_2022 }} |
+| R package | spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs | free and open-source R package designed to assist in the implementation of the STE and TTE models, along with the IS estimator | <https://github.com/annam21/spaceNtime;<br><https://link.springer.com/article/10.1007/s42991-021-00181-8> | {{ ref_bib_moeller_lukacs_2021 }} |
 ::::::
 
 ::::::{tab-item} References
@@ -169,7 +169,7 @@ Check back in the future!
 
 {{ ref_bib_gilbert_et_al_2020 }}
 
-{{ ref_bib_granados 2021 }}
+{{ ref_bib_granados_2021 }}
 
 {{ ref_bib_loonam_et_al_2021a }}
 
@@ -177,7 +177,7 @@ Check back in the future!
 
 {{ ref_bib_mcmurray_et_al_2023 }}
 
-{{ ref_bib_moeller_lukacs_2022 }}
+{{ ref_bib_moeller_lukacs_2021 }}
 
 {{ ref_bib_moeller_et_al_2018 }}
 ::::::

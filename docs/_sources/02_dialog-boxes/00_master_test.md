@@ -23,34 +23,51 @@ test
 I am a note
 :::::
 
-**{{ term_mod_occupancy }}**: {{ term_def_mod_occupancy }}
-
-::::::{dropdown} Assumptions, Pros, Cons
-:::::{grid}
-
-::::{grid-item-card} Assumptions
-- {{ mod_occupancy_assump_01 }}
-- {{ mod_occupancy_assump_02 }}
-- {{ mod_occupancy_assump_03 }}
-- {{ mod_occupancy_assump_04 }}
-- {{ mod_occupancy_assump_05 }}
-::::
-::::{grid-item-card} Pros
-- {{ mod_occupancy_pro_01 }}
-- {{ mod_occupancy_pro_02 }}
-- {{ mod_occupancy_pro_03 }}
-- {{ mod_occupancy_pro_04 }}
-- {{ mod_occupancy_pro_05 }}
-::::
-::::{grid-item-card} Cons
-- {{ mod_occupancy_con_01 }}
-- {{ mod_occupancy_con_02 }}
-::::
-:::::
-::::::
-
 :::::::{tab-set}
 
+::::::{tab-item} TEST
+{material-regular}`data_exploration;2em`
+{file-media}`data_exploration;2em`
+
+{file-media}`report;1em;sd-text-info`, 
+- An icon {fas}`spinner;sd-text-primary`, some more text.
+- An icon {fab}`github`, some more text.
+- An icon {fab}`gitkraken;sd-text-success fa-xl`, some more text.
+- An icon {fas}`skull;sd-text-danger`, some more text.
+
+```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
+:color: primary
+:shadow:
+:align: center
+Concept library
+```
+
+```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
+:color: primary
+:shadow:
+:align: center
+:tooltip: I am a tooltip
+Concept library
+```
+
+**<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
+<div class="h_bold">How does this relate to study design?</div>
+
+
+```{literalinclude} include/example.py
+```
+
+```{literalinclude} include/00_test_image.md
+```
+
+```{include} include/00_test_image.md
+```
+
+```{embed} include/00_test_image.md
+```
+
+
+::::::
 ::::::{tab-item} Overview
 This section will be available soon! In the meantime, check out the information in the other tabs!
 
@@ -311,9 +328,9 @@ Compute the relative bias (in %) in the maximum-likelihood estimator of the occu
 :::::
 ::::::
 
-::::::{tab-item} Analytical tools & resources
-| Type | Name | Note | URL |Reference |
-|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
+::::::{tab-item} Analytical tools & Resources
+| Type<img width=50/> | Name<img width=50/> | Note<img width=50/> | URL<img width=50/> | Reference<img width=50/> |
+|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------| 
 | rJAGS/R code | mfidino/multi-state-occupancy-models |     | <https://github.com/mfidino/multi-state-occupancy-models> | {{ ref_bib_fidino_2021a }} |
 | JAGS/R code | A gentle introduction to an integrated occupancy model that combines presence-only and detection/non-detection data, and how to fit it in JAGS; <br>integrated-occupancy-model” |      | <https://masonfidino.com/bayesian_integrated_model/>;<br><https://github.com/mfidino/integrated-occupancy-model> | {{ ref_bib_fidino_2021b }}; {{ ref_bib_fidino_2021c }} |
 | JAGS code/Tutorial | So, you don't have enough data to fit a dynamic occupancy model? An introduction to auto-logistic occupancy models; <br>auto-logistic-occupancy | 

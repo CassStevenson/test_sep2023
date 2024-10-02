@@ -189,7 +189,7 @@ Rarefied Species Accumulation Curves (the simple way) tutorial: How to create be
 
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | R package / Tutorial | Species Accumulation Curves |      | <https://www.pisces-conservation.com/sdrhelp/index.html?specaccum.html> | {{ ref_bib_chao_et_al_2016 }} |

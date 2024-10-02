@@ -92,7 +92,6 @@ The first SMR model, developed by Chandler and Royle (2013) and Sollmann et al. 
 To ease the assumptions and address the limitations of conventional SMR, Whittington et al. (2018) developed generalized SMR, which models the marking and resighting processes separately. The marking sub-model describes where animals were trapped and tagged on the study landscape – that is, how marked individuals are distributed in space ({{ ref_intext_jimenez_et_al_2021 }}). Explicitly modelling the marking process allows practitioners to trap and tag animals non-randomly (e.g., using linear or grid trap layouts) without biasing density estimates ({{ ref_intext_whittington_et_al_2018 }}). The resighting submodel combines marked individuals’ detection histories, camera trap-specific counts of unmarked individuals and estimates of detection probability to determine population density ({{ ref_intext_whittington_et_al_2018 }}). 
 
 Practitioners should note that the number of marked animals in a population can influence the precision of SMR studies. The general trend in precision, based on previous SMR studies (both conventional and generalized), is: the more marked animals, the more precise the density estimation (see {{ ref_intext_whittington_et_al_2018 }}). Of the four studies compared, only those with 22 or more marked individuals achieved coefficients of variation (CVs) below the accepted threshold for wildlife management (i.e., CV ≤ 0.2; {{ ref_intext_sollmann_et_al_2013a }}; {{ ref_intext_whittington_et_al_2018 }}; {{ ref_intext_williams_et_al_2002 }}).
-
 ::::::
 
 ::::::{tab-item} Visual resources
@@ -109,7 +108,7 @@ Practitioners should note that the number of marked animals in a population can 
 ::::
 
 ::::{grid-item-card} {{ ref_intext_figure2_ref_id }}
-```{figure} ../03_images/03_image_files/SECR_creemmural.org_secr.png 
+```{figure} ../03_images/03_image_files/SECR_creemmural_org_secr.png 
 :class: img_grid
 ```
 figure2_caption
@@ -130,7 +129,7 @@ figure3_caption
 Check back in the future!
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | resource1_type | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |

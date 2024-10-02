@@ -16,10 +16,15 @@ editor_options:
 ---
 (i_mod_scr_secr)=
 # {{ name_mod_scr_secr }}
+<!--
+:::{info}
+replace me with text
+:::
+-->
 
 **{{ term_mod_scr_secr }}**: {{ term_def_mod_scr_secr }}
 
-::::::{dropdown} Assumptions, Pros, Cons
+:::::::{dropdown} Assumptions, Pros, Cons
 :::::{grid}
 
 ::::{grid-item-card} Assumptions
@@ -59,11 +64,12 @@ editor_options:
 - {{ mod_scr_secr_con_07 }}
 ::::
 :::::
-::::::
+:::::::
 
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
+
 This section will be available soon! In the meantime, check out the information in the other tabs!
 
 :::{figure} ../03_images/03_image_files/00_coming_soon.png
@@ -112,10 +118,11 @@ See Clark (2019), Dupont et al., (2021), Fleming et al., (2021), McFarlane et al
 
 **Clarke et al. (2023) – Fig. 5** Adapted from Morin et al., (2022) and Royle et al., (2014). A) A diagram of how the individual activity centres (circles) that make up a population might overlap with a camera array (grey crosses). The red circle highlights an example individual’s activity centre. The red arrows point towards camera stations where the red individual was detected; the numbers beside the camera stations show how many times the red individual was detected at each station. Note, the number and location of individual’s activity centres is not known, but rather inferred from the spatial pattern of detections (i.e., the number of detections of each individual at camera stations of known location). B) An example graph showing how the probability the red individual is detected at a camera station decreases with distance from its activity centre. This is reflected in A); as the distance between the red individual’s activity centre and a camera station increases, the number of detections dwindles. σ is the spatial scale parameter; it describes how detection probability decreases with increasing distance.
 
-Another aspect of sampling design practitioners must consider is the number and configuration of cameras deployed at a station to identify animals to the individual. Left and right flanks may need to be photographed simultaneously, for example, to avoid assigning different identities to each side  ({{ ref_intext_augustine_et_al_2018 }}); as another example, chest markings may need to be photographed from multiple angles at bait stations to be able to resolve identity ({{ ref_intext_proctor_et_al_2022 }}).
+Another aspect of sampling design practitioners must consider is the number and configuration of cameras deployed at a station to identify animals to the individual. Left and right flanks may need to be photographed simultaneously, for example, to avoid assigning different identities to each side  ({{ ref_intext_augustine_et_al_2018 }}); as another example, chest markings may need to be photographed from multiple angles at bait stations to be able to resolve identity ({{ ref_intext_proctor_et_al_2022 }}).::::::
 ::::::
 
 ::::::{tab-item} Visual resources
+
 :::::{grid} 3
 :gutter: 1
 :padding: 0
@@ -125,6 +132,7 @@ Another aspect of sampling design practitioners must consider is the number and 
 :::{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_scr1.png
 :class: img_grid
 :::
+   
 
 ::::
 
@@ -144,13 +152,28 @@ Another aspect of sampling design practitioners must consider is the number and 
 The red circle highlights an example individual’s activity centre. The red arrows point towards camera stations where the red individual was detected; the numbers beside the camera stations show how many times the red individual was detected at each station. Note, the number and location of individual’s activity centres is not known, but rather inferred from the spatial pattern of detections (i.e., the number of detections of each individual at camera stations of known location). B) An example graph showing how the probability the red individual is detected at a camera station decreases with distance from its activity centre. This is reflected in A); as the distance between the red individual’s activity centre and a camera station increases, the number of detections dwindles. σ is the spatial scale parameter; it describes how detection probability decreases with increasing distance.
 :::
 ::::
-
 :::::
 
 :::::{grid} 3
 :gutter: 1
 :padding: 0
 :margin: 0
+
+::::{grid-item-card} {{ ref_intext_efford_2024 }}
+:::{figure} ../03_images/03_image_files/efford_2024_fig1.png 
+:class: img_grid
+:::
+    
+
+::::
+
+::::{grid-item-card} {{ ref_intext_u_capetown_2017 }}
+:::{figure} ../03_images/03_image_files/secr_creemmural_org_secr.png 
+:class: img_grid
+:::
+**University of Cape Town, 2024c - Slide 6** Observation process - The expected frequency of encountering an individual depends
+on the individual's location in space.
+::::
 
 ::::{grid-item-card} {{ ref_intext_jimenez_et_al_2021 }}
 :::{figure} ../03_images/03_image_files/jimenez_et_al_2021_fig1_clipped.png
@@ -161,6 +184,15 @@ The red circle highlights an example individual’s activity centre. The red arr
 In this model (like in standard SCR), the detection rate of each individual depends on (i) Euclidean distance between individual's locations and traps (centroids of polygonal grid in the study case); (ii) baseline detection rate (λ<sub>ID</sub>) that here depends on sampling effort (length of transect in each polygon); and (iii) the scale parameter (σ) from the half-normal detection function, that describes the animal movement. In the observation process, we obtain two types of data: encounters with identification (*y*<sup>ID</sup>) and non-ID data (*y*<sup>noID</sup>) or counts. Random thinning SCR model uses ID data (in red) like in standard SCR to make inferences about population size and individuals' distribution (including nonobserved individuals, in gray), but also uses the counts (in orange) with a constraint (*y*<sup>noID</sup> = *y*<sup>true</sup> − *y*<sup>ID</sup>) using a Metropolis–Hastings algorithm—in a mechanistic approach—to make a probabilistic reconstruction of the true encounter frequencies (*y*<sup>true</sup>), thus assigning identities to non-ID samples.
 :::
 ::::
+:::::
+::::::
+
+::::::{tab-item} Visual resources
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
 
 ::::{grid-item-card} {{ ref_intext_borchers_efford_2008 }}
 :::{figure} ../03_images/03_image_files/borchers_and_efford_2008_fig1_clipped.png
@@ -175,19 +207,6 @@ In this model (like in standard SCR), the detection rate of each individual depe
 :::
 **Borchers & Efford (2008) - Fig. 2** Trapping grid used in simulations. The curves are 10% contours (from 10% to 90%) of estimated capture probability *p*.(***X***) as a function of animal location, ***X***. The integral of this function is the effective sampling area.
 ::::
-:::::
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_efford_2024b }}
-:::{figure} ../03_images/03_image_files/efford_2024_fig1.png 
-:class: img_grid
-:::
- 
-::::
 
 :::::
 
@@ -199,7 +218,7 @@ In this model (like in standard SCR), the detection rate of each individual depe
 ::::{grid-item-card} {{ ref_intext_royle_2016 }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/4HKFimATq9E" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/4HKFimATq9E" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -210,7 +229,7 @@ J. Andrew Royle, ’Spatial Capture-Recapture Modelling’
 ::::{grid-item-card} {{ ref_intext_snow_leopard_network_2020a }} 
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/IHVez1a_hqg?si=1ePCJKv0v1SiKwSi" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/IHVez1a_hqg?si=1ePCJKv0v1SiKwSi" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
@@ -221,13 +240,48 @@ PAWS: Spatial Capture Recapture Data Analysis Part 1
 ::::{grid-item-card} {{ ref_intext_snow_leopard_network_2020b }}
 <div>
   <div style="position:relative;padding-top:56.25%;">
-    <iframe src="https://www.youtube.com/embed/IHVez1a_hqg" frameborder="0" allowfullscreen
+    <iframe src="https://www.youtube.com/embed/IHVez1a_hqg" loading="lazy" frameborder="0" allowfullscreen
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
 
 PAWS: Spatial Capture Recapture Data Analysis Part 2
 ::::
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_royle_2020 }} 
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/yRRDi07FtPg?si=vmGQslB9Wv9MnkYC" loading="lazy" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
+
+Introduction to Spatial Capture-Recapture with the oSCR Package 
+::::
+
+::::{grid-item-card} {{ ref_intext_oscrpackage206 }}
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="../03_images/03_image_files/oscrpackage206.png" loading="lazy" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
+
+**oSCR Package**: Channel for the R package for the analysis of spatial encounter histories for inferences about spatial population ecology.
+- [Introduction to Spatial Capture-Recapture](https://www.youtube.com/watch?v=yRRDi07FtPg)
+- [Multi-session Spatial Capture-Recapture models](https://www.youtube.com/watch?v=GzYYnl8n6rI)
+- [Incorporating telemetry in SCR models](https://www.youtube.com/watch?v=LzqyUbbZNTU)
+- [Basic SCR models and the oSCR package](https://www.youtube.com/watch?v=vP5G7YhRRuM)
+- [Modeling spatial variation in density with SCR](https://www.youtube.com/watch?v=k_eFDUD5xGU)
+- [Design of Spatial Capture-Recapture studies](https://www.youtube.com/watch?v=wX0uIolgo38)
+::::
+
 :::::
 
 ::::::
@@ -240,23 +294,23 @@ PAWS: Spatial Capture Recapture Data Analysis Part 2
     width="100%"
     height="900"
     src="https://www.stats.otago.ac.nz/secrdesignapp"
+    loading="lazy"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<!--
 :::::
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+:::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------| 
-| Article | Fast Evaluation of Study Designs for Spatially Explicit Capture–Recapture | resource1_note | <https://doi.org/10.1111/2041-210X.13239> | {{ ref_bib_efford_boulanger_2019 }} |
+| Article | Fast Evaluation of Study Designs for Spatially Explicit Capture–Recapture |      | <https://doi.org/10.1111/2041-210X.13239> | {{ ref_bib_efford_boulanger_2019 }} |
 | App/Program | Program SPACECAP | Note: this program is not longer available from cran (<https://cran.r-project.org/web/packages/SPACECAP/index.html>). | <https://www.mbr-pwrc.usgs.gov/software/spacecap.html> | {{ ref_bib_singh_et_al_2010 }} |
 | resource3_type | resource3_name | resource3_note | <> | {{ ref_bib_resource3_ref_id }} |
-| R package | Package 'secr' |     | Package info: <https://CRAN.R-project.org/package=secr><br>Guide: <https://cran.r-project.org/web/packages/secr/vignettes/secr-overview.pdf> | {{ ref_bib_efford_2024a }};<br><br> {{ ref_bib_efford_2024b }} |
-| App/Program | DENSITY |      | < > | {{ ref_bib_resource5_ref_id }} |
-| Powerpoint slides | SEEC Toolbox seminars - Spatial Capture-Recapture (SCR) models | Additional information can be accessed [here](https://science.uct.ac.za/seec/stats-toolbox-seminars-spatial-and-species-distribution-toolboxes/spatial-capture-recapture-scr-modelling) | <https://science.uct.ac.za/sites/default/files/content_migration/science_uct_ac_za/708/files/SEEC%2520Stats%2520Toolbox%2520-%2520Spatial%2520capture%2520recapture%2520slides.pdf> | {{ ref_bib_u_capetown_2024b }} |
+| R package | Package 'secr' |     | Package info: <https://CRAN.R-project.org/package=secr><br>Guide: <https://cran.r-project.org/web/packages/secr/vignettes/secr-overview.pdf> | {{ ref_bib_efford_2024a }};<br><br>{{ ref_bib_efford_2024b }} |
+| App/Program | DENSITY | Software for analysing capture-recapture data from passive detector arrays. | <https://doi.org/10.32800/abc.2004.27.021> | {{ ref_bib_efford_et_al_2004 }} |
+| Powerpoint slides | SEEC Toolbox seminars - Spatial Capture-Recapture (SCR) models | 'Greg Distiller provides a comprehensive introduction to SCR models and how to perform these in R' | <https://science.uct.ac.za/seec/stats-toolbox-seminars-spatial-and-species-distribution-toolboxes/spatial-capture-recapture-scr-modelling> | {{ ref_bib_u_capetown_2024b }} |
 | R package  | Package 'oSCR' | The 'sim.SCR' function 
 may be particularly useful. | Article: <https://onlinelibrary.wiley.com/doi/10.1111/ecog.04551>;<br><br>R package: <https://github.com/jaroyle/oSCR> | {{ ref_bib_sutherland_et_al_2019 }} |
 | Tutorial | oSCR package \[online resources\] | This site contains tutorials; supplemental materials for the book Spatial Capture-Recapture by Royle, Chandler, Sollmann & Gardner (2013). | <https://sites.google.com/site/spatialcapturerecapture/oscr-package/2-getting-started-with-oscr>| {{ ref_bib_royle_et_al_2013}} |
@@ -279,7 +333,11 @@ may be particularly useful. | Article: <https://onlinelibrary.wiley.com/doi/10.1
 
 {{ ref_bib_dupont_et_al_2021 }}
 
+{{ ref_bib_efford_et_al_2004 }}
+
 {{ ref_bib_efford_boulanger_2019 }}
+
+{{ ref_bib_efford_2011 }}
 
 {{ ref_bib_efford_2023 }}
 
@@ -298,6 +356,8 @@ may be particularly useful. | Article: <https://onlinelibrary.wiley.com/doi/10.1
 {{ ref_bib_morin_et_al_2022 }}
 
 {{ ref_bib_nawaz_et_al_2021 }}
+
+{{ ref_bib_oscrpackage206 }}
 
 {{ ref_bib_sollmann_et_al_2012 }}
 

@@ -95,7 +95,7 @@ Check back in the future!
 Check back in the future!
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | R package/function | SPIMswith the ‘SPIM’ package | Can be used to assess model fit: 2-flank SPIM, categorical SPIM, categorical conventional and generalized Spatial Mark Resight | <https://rdrr.io/github/benaug/SPIM> | {{ ref_bib_augustine_et_al_2019 }} |

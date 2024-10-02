@@ -17,11 +17,10 @@ editor_options:
 (i_mod_divers_rich)=
 # {{ name_mod_divers_rich }}
 
-<!--
-:::{info}
-replace me with text
+:::{seealso}
+{bdg-link-primary-line}`Species-accumulation curves<https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html>`
+{bdg-link-primary-line}`Species rarity<https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_19_sp_rarity.html>`
 :::
--->
 
 :::::::{dropdown} Assumptions, Pros, Cons
 :::::{dropdown} Species richness (Alpha diversity)
@@ -100,11 +99,10 @@ Note that there are multiple parameters corresponding to different scales and in
 
 You can refer to the “Assumptions, Pros, Cons” dropdown above to see relevant information for all three.
 
-
-```{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
+:::{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
 :align: center
 :scale: 60%
-```
+:::
 **Pyron (2010) - Fig. 1**: Species evenness and species richness for animalcule communities. Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. 
 :::
 
@@ -147,8 +145,9 @@ Its important to note the difference in **Observed *vs* estimated species richne
 The **two principal ways of estimating species richness from remote camera data** are (from {{ ref_intext_wearn_gloverkapfer_2017 }}):
  -   non-parametric estimators ({{ ref_intext_gotelli_chao_2013 }}), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. {{ ref_intext_tobler_et_al_2008 }}), 
 -   or 2) occupancy models ({{ ref_intext_mackenzie_et_al_2006 }})
-:::::
+::::::
 
+::::::{tab-item} Visual resources
 :::::{grid} 3
 :gutter: 1
 :padding: 0
@@ -342,7 +341,7 @@ Software for interpolation and extrapolation of species diversity.<br><br>{{ ref
 :::::
 ::::::
 
-:::::{tab-item} Analytical tools & resources
+:::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------| 
 | R package | Chapter 9 Community composition |     | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes> | {{ ref_bib_wildco_lab_2021b }} |

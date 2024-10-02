@@ -104,7 +104,6 @@ Both Garland et al. (2020) and Nakashima et al. (2018) tested the effect of samp
 - Palencia et al. (2021) found that REST-derived density estimates were consistent with line-transect surveys of deer, but not with drive-count surveys of boar; the REST underestimated density compared to the latter. The model was, however, highly consistent with the REM and camera trap distance sampling (DS; {{ ref_intext_palencia_et_al_2021 }}). Furthermore, the REST was more precise than the other two camera models – although not significantly ({{ ref_intext_palencia_et_al_2021 }}). 
 
 Practitioners should be aware that population densities were quite high in the studies listed above (about 1 to 160 animals per km<sup>2</sup>; {{ ref_intext_jensen_et_al_2022 }}; {{ ref_intext_nakashima_et_al_2017 }}). Thus, while the REST model applies well to very dense populations, it may not be appropriate for average-to-low density populations (e.g., wildlife populations in BC, with densities often <1 animal/km<sup>2</sup>); further investigation is needed ({{ ref_intext_morin_et_al_2022 }}). The precision of the REST is also inversely related to population size – the smaller the population, the less precise the density estimate ({{ ref_intext_morin_et_al_2022 }}).
-
 ::::::
 
 ::::::{tab-item} Visual resources
@@ -156,40 +155,34 @@ Practitioners should be aware that population densities were quite high in the s
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext_nakajima_2021b }}
-<iframe 
-    width="100%"
-    height="300"
-    src="https://www.youtube.com/embed/pUa9rgxSGVA?si=pOIqFPL6AxNuUYJtl"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/pUa9rgxSGVA?si=pOIqFPL6AxNuUYJtl" loading="lazy" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
 
 Density Estimation with the REST Model > REST_01_Set_Focal_Area
 ::::
 
 ::::{grid-item-card} {{ ref_intext_nakajima_2021c }} 
-<iframe 
-    width="100%"
-    height="300"
-    src="https://www.youtube.com/embed/wqEF_up7EGs?si=IL2_moYR0XpdR-Fk"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/wqEF_up7EGs?si=IL2_moYR0XpdR-Fk" loading="lazy" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
 
 Density Estimation with the REST Model > REST_02_Set_Up_Emv
 ::::
 
 ::::{grid-item-card} {{ ref_intext_nakajima_2021d }}
-<iframe 
-    width="100%"
-    height="300"
-    src="https://www.youtube.com/embed/s-d81K72yWs?si=PqWOR_dvvkCfoLY7"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://www.youtube.com/embed/s-d81K72yWs?si=PqWOR_dvvkCfoLY7" loading="lazy" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
 
 Density Estimation with the REST Model > REST_03_MeasureStayingTime
 ::::
@@ -203,7 +196,7 @@ Density Estimation with the REST Model > REST_03_MeasureStayingTime
 Check back in the future!
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | resource1_type | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |

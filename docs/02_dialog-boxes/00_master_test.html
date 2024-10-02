@@ -31,11 +31,11 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=c483416e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0be1e2fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -152,68 +152,66 @@
 <p class="admonition-title">Hint</p>
 <p>I am a note</p>
 </div>
-<p><strong>Occupancy model (MacKenzie et al., 2002)</strong>: A modelling approach used to account for imperfect detection by first evaluating the detection probability of a species via detection histories (i.e., present or absent) to determine the probability of the true presence or absence of a species at a site (MacKenzie et al., 2002).</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">Assumptions, Pros, Cons</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Assumptions</div>
-<ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">Occupancy</span></a> is constant (MacKenzie et al., 2002) (abundance is constant) (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#camera-location"><span class="std std-ref">Camera locations</span></a> are independent (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">Detections are <a class="reference internal" href="09_glossary.html#independent-detections"><span class="std std-ref">independent</span></a> (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">The probability of <a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> and detection are constant across all <a class="reference internal" href="09_glossary.html#camera-location"><span class="std std-ref">camera locations</span></a> within a stratum or can be modelled using covariates (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">Species are not misidentified (MacKenzie et al., 2006)</p></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Pros</div>
-<ul class="simple">
-<li><p class="sd-card-text">Does not require individual identification (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">Only requires detection*/non-detection data for each site (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Relatively easy-to-use software exists for fitting models (PRESENCE, MARK, and the ‘unmarked’ R package) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Open models exist that allow for the estimation of site colonization and extinction rates (MacKenzie et al., 2006; Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Multi-species <a class="reference internal" href="09_glossary.html#mods-occupancy"><span class="std std-ref">occupancy models</span></a> (MacKenzie et al., 2002) allow the inclusion of interactions among species while controlling for <a class="reference internal" href="09_glossary.html#imperfect-detection"><span class="std std-ref">imperfect detection</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Cons</div>
-<ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">Occupancy</span></a> (MacKenzie et al., 2002) only measures distribution; it may be a misleading indicator of changes in abundance (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the <a class="reference internal" href="09_glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> the results should be interpreted as ‘probability of use’ rather than <a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a>) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</details><div class="sd-tab-set docutils">
+<div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
+TEST</label><div class="sd-tab-content docutils">
+<p><svg version="4.0.0.63c5cb3" width="2.0em" height="2.0em" class="sd-material-icon sd-material-icon-data_exploration" viewBox="0 0 24 24" aria-hidden="true"><rect fill="none" height="24" width="24"></rect><path d="M12,2C6.48,2,2,6.48,2,12c0,1.33,0.26,2.61,0.74,3.77L8,10.5l3.3,2.78L14.58,10H13V8h5v5h-2v-1.58L11.41,16l-3.29-2.79 l-4.4,4.4C5.52,20.26,8.56,22,12,22h8c1.1,0,2-0.9,2-2v-8C22,6.48,17.52,2,12,2z M19.5,20.5c-0.55,0-1-0.45-1-1s0.45-1,1-1 s1,0.45,1,1S20.05,20.5,19.5,20.5z"></path></svg>
+</p>
+<p>,</p>
+<ul class="simple">
+<li><p>An icon <span class="fas fa-spinner sd-text-primary"></span>, some more text.</p></li>
+<li><p>An icon <span class="fab fa-github"></span>, some more text.</p></li>
+<li><p>An icon <span class="fab fa-gitkraken sd-text-success fa-xl"></span>, some more text.</p></li>
+<li><p>An icon <span class="fas fa-skull sd-text-danger"></span>, some more text.</p></li>
+</ul>
+<p class="sd-text-center"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-shadow-sm reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library"><span>Concept library</span></a></p>
+<p class="sd-text-center"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-shadow-sm reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library" title="I am a tooltip"><span>Concept library</span></a></p>
+<p><strong><font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span></strong></p>
+<div class="h_bold">How does this relate to study design?</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;An example Python file.&quot;&quot;&quot;</span>
+
+
+<span class="c1"># start example</span>
+<span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;An example class.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;An example method.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+
+
+<span class="c1"># end example</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:::{figure} ../03_images/03_image_files/clarke_et_al_2023_fig7_clipped.png 
+:class: img_grid
+:label: myLabel
+
+**Clarke et al. (2023) - Fig. 7** Measuring *𝑟* and *𝜃* by field trial. The perimeter of the detection zone is determined by approaching the camera from different angles and at different speeds, and noting where the camera’s sensor (red flash) detects motion (red dots).
+:::
+</pre></div>
+</div>
+<figure class="align-default" id="id1">
+<img alt="../_images/clarke_et_al_2023_fig7_clipped.png" class="img-grid" src="../_images/clarke_et_al_2023_fig7_clipped.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><strong>Clarke et al. (2023) - Fig. 7</strong> Measuring <em>𝑟</em> and <em>𝜃</em> by field trial. The perimeter of the detection zone is determined by approaching the camera from different angles and at different speeds, and noting where the camera’s sensor (red flash) detects motion (red dots).</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
 Overview</label><div class="sd-tab-content docutils">
 <p>This section will be available soon! In the meantime, check out the information in the other tabs!</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/00_coming_soon.png"><img alt="../_images/00_coming_soon.png" src="../_images/00_coming_soon.png" style="width: 300px;" /></a>
 </figure>
 </div>
-<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-1">
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
 In-depth</label><div class="sd-tab-content docutils">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -240,8 +238,8 @@ In-depth</label><div class="sd-tab-content docutils">
 <p>However, many researchers have cautioned against the use occupancy as an index. As with relative abundance (RA; see above), there is no consistent, long-term relationship between occupancy and abundance (Efford &amp; Dawson, 2012). Occupancy can change with abundance, but also with survey duration, species home range size, animal movement, etc., muddling occupancy-abundance relationships and thus inferences about population size (Neilson et al., 2018; Steenweg et al., 2018). While occupancy is a powerful stand-alone metric, Sollmann (2018) says it should not be “misinterpreted” as an index of abundance.</p>
 <p>Despite its widespread use, occupancy may be particularly problematic for camera trap studies due to the violation of the closure assumption. Burton et al. (2015) highlighted that many camera trap studies using occupancy do not explicitly define the “site,” although is often implicitly given as some larger area around a camera trap. Since camera trap studies typically target mammal species with relatively large home ranges, the site closure assumption is almost certainly violated in most cases. Many camera trappers therefore assume that “occupancy” is in fact “use” of a site (i.e., the site is not closed), and that detection probability also includes availability for detection. Mackenzie et al. (2017) suggested that estimates should be unbiased if movements in and out of a site are random, but this assumption is rarely tested. And where occupancy estimates have been tested using realistic mammal movements, they have generally performed poorly (Neilson et al., 2018; Stewart et al., 2018).</p>
 </div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
 Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
@@ -502,8 +500,8 @@ Proteus, 2019a</div>
 </div>
 </div>
 </div>
-<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
 Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -524,16 +522,16 @@ Gimenez, O. (2020a). <em>Bias in single-season occupancy models.</em> <a class="
 <div class="docutils">
 </div>
 </div>
-<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
-Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Type</p></th>
-<th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Note</p></th>
-<th class="head text-left"><p>URL</p></th>
-<th class="head text-left"><p>Reference</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Type<img width=50/></p></th>
+<th class="head text-left"><p>Name<img width=50/></p></th>
+<th class="head text-left"><p>Note<img width=50/></p></th>
+<th class="head text-left"><p>URL<img width=50/></p></th>
+<th class="head text-left"><p>Reference<img width=50/></p></th>
 </tr>
 </thead>
 <tbody>
@@ -667,8 +665,8 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 </table>
 </div>
 </div>
-<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
+<input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
 References</label><div class="sd-tab-content docutils">
 <p>Burton, A. C., Neilson, E., Moreira, D., Ladle, A., Steenweg, R., Fisher, J. T., Bayne, E., Boutin, S., &amp; Stephens, P. (2015). Camera trap Trapping: A Review and Recommendations for Linking Surveys to Ecological Processes. <em>Journal of Applied Ecology</em>, <em>52</em>(3), 675–685. <a class="reference external" href="https://doi.org/10.1111/1365-2664.12432">https://doi.org/10.1111/1365-2664.12432</a></p>
 <p>Cove, M. (2020a, Sep 27). <em>Occupancy Modeling Video 1 – Sampling Techniques for Mammals.</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=n21Ugw0lYcY">https://www.youtube.com/watch?v=n21Ugw0lYcY</a></p>

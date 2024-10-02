@@ -147,7 +147,6 @@ figure4_caption
 
 ::::::{tab-item} Shiny apps/Widgets
 :::::{card} Species home range / body size lookup
-
 A R Shiny app created for the RC Decision Support Tool to lookup information on species home range size / body size; information pulled directly from the following sources:
 - Burton et al. (2015) supplementary material “S2. Average body mass and home range size for a sample of species and studies among the reviewed set of camera trap publications”
 - PanTHERIA database ({{ ref_intext_jones_et_al_2009 }}) “a species-level database of life history, ecology,and geography of extant and recently extinct mammals
@@ -157,6 +156,7 @@ A R Shiny app created for the RC Decision Support Tool to lookup information on 
     width="100%"
     height="900"
     src="https://7e2l38-cassondra-stevenson.shinyapps.io/lu_species_homerange/"
+    loading="lazy"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -164,7 +164,7 @@ A R Shiny app created for the RC Decision Support Tool to lookup information on 
 :::::
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | resource1_type | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |

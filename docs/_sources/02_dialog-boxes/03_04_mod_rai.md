@@ -85,8 +85,9 @@ In a camera trapping context, RA is the comparison of detection rates across spa
 RA has been criticized as an abundance estimator. Anderson (2001) condemned the index as “unprofessional,” while O’Brien (2011) called it a “metric of last resort.” Sollmann et al. (2013b) used simulations to determine that camera trap RA analyses did not detect changes in big cat density, and called use of the index for wildlife management “alarming.” Nevertheless, some researchers have had success with the method and/or have argued for its conceptual and practical advantages (e.g., {{ ref_intext_rovero_carbone_et_al_2001, {{ ref_intext_johnson_2008 }}; {{ ref_intext_palmer_et_al_2018 }}; {{ ref_intext_rovero_marshall_2009 }}). Broadley et al. (2019) used simulations to show that RA could be sensitive to density-dependent movement, but generally tracked abundance well. Banks-Leite (2014) emphasized the importance of careful sampling design and protocols to control for variation in detectability, arguing that researchers should not solely rely on statistical corrections.
 
 Ultimately, there is no “silver bullet” and researchers must carefully consider their inferential objectives and potential sources of sampling and estimation bias when choosing response variables and modelling frameworks for camera trap data.
-:::::
+::::::
 
+::::::{tab-item} Visual resources
 :::::{grid} 3
 :gutter: 1
 :padding: 0
@@ -246,7 +247,7 @@ A Shiny app allows you to visualize data by using R scripts without having to in
 :::::
 ::::::
 
-:::::{tab-item} Analytical tools & resources
+:::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------| 
 | R resource | abmi.camera.extras: Animal Density from Camera Data > Probabilistic gaps |     | Main resource page: <https://mabecker89.github.io/abmi.camera.extras/index.html>;<br>[Probabilistic gaps]<https://mabecker89.github.io/abmi.camera.extras/articles/gaps.html> | {{ ref_bib_becker_et_al_2020 }} |

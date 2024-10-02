@@ -56,6 +56,12 @@ div.img_grid {
   :align: center;
 }
 
+div.h_bold {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2F5496
+}
+
 /* Block Quotes
 blockquote {
   color: white;
@@ -63,6 +69,13 @@ blockquote {
   background-color: white;
   padding: 20px;
 }*/
+
+div.indent {
+  color: white;
+  border-left: 8px solid  white;
+  background-color: white;
+  padding: 20px;
+}
 
 div.admonition.admonition-youtube {
   border-color: hsl(0deg 100% 50%); /* YouTube red */
