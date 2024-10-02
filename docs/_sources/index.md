@@ -40,12 +40,12 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item}
-:columns: 11
+:columns: 10
 Items in grey/italics are not yet available.
 :::
 
 :::{grid-item}
-:columns: 1
+:columns: 2
 
 {bdg-link-primary-line}`Secrets<index_links_all_internal_2024-10-02.html>`
 :::
