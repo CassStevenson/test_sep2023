@@ -31,11 +31,11 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=6423beaa" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=5d6d0367" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -54,9 +54,22 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-PJDP7DQ9Q0"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-PJDP7DQ9Q0');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-PJDP7DQ9Q0');
+            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/03_23_mod_is';</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -214,7 +227,7 @@ Overview</label><div class="sd-tab-content docutils">
 In-depth</label><div class="sd-tab-content docutils">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>This content was adapted from</strong>: The Density Handbook, “<a class="reference external" href="https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers">Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers</a>” (Clarke et al., 2024)</p>
+<p><strong>This content was adapted from</strong>: The Density Handbook, “<a class="reference external" href="https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers">Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers</a>” (Clarke et al., 2023)</p>
 </div>
 <p>The instantaneous sampling model (IS) is an extension of the space-to-event model (STE; see <a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_22_mod_ste.html"><span>Space-to-event (STE)</span></a>) that uses counts of animals in time-lapse images – instead of the area until an animal is first detected – to estimate density (Moeller et al., 2018). As with the STE, all cameras in a randomly-deployed array are programmed to take time-lapse images at predefined intervals (e.g., every hour) to get instantaneous “snapshot” samples of the study area. During image processing, the number of animals in each photograph is recorded. Thus, the IS is essentially a series of fixed-area point counts (Moeller et al., 2018): camera traps act as “standing observers” tabulating the number of individuals seen within a set area and time.</p>
 <p>The IS equation is as follows:</p>
@@ -278,7 +291,7 @@ Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
 <td class="text-left"><p>spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs</p></td>
 <td class="text-left"><p>free and open-source R package designed to assist in the implementation of the STE and TTE models, along with the IS estimator</p></td>
 <td class="text-left"><p>&lt;<a class="github reference external" href="https://github.com/annam21/spaceNtime;">annam21/spaceNtime</a><br><a class="reference external" href="https://link.springer.com/article/10.1007/s42991-021-00181-8">https://link.springer.com/article/10.1007/s42991-021-00181-8</a></p></td>
-<td class="text-left"><p>Moeller, A. K.,&amp;  Lukacs, P. M. (2021) spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs. <em>Mammalian Biology, 102</em>, 581–590. <a class="reference external" href="https://doi.org/10.1007/s42991-021-00181-8">https://doi.org/10.1007/s42991-021-00181-8</a></p></td>
+<td class="text-left"><p>Moeller, A. K.,&amp;  Lukacs, P. M. (2021) spaceNtime: an R package for estimating abundance of unmarked animals using camera-trap photographs. <em>Mammalian Biology, 102</em>, 581-590. <a class="reference external" href="https://doi.org/10.1007/s42991-021-00181-8">https://doi.org/10.1007/s42991-021-00181-8</a></p></td>
 </tr>
 </tbody>
 </table>

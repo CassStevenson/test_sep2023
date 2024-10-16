@@ -28,7 +28,7 @@ editor_options:
     }
 }
 </style>
-(toc1_concept_lib)=
+(toc1_concept_lib2)=
 # Remote Camera Decision Support Tool - Concept Library
 <!-- index_public_2024-10-02.md
 conda activate rclib
@@ -52,7 +52,7 @@ Items in grey/italics are not yet available.
 ::::
 :::::
 
-(objectives-resources)=
+(objectives-resources2)=
 ## Objectives & Resources
 :::::{grid} 3
 :gutter: 3
@@ -86,7 +86,7 @@ Items in grey/italics are not yet available.
 
 ***
 
-(study-area-site-selection-constraints)=
+(study-area-site-selection-constraints2)=
 ## Study area & Site selection constraints
 
 ::::{grid} 3
@@ -130,7 +130,7 @@ Items in grey/italics are not yet available.
 
 ***
 
-(duration-timing)=
+(duration-timing2)=
 ## Duration & Timing
 
 ::::{grid} 3
@@ -165,10 +165,10 @@ Items in grey/italics are not yet available.
 
 ***
 
-(target-species)=
+(target-species2)=
 ## Target species
 
-(target-species-single)=
+(target-species-single2)=
 ### Target species (single)
 <br>
 
@@ -360,7 +360,7 @@ Items in grey/italics are not yet available.
 
 ***
 
-(target-species-multiple)=
+(target-species-multiple2)=
 ### Target species (multiple)
 <br>
 
@@ -405,7 +405,7 @@ Items in grey/italics are not yet available.
 
 ***
 
-(equipment-deployment)=
+(equipment-deployment2)=
 ## Equipment & Deployment
 
 ::::{grid} 3
@@ -461,7 +461,7 @@ Items in grey/italics are not yet available.
 
 ***
 
-(data-analysis)=
+(data-analysis2)=
 ## Data & Analysis
 
 ::::{grid} 3
@@ -542,10 +542,10 @@ Items in grey/italics are not yet available.
 
 ***
 
-(recommendations)=
+(recommendations2)=
 ## Recommendations
 
-(modelling-approaches)=
+(modelling-approaches2)=
 ### Modelling Approaches
 <br>
 
@@ -724,7 +724,7 @@ Items in grey/italics are not yet available.
 
 ***
 
-(toc_ref_glossary)=
+(toc_ref_glossary2)=
 ## References / Glossary
 
 ::::{grid} 3

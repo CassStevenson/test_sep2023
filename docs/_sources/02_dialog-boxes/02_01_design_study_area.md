@@ -14,7 +14,7 @@ editor_options:
   markdown: 
   wrap: none
 ---
-(i_study_area)=
+(i_design_study_area)=
 # Study area
 
 A [study area](#study_area) is a unique area(s) within a [project](#project). There may be multiple [study areas](#study_area) within a larger [study area](#study_area). Aspects to consider when identifying the [study area](#study_area) include the spatial extent (and method of delineation), shape ({{ ref_intext_foster_harmsen_2012 }}), and composition and configuration of features within it (including habitat types, land uses and disturbances).

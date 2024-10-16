@@ -31,73 +31,6 @@ I am a note
 :::::::{tab-set}
 
 ::::::{tab-item} TEST
-{material-regular}`data_exploration;2em`
-{file-media}`data_exploration;2em`
-
-{file-media}`report;1em;sd-text-info`, 
-- An icon {fas}`spinner;sd-text-primary`, some more text.
-- An icon {fab}`github`, some more text.
-- An icon {fab}`gitkraken;sd-text-success fa-xl`, some more text.
-- An icon {fas}`skull;sd-text-danger`, some more text.
-
-
-**<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
-<div class="h_bold">How does this relate to study design?</div>
-
-
-```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
-:color: primary
-:shadow:
-:align: center
-:tooltip: I am a tooltip
-Concept library
-```
-
-:::{figure} ../logo.png
-:width: 50%
-:align: left
-:::
-<div class="indent">figure 1. this is a figure caption</div>
-
-here is some info with a {bdg}`plain badge`
-
-here is some info with a {bdg}`plain badge<tooltip="I am a tooltip">`
-
-{bdg-link-white}`explicit title <https://ab-rcsc.github.io/rc-decision-support-tool_concept-library>`
-
-<button type="button" class="btn btn-primary">Primary</button>
-
-<button type="button" class="btn btn-primary">Primary</button>
-
-
-```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
-:color: primary
-:shadow:
-:align: center
-:tooltip: I am a tooltip
-Concept library
-```
-
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
-  Tooltip with HTML
-</button>
-
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-  Tooltip on top
-</button>
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
-  Tooltip on right
-</button>
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
-  Tooltip on bottom
-</button>
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
-  Tooltip on left
-</button>
-
-
-
-
 **<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
 <div class="h_bold">How does this relate to study design?</div>
 
@@ -118,7 +51,7 @@ This section will be available soon! In the meantime, check out the information 
 
 ::::::{tab-item} In-depth
 :::{note}
-**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2024)
+**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2023)
 :::
 
 __[density](#density)__
@@ -130,7 +63,7 @@ __[density](#density)__
 
 
 <p style="padding-left: 2em; text-indent: -2em;">
-**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2024)
+**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2023)
 </p>
 
 
